@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@287eaab3b2",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "ion ‘virtual void FormatToTest_WriteMultipleLongDoubles_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@287eaab3b2/gemini-2.5-flash/run2/test.cpp:150:25: error: ‘appender’ is not a member of ‘fmt’\n  150 |     fmt::format_to(fmt::appender(buffer_), \"{}{}\", val1, val2);\n      |                         ^~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@287eaab3b2/gemini-2.5-flash/run2/test.cpp: In member function ‘virtual void FormatToTest_WriteMixedTypes_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@287eaab3b2/gemini-2.5-flash/run2/test.cpp:159:25: error: ‘appender’ is not a member of ‘fmt’\n  159 |     fmt::format_to(fmt::appender(buffer_), \"LD:{} Char:{}\", ld_val, char_val);\n      |                         ^~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

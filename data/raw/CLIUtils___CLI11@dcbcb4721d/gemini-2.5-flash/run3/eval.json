@@ -1,0 +1,21 @@
+{
+ "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gemini-2.5-flash/run3/test.cpp: In member function ‘virtual void ConfigFlagValueTest_OptionWithTransformCallback_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gemini-2.5-flash/run3/test.cpp:212:9: error: ‘class CLI::App’ has no member named ‘parse_config’; did you mean ‘_parse_config’?\n  212 |     app.parse_config(config_str);\n      |         ^~~~~~~~~~~~\n      |         _parse_config\n/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gemini-2.5-flash/run3/test.cpp:217:9: error: ‘class CLI::App’ has no member named ‘parse_config’; did you mean ‘_parse_config’?\n  217 |     app.parse_config(config_str_empty);\n      |         ^~~~~~~~~~~~\n      |         _parse_config\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

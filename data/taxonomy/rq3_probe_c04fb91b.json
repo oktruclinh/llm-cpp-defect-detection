@@ -1,0 +1,9 @@
+{
+  "defect": "fmtlib___fmt@c04fb91b03", "question": "O2 vs O4",
+  "bug": "formatter::format returns ctx.out() instead of visit() result (wrong RETURN ITERATOR; buffer content unaffected)",
+  "buggy_commit": "323b92bffef7", "fixed_commit": "c04fb91b03cb",
+  "probe": "fmt::format(\"{}-{}\",42,99) AND fmt::format_to(char*, ...) on both versions",
+  "fmt_format_buggy": "42-99", "fmt_format_fixed": "42-99",
+  "format_to_buggy": "42-99", "format_to_fixed": "42-99",
+  "verdict": "No public-API output difference found (fmt::format and format_to both identical). The fault is in the returned iterator value, not in emitted output; the tests compare strings from fmt::format, so they observe a surface on which the fault does not appear => O2 (wrong API surface). coder2's 'a chained format could expose it' was not borne out by the format_to probe."
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@3d0a9d58b6",
+  "project": "apache___arrow",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-24T16:33:28",
+  "temperature": 0.2,
+  "shots": 1,
+  "compiled_on_fixed": true,
+  "tokens_in": 464,
+  "tokens_out": 962,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/apache___arrow@3d0a9d58b6/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": ""
+}

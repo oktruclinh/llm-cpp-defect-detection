@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@cf0da32fd0",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "udy/data/raw/skypjack___entt@cf0da32fd0/gemini-2.5-flash/run1/test.cpp: In member function ‘virtual void DereferenceTest_DereferenceNonIteratorType_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gemini-2.5-flash/run1/test.cpp:246:41: error: ‘forward_as_meta’ is not a member of ‘entt’\n  246 |     entt::meta_any non_iterator = entt::forward_as_meta(123);\n      |                                         ^~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gemini-2.5-flash/run1/test.cpp:247:42: error: ‘class entt::meta_any’ has no member named ‘dereference’\n  247 |     entt::meta_any result = non_iterator.dereference(); // This calls the internal operation\n      |                                          ^~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@a3cfd1b8ad",
+  "project": "yhirose___cpp_peglib",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:36:44",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4986,
+  "tokens_out": 3717,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@a3cfd1b8ad/gpt-5.4-or/guided/run1/test.cpp",
+  "compile_err_tail": "  \\\n      |                                      ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1838:33: note: in expansion of macro \u2018GTEST_EXPECT_FALSE\u2019\n 1838 | #define EXPECT_FALSE(condition) GTEST_EXPECT_FALSE(condition)\n      |                                 ^~~~~~~~~~~~~~~~~~\n/tmp/tmp1581xvqs/t.cpp:279:3: note: in expansion of macro \u2018EXPECT_FALSE\u2019\n  279 |   EXPECT_FALSE(p4.load_grammar(\"Start <- 'a'#comment\"));\n      |   ^~~~~~~~~~~~\n"
+}

@@ -1,0 +1,73 @@
+id,defect_id,model,final_code,final_label,clf_code,source
+1,CLIUtils___CLI11@020a21afc6,qwen3-coder,5,Template/overload deduction,9,audit
+2,CLIUtils___CLI11@020a21afc6,qwen3-coder,3,Hallucinated/wrong API,3,audit
+3,CLIUtils___CLI11@dcbcb4721d,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+4,CLIUtils___CLI11@dcbcb4721d,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+5,CLIUtils___CLI11@dcbcb4721d,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+6,CLIUtils___CLI11@dcbcb4721d,qwen3-coder,3,Hallucinated/wrong API,3,audit
+7,CLIUtils___CLI11@de215ef978,gemini-2.5-flash,7,Reference/value-category,7,audit
+8,CLIUtils___CLI11@de215ef978,gemini-2.5-flash,7,Reference/value-category,7,audit
+9,fmtlib___fmt@0cc73ebf79,deepseek-chat,4,Missing include/type,4,audit
+10,fmtlib___fmt@0cc73ebf79,deepseek-chat,4,Missing include/type,4,audit
+11,fmtlib___fmt@0cc73ebf79,deepseek-chat,4,Missing include/type,4,audit
+12,fmtlib___fmt@0cc73ebf79,gemini-2.5-flash,9,Malformed syntax,3,audit
+13,fmtlib___fmt@0cc73ebf79,gemini-2.5-flash,4,Missing include/type,4,audit
+14,fmtlib___fmt@0cc73ebf79,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+15,fmtlib___fmt@0cc73ebf79,gpt-5.4-or,10,Other,2,audit
+16,fmtlib___fmt@0cc73ebf79,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+17,fmtlib___fmt@0cc73ebf79,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+18,fmtlib___fmt@287eaab3b2,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+19,fmtlib___fmt@287eaab3b2,gemini-2.5-flash,3,Hallucinated/wrong API,3,fence->underlying
+20,fmtlib___fmt@2b7a146fa1,deepseek-chat,3,Hallucinated/wrong API,3,audit
+21,fmtlib___fmt@2b7a146fa1,gemini-2.5-flash,10,Other,5,audit
+22,fmtlib___fmt@611cf0b3c6,gemini-2.5-flash,12,Test-harness/macro misuse,12,fence->underlying
+23,fmtlib___fmt@611cf0b3c6,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+24,fmtlib___fmt@6a13464059,gemini-2.5-flash,9,Malformed syntax,9,audit
+25,fmtlib___fmt@6a13464059,gemini-2.5-flash,9,Malformed syntax,9,audit
+26,fmtlib___fmt@6a13464059,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+27,fmtlib___fmt@6a13464059,qwen3-coder,2,static_assert/trait,2,audit
+28,fmtlib___fmt@6a13464059,qwen3-coder,4,Missing include/type,4,audit
+29,fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,Hallucinated/wrong API,3,fence->underlying
+30,fmtlib___fmt@971fb584c3,deepseek-chat,6,Access control,6,audit
+31,fmtlib___fmt@971fb584c3,deepseek-chat,3,Hallucinated/wrong API,3,audit
+32,fmtlib___fmt@971fb584c3,deepseek-chat,3,Hallucinated/wrong API,3,audit
+33,fmtlib___fmt@971fb584c3,gemini-2.5-flash,4,Missing include/type,4,audit
+34,fmtlib___fmt@971fb584c3,gemini-2.5-flash,4,Missing include/type,4,audit
+35,fmtlib___fmt@971fb584c3,gemini-2.5-flash,4,Missing include/type,4,audit
+36,fmtlib___fmt@971fb584c3,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+37,fmtlib___fmt@c04fb91b03,deepseek-chat,3,Hallucinated/wrong API,3,audit
+38,fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+39,fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+40,fmtlib___fmt@c04fb91b03,gpt-5.4-or,5,Template/overload deduction,5,audit
+41,fmtlib___fmt@c04fb91b03,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+42,fmtlib___fmt@c04fb91b03,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+43,fmtlib___fmt@c04fb91b03,qwen3-coder,3,Hallucinated/wrong API,3,audit
+44,fmtlib___fmt@c1d430e61a,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+45,fmtlib___fmt@c1d430e61a,gemini-2.5-flash,4,Missing include/type,4,audit
+46,fmtlib___fmt@cd7202e039,gemini-2.5-flash,3,Hallucinated/wrong API,3,audit
+47,fmtlib___fmt@cd7202e039,gemini-2.5-flash,12,Test-harness/macro misuse,12,fence->underlying
+48,fmtlib___fmt@e6b37b4aff,deepseek-chat,3,Hallucinated/wrong API,3,audit
+49,fmtlib___fmt@e6b37b4aff,deepseek-chat,3,Hallucinated/wrong API,3,audit
+50,fmtlib___fmt@e6b37b4aff,gpt-5.4-or,4,Missing include/type,4,audit
+51,fmtlib___fmt@e6b37b4aff,gpt-5.4-or,4,Missing include/type,4,audit
+52,fmtlib___fmt@e6b37b4aff,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+53,skypjack___entt@ad5bb5198b,deepseek-chat,12,Test-harness/macro misuse,12,audit(macro->12)
+54,skypjack___entt@ad5bb5198b,deepseek-chat,6,Access control,6,audit
+55,skypjack___entt@ad5bb5198b,deepseek-chat,12,Test-harness/macro misuse,12,audit(macro->12)
+56,skypjack___entt@ad5bb5198b,gemini-2.5-flash,12,Test-harness/macro misuse,12,audit(macro->12)
+57,skypjack___entt@ad5bb5198b,gemini-2.5-flash,12,Test-harness/macro misuse,12,audit(macro->12)
+58,skypjack___entt@ad5bb5198b,gemini-2.5-flash,12,Test-harness/macro misuse,12,audit(macro->12)
+59,skypjack___entt@ad5bb5198b,gpt-5.4-or,12,Test-harness/macro misuse,12,audit(macro->12)
+60,skypjack___entt@ad5bb5198b,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+61,skypjack___entt@ad5bb5198b,gpt-5.4-or,12,Test-harness/macro misuse,12,audit(macro->12)
+62,skypjack___entt@ad5bb5198b,qwen3-coder,12,Test-harness/macro misuse,12,audit(macro->12)
+63,skypjack___entt@ad5bb5198b,qwen3-coder,6,Access control,6,audit
+64,skypjack___entt@ad5bb5198b,qwen3-coder,12,Test-harness/macro misuse,12,audit(macro->12)
+65,skypjack___entt@cf0da32fd0,deepseek-chat,1,UDL/namespace,1,audit
+66,skypjack___entt@cf0da32fd0,deepseek-chat,1,UDL/namespace,1,audit
+67,skypjack___entt@cf0da32fd0,gemini-2.5-flash,12,Test-harness/macro misuse,12,audit(macro->12)
+68,skypjack___entt@cf0da32fd0,gemini-2.5-flash,1,UDL/namespace,1,fence->underlying
+69,skypjack___entt@cf0da32fd0,gemini-2.5-flash,12,Test-harness/macro misuse,12,fence->underlying
+70,skypjack___entt@cf0da32fd0,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+71,skypjack___entt@cf0da32fd0,gpt-5.4-or,3,Hallucinated/wrong API,3,audit
+72,skypjack___entt@cf0da32fd0,gpt-5.4-or,1,UDL/namespace,1,audit

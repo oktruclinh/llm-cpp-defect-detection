@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@c1d430e61a",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "ing function for call to ‘fmt::v5::basic_format_context<std::back_insert_iterator<fmt::v5::internal::buffer<char> >, char>::basic_format_context(fmt::v5::memory_buffer&)’\n   15 |   fmt::format_context ctx(buf);\n      |                       ^~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1133:3: note: candidate: ‘fmt::v5::basic_format_context<OutputIt, Char>::basic_format_context(OutputIt, fmt::v5::basic_format_args<fmt::v5::basic_format_context<OutputIt, Char> >, fmt::v5::internal::locale_ref) [with OutputIt = std::back_insert_iterator<fmt::v5::internal::buffer<char> >; Char = char]’\n 1133 |   basic_format_context(OutputIt out,\n      |   ^~~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1133:3: note:   candidate expects 3 arguments, 1 provided\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

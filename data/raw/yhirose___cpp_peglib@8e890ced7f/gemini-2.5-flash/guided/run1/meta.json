@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@8e890ced7f",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:08:41",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5820,
+  "tokens_out": 7840,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@8e890ced7f/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "ody()::AnotherCustomAstNode&)\u2019\n  305 |     struct AnotherCustomAstNode {\n      |            ^~~~~~~~~~~~~~~~~~~~\n/tmp/tmpc6thia5b/t.cpp:305:12: note:   candidate expects 1 argument, 9 provided\n/tmp/tmpc6thia5b/t.cpp:305:12: note: candidate: \u2018EnableAstTest_EnableAstMultipleTimes_Test::TestBody()::AnotherCustomAstNode::AnotherCustomAstNode(EnableAstTest_EnableAstMultipleTimes_Test::TestBody()::AnotherCustomAstNode&&)\u2019\n/tmp/tmpc6thia5b/t.cpp:305:12: note:   candidate expects 1 argument, 9 provided\n"
+}

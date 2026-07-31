@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:16:10",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4866,
+  "tokens_out": 6376,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/gemini-2.5-flash/run1/test.cpp",
+  "compile_err_tail": "     |                          ^\n/tmp/tmp608h23uo/t.cpp:225:24: error: size \u2018-1\u2019 of array \u2018values_\u2019 is negative\n  225 |         ValueW values_[-1];\n      |                        ^~\n/tmp/tmp608h23uo/t.cpp:229:22: error: narrowing conversion of \u2018-1\u2019 from \u2018int\u2019 to \u2018long unsigned int\u2019 [-Wnarrowing]\n  229 |         ArgW args_[-1];\n      |                      ^\n/tmp/tmp608h23uo/t.cpp:229:20: error: size \u2018-1\u2019 of array \u2018args_\u2019 is negative\n  229 |         ArgW args_[-1];\n      |                    ^~\n"
+}

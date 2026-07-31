@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@287eaab3b2",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:15:40",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5825,
+  "tokens_out": 6460,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@287eaab3b2/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "             ^~~~~~~~\n/tmp/tmpuafsnthb/t.cpp: In member function \u2018virtual void FormatToTest_WriteMultipleChars_Test::TestBody()\u2019:\n/tmp/tmpuafsnthb/t.cpp:176:23: error: \u2018appender\u2019 is not a member of \u2018fmt\u2019\n  176 |   fmt::format_to(fmt::appender(buffer_), \"{}{}{}\", 'X', 'Y', 'Z');\n      |                       ^~~~~~~~\n/tmp/tmpuafsnthb/t.cpp:181:23: error: \u2018appender\u2019 is not a member of \u2018fmt\u2019\n  181 |   fmt::format_to(fmt::appender(buffer_), \"{}\", long_string);\n      |                       ^~~~~~~~\n"
+}

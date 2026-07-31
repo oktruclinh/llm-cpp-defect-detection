@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@020a21afc6",
+  "project": "CLIUtils___CLI11",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:09:30",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 3024,
+  "tokens_out": 2995,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@020a21afc6/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": ""
+}

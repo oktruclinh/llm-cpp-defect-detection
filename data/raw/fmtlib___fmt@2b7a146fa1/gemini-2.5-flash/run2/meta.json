@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@2b7a146fa1",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:28:52",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4187,
+  "tokens_out": 5289,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@2b7a146fa1/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": "+/13/variant:1305:18: note: candidate: \u2018constexpr bool std::operator!=(monostate, monostate)\u2019\n 1305 |   constexpr bool operator!=(monostate, monostate) noexcept { return false; }\n      |                  ^~~~~~~~\n/usr/include/c++/13/variant:1305:29: note:   no known conversion for argument 1 from \u2018std::__cxx11::basic_string<char>::const_iterator\u2019 to \u2018std::monostate\u2019\n 1305 |   constexpr bool operator!=(monostate, monostate) noexcept { return false; }\n      |                             ^~~~~~~~~\n"
+}

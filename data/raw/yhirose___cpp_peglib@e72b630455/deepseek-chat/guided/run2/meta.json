@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@e72b630455",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:28:24",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4464,
+  "tokens_out": 3132,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@e72b630455/deepseek-chat/guided/run2/test.cpp",
+  "compile_err_tail": "ize_t, F) const [with F = std::__cxx11::basic_string<char>]\u2019:\n/tmp/tmphmtbwahv/t.cpp:186:46:   required from here\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:316:102: error: no match for call to \u2018(std::__cxx11::basic_string<char>) (peg::any)\u2019\n  316 |     auto transform(size_t beg, size_t end, F f) const -> vector<typename std::remove_const<decltype(f(any()))>::type> {\n      |                                                                                                     ~^~~~~~~\n"
+}

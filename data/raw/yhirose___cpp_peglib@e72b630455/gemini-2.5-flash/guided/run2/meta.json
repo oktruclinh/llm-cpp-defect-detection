@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@e72b630455",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:30:52",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 6659,
+  "tokens_out": 7278,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@e72b630455/gemini-2.5-flash/guided/run2/test.cpp",
+  "compile_err_tail": "                              ^~~~~~~~\n/tmp/tmp345ib95a/t.cpp: In member function \u2018virtual void SemanticValuesTest_VectorOperations_Test::TestBody()\u2019:\n/tmp/tmp345ib95a/t.cpp:283:17: error: \u2018const class peg::any\u2019 has no member named \u2018type\u2019\n  283 |         if (val.type() == typeid(double)) {\n      |                 ^~~~\n/tmp/tmp345ib95a/t.cpp:285:24: error: \u2018const class peg::any\u2019 has no member named \u2018type\u2019\n  285 |         } else if (val.type() == typeid(int)) {\n      |                        ^~~~\n"
+}

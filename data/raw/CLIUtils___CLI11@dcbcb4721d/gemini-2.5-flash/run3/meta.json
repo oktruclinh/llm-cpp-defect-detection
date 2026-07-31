@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+  "project": "CLIUtils___CLI11",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:11:47",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4055,
+  "tokens_out": 5117,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "ithTransformCallback_Test::TestBody()\u2019:\n/tmp/tmpfjqueweg/t.cpp:213:9: error: \u2018class CLI::App\u2019 has no member named \u2018parse_config\u2019; did you mean \u2018_parse_config\u2019?\n  213 |     app.parse_config(config_str, true);\n      |         ^~~~~~~~~~~~\n      |         _parse_config\n/tmp/tmpfjqueweg/t.cpp:218:9: error: \u2018class CLI::App\u2019 has no member named \u2018parse_config\u2019; did you mean \u2018_parse_config\u2019?\n  218 |     app.parse_config(config_str_empty, true);\n      |         ^~~~~~~~~~~~\n      |         _parse_config\n"
+}

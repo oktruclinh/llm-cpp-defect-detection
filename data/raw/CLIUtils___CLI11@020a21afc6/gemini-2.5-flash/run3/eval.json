@@ -1,0 +1,46 @@
+{
+ "defect_id": "CLIUtils___CLI11@020a21afc6",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 12,
+ "n_valid": 1,
+ "n_invalid_on_fixed": 11,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "CLIAppParseTest.BasicCommandLineParsing",
+  "CLIAppParseTest.CommandLineWithNoOptions",
+  "CLIAppParseTest.CommandLineWithOnlyProgramName",
+  "CLIAppParseTest.CommandLineWithMultipleOptions",
+  "CLIAppParseTest.CommandLineWithSubcommand",
+  "CLIAppParseTest.CommandLineWithSubcommandAndNoSubcommandOptions",
+  "CLIAppParseTest.CommandLineWithArgumentsAfterOptions",
+  "CLIAppParseTest.CommandLineWithEmptyProgramName",
+  "CLIAppParseTest.CommandLineWithProgramNameAndTrailingWhitespace",
+  "CLIAppParseTest.CommandLineWithNoArgumentsAfterProgramName",
+  "CLIAppParseTest.CommandLineWithOnlyProgramNameAndWhitespace"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": false,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   1163,
+   1169
+  ],
+  "hunk_lines_executed": [],
+  "hunk_executed": false,
+  "hunk_instrumented_lines": [],
+  "focal_lines_total": 1166
+ },
+ "outcome": "not_reached"
+}

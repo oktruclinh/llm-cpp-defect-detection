@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@3d0a9d58b6",
+  "project": "apache___arrow",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-24T16:33:51",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3155,
+  "tokens_out": 3990,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/apache___arrow@3d0a9d58b6/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "sicDecimal128, arrow::BasicDecimal128>(char const*, char const*, arrow::BasicDecimal128 const&, arrow::BasicDecimal128 const&)':\nt.cpp:(.text._ZN7testing8internal11CmpHelperEQIN5arrow15BasicDecimal128ES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_[_ZN7testing8internal11CmpHelperEQIN5arrow15BasicDecimal128ES3_EENS_15AssertionResultEPKcS6_RKT_RKT0_]+0x3e): undefined reference to `arrow::operator==(arrow::BasicDecimal128 const&, arrow::BasicDecimal128 const&)'\ncollect2: error: ld returned 1 exit status\n"
+}

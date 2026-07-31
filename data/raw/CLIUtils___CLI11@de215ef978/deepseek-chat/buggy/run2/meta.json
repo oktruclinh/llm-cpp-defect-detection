@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@de215ef978",
+  "project": "CLIUtils___CLI11",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "buggy",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:03:12",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2738,
+  "tokens_out": 3107,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@de215ef978/deepseek-chat/buggy/run2/test.cpp",
+  "compile_err_tail": "\n/tmp/tmpyoybydti/t.cpp:14:34: error: use of deleted function \u2018CLI::App& CLI::App::operator=(const CLI::App&)\u2019\n   14 |         app = CLI::App{\"Test app\"};\n      |                                  ^\nIn file included from /home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/CLI.hpp:32,\n                 from /tmp/tmpyoybydti/t.cpp:2:\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/App.hpp:330:10: note: declared here\n  330 |     App &operator=(const App &) = delete;\n      |          ^~~~~~~~\n"
+}

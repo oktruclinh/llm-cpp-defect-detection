@@ -1,0 +1,26 @@
+{
+ "defect_id": "fmtlib___fmt@279d698e1b",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": false,
+ "n_tests": 4,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 4,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [
+  "FmtFormatTest.TestFormatRightAligned",
+  "FmtFormatTest.TestFormatRightAlignedEdgeCases",
+  "FmtFormatTest.TestFormatRightAlignedSpecialCases",
+  "FmtFormatTest.TestFormatRightAlignedErrorConditions"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "outcome": "no_valid_tests"
+}

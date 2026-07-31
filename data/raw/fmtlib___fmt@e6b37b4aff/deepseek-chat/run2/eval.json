@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@e6b37b4aff",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "4aff/deepseek-chat/run2/test.cpp: In member function ‘virtual void TranscodeTest_OnlyMultiByte_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/run2/test.cpp:130:31: error: ‘fmt::detail’ has not been declared\n  130 |     std::string result = fmt::detail::transcode(input);\n      |                               ^~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/run2/test.cpp: In member function ‘virtual void TranscodeTest_WithBom_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/run2/test.cpp:140:31: error: ‘fmt::detail’ has not been declared\n  140 |     std::string result = fmt::detail::transcode(input);\n      |                               ^~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

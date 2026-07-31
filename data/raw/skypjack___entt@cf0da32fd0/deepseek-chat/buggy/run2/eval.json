@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@cf0da32fd0",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "       ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest_pred_impl.h:148:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’\n  148 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:2009:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’\n 2009 |   ASSERT_PRED_FORMAT2(::testing::internal::CmpHelperFloatingPointEQ<double>, \\\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/buggy/run2/test.cpp:102:5: note: in expansion of macro ‘ASSERT_DOUBLE_EQ’\n  102 |     ASSERT_DOUBLE_EQ(pair->second.cast<double>(), 1.0);\n      |     ^~~~~~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

@@ -1,0 +1,13 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3213,
+  "tokens_out": 3440,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/run1/test.cpp",
+  "compile_err_tail": "EST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1896:3: note: in expansion of macro \u2018EXPECT_PRED_FORMAT2\u2019\n 1896 |   EXPECT_PRED_FORMAT2(::testing::internal::EqHelper::Compare, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/tmp/tmpf8urs9rq/t.cpp:167:5: note: in expansion of macro \u2018EXPECT_EQ\u2019\n  167 |     EXPECT_EQ(99, arg.template get<int>());\n      |     ^~~~~~~~~\n"
+}

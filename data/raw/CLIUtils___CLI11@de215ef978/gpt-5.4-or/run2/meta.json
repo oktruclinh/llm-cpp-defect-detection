@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@de215ef978",
+  "project": "CLIUtils___CLI11",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T16:42:13",
+  "temperature": 0.2,
+  "shots": 1,
+  "compiled_on_fixed": true,
+  "tokens_in": 285,
+  "tokens_out": 832,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@de215ef978/gpt-5.4-or/run2/test.cpp",
+  "compile_err_tail": ""
+}

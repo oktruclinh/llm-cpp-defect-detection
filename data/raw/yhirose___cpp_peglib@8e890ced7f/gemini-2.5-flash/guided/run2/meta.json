@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@8e890ced7f",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:09:14",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4128,
+  "tokens_out": 5493,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@8e890ced7f/gemini-2.5-flash/guided/run2/test.cpp",
+  "compile_err_tail": "  ^~~~~~~~~~~~~\n/tmp/tmp3q_x19mu/t.cpp:10:5: note:   candidate expects 0 arguments, 9 provided\n/tmp/tmp3q_x19mu/t.cpp:5:8: note: candidate: \u2018CustomAstNode::CustomAstNode(const CustomAstNode&)\u2019\n    5 | struct CustomAstNode {\n      |        ^~~~~~~~~~~~~\n/tmp/tmp3q_x19mu/t.cpp:5:8: note:   candidate expects 1 argument, 9 provided\n/tmp/tmp3q_x19mu/t.cpp:5:8: note: candidate: \u2018CustomAstNode::CustomAstNode(CustomAstNode&&)\u2019\n/tmp/tmp3q_x19mu/t.cpp:5:8: note:   candidate expects 1 argument, 9 provided\n"
+}

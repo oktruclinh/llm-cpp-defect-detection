@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@ad5bb5198b",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "buggy",
+  "seed": 1,
+  "timestamp": "2026-06-23T18:26:16",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3468,
+  "tokens_out": 3932,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@ad5bb5198b/deepseek-chat/buggy/run1/test.cpp",
+  "compile_err_tail": "|                                   ^~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:1780:35: note:   candidate expects 1 argument, 2 provided\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:1780:35: note: candidate: \u2018entt::meta_associative_container::meta_iterator::meta_iterator(entt::meta_associative_container::meta_iterator&&)\u2019\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:1780:35: note:   candidate expects 1 argument, 2 provided\n"
+}

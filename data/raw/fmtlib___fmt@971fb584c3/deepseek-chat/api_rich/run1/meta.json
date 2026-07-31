@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "api_rich",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:54:46",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3017,
+  "tokens_out": 2478,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/api_rich/run1/test.cpp",
+  "compile_err_tail": "ffer<wchar_t>&\u2019}\n  106 |     fmt::format_to(std::back_inserter(buffer), \"{name}\", fmt::arg(\"name\", \"Output\"));\n      |                    ~~~~~~~~~~~~~~~~~~^~~~~~~~\n/tmp/tmp3s3_os1s/t.cpp: In member function \u2018virtual void BasicContextGetArgTest_FormattedSizeWithNamedArgs_Test::TestBody()\u2019:\n/tmp/tmp3s3_os1s/t.cpp:112:24: error: \u2018formatted_size\u2019 is not a member of \u2018fmt\u2019\n  112 |     size_t size = fmt::formatted_size(\"{name}\", fmt::arg(\"name\", \"Size\"));\n      |                        ^~~~~~~~~~~~~~\n"
+}

@@ -1,0 +1,28 @@
+{
+ "defect_id": "fmtlib___fmt@c1d430e61a",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 12,
+ "n_valid": 11,
+ "n_invalid_on_fixed": 1,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "FmtChronoFormatterDurationTest.NegativeFloatingSubsecondDurationPrintsMinusAndAbsoluteFraction"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": false,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": false
+ },
+ "outcome": "not_reached"
+}

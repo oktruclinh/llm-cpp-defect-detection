@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@6a13464059",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "_cxx11::basic_string<char>; format_string<T ...> = basic_format_string<char, int*&>]’\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/gemini-2.5-flash/run1/test.cpp:9:23:   required from ‘std::string format_value(const std::string&, T) [with T = int*; std::string = std::__cxx11::basic_string<char>]’\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/gemini-2.5-flash/run1/test.cpp:80:3:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1701:17: error: static assertion failed: Formatting of non-void pointers is disallowed.\n 1701 |   static_assert(formattable_pointer,\n      |                 ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1701:17: note: ‘formattable_pointer’ evaluates to false\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

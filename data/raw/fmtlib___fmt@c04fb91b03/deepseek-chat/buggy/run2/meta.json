@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@c04fb91b03",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "buggy",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:22:47",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3417,
+  "tokens_out": 3624,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/deepseek-chat/buggy/run2/test.cpp",
+  "compile_err_tail": "al, FormatContext &ctx) -> decltype(ctx.out()) {\n      |        ^~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:3212:8: note:   template argument deduction/substitution failed:\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:553:28: note:   cannot convert \u2018*(const SmallEnum*)arg\u2019 (type \u2018const SmallEnum\u2019) to type \u2018const int&\u2019\n  553 |     ctx.advance_to(f.format(*static_cast<const T*>(arg), ctx));\n      |                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@ad5bb5198b",
+  "project": "skypjack___entt",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:06:41",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2715,
+  "tokens_out": 2494,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@ad5bb5198b/qwen3-coder/run3/test.cpp",
+  "compile_err_tail": "|                                   ^~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:1780:35: note:   candidate expects 1 argument, 2 provided\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:1780:35: note: candidate: \u2018entt::meta_associative_container::meta_iterator::meta_iterator(entt::meta_associative_container::meta_iterator&&)\u2019\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:1780:35: note:   candidate expects 1 argument, 2 provided\n"
+}

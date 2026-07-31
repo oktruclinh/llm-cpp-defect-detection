@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+  "project": "CLIUtils___CLI11",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:10:38",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4378,
+  "tokens_out": 6585,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gemini-2.5-flash/run1/test.cpp",
+  "compile_err_tail": "     ^~~~~~~~~~~~~\n      |          transform\n/tmp/tmpsssxak8h/t.cpp:252:10: error: \u2018class CLI::Option\u2019 has no member named \u2018set_config_name\u2019; did you mean \u2018get_configurable\u2019?\n  252 |     opt->set_config_name(\"custom_key\");\n      |          ^~~~~~~~~~~~~~~\n      |          get_configurable\n/tmp/tmpsssxak8h/t.cpp:253:10: error: \u2018class CLI::Option\u2019 has no member named \u2018set_custom_option_keys\u2019\n  253 |     opt->set_custom_option_keys({\"enabled\", \"disabled\"});\n      |          ^~~~~~~~~~~~~~~~~~~~~~\n"
+}

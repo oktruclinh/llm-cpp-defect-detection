@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@0b4fa2a2bf",
+  "project": "apache___arrow",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-25T14:56:47",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3420,
+  "tokens_out": 5086,
+  "test_path": "/home/azureuser/study/data/raw/apache___arrow@0b4fa2a2bf/deepseek-chat/guided/run2/test.cpp",
+  "compile_err_tail": "2, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/azureuser/study/third_party/googletest/googletest/include/gtest/gtest.h:1896:3: note: in expansion of macro \u2018EXPECT_PRED_FORMAT2\u2019\n 1896 |   EXPECT_PRED_FORMAT2(::testing::internal::EqHelper::Compare, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/tmp/tmpe2rzrrey/t.cpp:250:3: note: in expansion of macro \u2018EXPECT_EQ\u2019\n  250 |   EXPECT_EQ(std::static_pointer_cast<Int64Array>(batch->column(0))->Value(0), 1234567890123LL);\n      |   ^~~~~~~~~\n"
+}

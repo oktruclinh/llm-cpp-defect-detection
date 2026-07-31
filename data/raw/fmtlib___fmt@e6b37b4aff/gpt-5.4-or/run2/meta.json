@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T16:56:50",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2580,
+  "tokens_out": 3380,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/gpt-5.4-or/run2/test.cpp",
+  "compile_err_tail": ": note: \u2018std::integral_constant<bool, false>::value\u2019 evaluates to false\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:879:26: error: could not convert \u2018fmt::v6::to_string_view<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >((* & val))\u2019 from \u2018basic_string_view<wchar_t>\u2019 to \u2018basic_string_view<char>\u2019\n  879 |     return to_string_view(val);\n      |            ~~~~~~~~~~~~~~^~~~~\n      |                          |\n      |                          basic_string_view<wchar_t>\n"
+}

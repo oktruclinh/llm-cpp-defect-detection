@@ -1,0 +1,30 @@
+{
+ "defect_id": "fmtlib___fmt@96c18b26c2",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 10,
+ "n_valid": 7,
+ "n_invalid_on_fixed": 3,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 4,
+ "real_bug_detected": true,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "PrintfCharFormattingTest.ZeroFlagDoesNotTriggerNumericAlignmentForCharConversion",
+  "PrintfCharFormattingTest.NullCharacterRespectsWidthAndAlignment",
+  "PrintfCharFormattingTest.ZeroPaddingStillIgnoredWhenCombinedWithLeftAlignment"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [
+  "PrintfCharFormattingTest.SignFlagsAreIgnoredForCharConversion",
+  "PrintfCharFormattingTest.AlternateFormIsIgnoredForCharConversion",
+  "PrintfCharFormattingTest.WidthAndAlignmentBehaveAsNonNumericFormatting",
+  "PrintfCharFormattingTest.PrecisionDoesNotAffectCharConversion"
+ ],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "outcome": "detected"
+}

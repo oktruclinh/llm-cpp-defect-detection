@@ -1,0 +1,21 @@
+{
+ "defect_id": "CLIUtils___CLI11@020a21afc6",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/Validators.hpp:1027:38: error: expected primary-expression\n 1027 |                 throw ValidationError(\"Unit must contain only letters.\");\n      |                       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/Validators.hpp:1037:42: error: expected primary-expression\n 1037 |                     throw ValidationError(std::string(\"Several matching lowercase unit representations are found: \") +\n      |                           ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n 1038 |                                           s);\n      |                                           ~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

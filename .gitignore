@@ -1,0 +1,12 @@
+# never commit credentials
+config/secrets.env
+*.env
+
+# build / coverage artifacts
+*.o
+*.a
+*.gcno
+*.gcda
+*.gcov
+__pycache__/
+*.pyc

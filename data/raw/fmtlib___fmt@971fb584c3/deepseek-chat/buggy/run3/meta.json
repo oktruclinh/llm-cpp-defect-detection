@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 3,
+  "condition": "buggy",
+  "seed": 3,
+  "timestamp": "2026-06-23T18:18:47",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2979,
+  "tokens_out": 3319,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/buggy/run3/test.cpp",
+  "compile_err_tail": "ntext<char> parse_ctx(\"\");\n      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~\n      |          basic_parse_context\n/tmp/tmpavi0lkh4/t.cpp:179:37: error: expected primary-expression before \u2018char\u2019\n  179 |     fmt::basic_format_parse_context<char> parse_ctx(\"\");\n      |                                     ^~~~\n/tmp/tmpavi0lkh4/t.cpp:180:34: error: \u2018parse_ctx\u2019 was not declared in this scope\n  180 |     fmt::basic_context<char> ctx(parse_ctx, format_args);\n      |                                  ^~~~~~~~~\n"
+}

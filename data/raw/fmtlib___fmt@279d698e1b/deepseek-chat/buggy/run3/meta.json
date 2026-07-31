@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@279d698e1b",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 3,
+  "condition": "buggy",
+  "seed": 3,
+  "timestamp": "2026-06-23T18:14:23",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3667,
+  "tokens_out": 4216,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@279d698e1b/deepseek-chat/buggy/run3/test.cpp",
+  "compile_err_tail": "const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\u2019\n  176 |       basic_string(__sv_wrapper __svw, const _Alloc& __a)\n      |       ^~~~~~~~~~~~\n/usr/include/c++/13/bits/basic_string.h:176:33: note:   no known conversion for argument 1 from \u2018std::__cxx11::basic_string<char>::iterator\u2019 to \u2018std::__cxx11::basic_string<char>::__sv_wrapper\u2019\n  176 |       basic_string(__sv_wrapper __svw, const _Alloc& __a)\n      |                    ~~~~~~~~~~~~~^~~~~\n"
+}

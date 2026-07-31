@@ -1,0 +1,33 @@
+{
+ "defect_id": "fmtlib___fmt@611cf0b3c6",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 11,
+ "n_valid": 2,
+ "n_invalid_on_fixed": 9,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 1,
+ "real_bug_detected": true,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "OctalFormatTest.WithPrecision",
+  "OctalFormatTest.AlternateFormWithPrecision",
+  "OctalFormatTest.NegativeNumbers",
+  "OctalFormatTest.ZeroEdgeCases",
+  "OctalFormatTest.WidthAndAlignment",
+  "OctalFormatTest.LargeValues",
+  "OctalFormatTest.PrecisionZero",
+  "OctalFormatTest.VerifyOctalFormattingPath",
+  "OctalFormatTest.LargePrecisionAlternateForm"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [
+  "OctalFormatTest.AlternateForm"
+ ],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "outcome": "detected"
+}

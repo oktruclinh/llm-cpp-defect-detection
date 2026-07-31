@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-23T17:55:24",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3765,
+  "tokens_out": 4280,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/run3/test.cpp",
+  "compile_err_tail": "ruclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:961:39:   required from \u2018std::string fmt::format(string_view, const Args& ...) [with Args = {basic_arg<basic_context<char> >}; std::string = std::__cxx11::basic_string<char>; string_view = basic_string_view<char>]\u2019\n/tmp/tmpykzzepg5/t.cpp:29:5:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:536:50: error: \u2018fmt::basic_context<char>::formatter_type<fmt::basic_arg<fmt::basic_context<char> > > f\u2019 has incomplete type\n"
+}

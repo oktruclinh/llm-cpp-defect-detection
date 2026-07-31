@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6b7bfed40c",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "buggy",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:21:00",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5545,
+  "tokens_out": 8192,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6b7bfed40c/deepseek-chat/buggy/run2/test.cpp",
+  "compile_err_tail": "nh/Thesis/kse2026/fmt_spike/include/fmt/format.h: In instantiation of \u2018void fmt::v7::basic_memory_buffer<T, SIZE, Allocator>::grow(size_t) [with T = wchar_t; long unsigned int SIZE = 500; Allocator = std::allocator<wchar_t>; size_t = long unsigned int]\u2019:\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:741:6:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:745:69: error: \u2018max_size\u2019 is not a member of \u2018std::allocator_traits<std::allocator<wchar_t> >\u2019\n"
+}

@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@971fb584c3",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "                                        ^~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/internal/gtest-internal.h:1318:5: note: in definition of macro ‘GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_’\n 1318 |     statement;                                                    \\\n      |     ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1803:3: note: in expansion of macro ‘GTEST_TEST_THROW_’\n 1803 |   GTEST_TEST_THROW_(statement, expected_exception, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/gemini-2.5-flash/run3/test.cpp:128:5: note: in expansion of macro ‘EXPECT_THROW’\n  128 |     EXPECT_THROW(\n      |     ^~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

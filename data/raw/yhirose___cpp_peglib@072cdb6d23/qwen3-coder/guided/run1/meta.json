@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@072cdb6d23",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:03:01",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3359,
+  "tokens_out": 1867,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@072cdb6d23/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": " unsigned int\u2019 arguments\n  123 |     parser[\"Repeated\"] = \"a\"_c + \"Repeated\"_c | \"a\"_c;\n      |                                                 ^~~~~\n/tmp/tmpb503_1ai/t.cpp: In member function \u2018virtual void HolderParseCoreTest_ErrorMessages_Test::TestBody()\u2019:\n/tmp/tmpb503_1ai/t.cpp:135:27: error: unable to find string literal operator \u2018operator\"\"_c\u2019 with \u2018const char [9]\u2019, \u2018long unsigned int\u2019 arguments\n  135 |     parser[\"ErrorRule\"] = \"expected\"_c;\n      |                           ^~~~~~~~~~~~\n"
+}

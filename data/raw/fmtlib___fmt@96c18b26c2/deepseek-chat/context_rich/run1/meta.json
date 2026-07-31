@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@96c18b26c2",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "context_rich",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:32:49",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3804,
+  "tokens_out": 4324,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@96c18b26c2/deepseek-chat/context_rich/run1/test.cpp",
+  "compile_err_tail": "/kse2026/fmt_spike/include/fmt/printf.h:648:68:   required from \u2018std::__cxx11::basic_string<Char> fmt::v6::sprintf(const S&, const Args& ...) [with S = char [3]; Args = {int*}; Char = char]\u2019\n/tmp/tmpmr8m752a/t.cpp:155:38:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1047:20: error: static assertion failed: formatting of non-void pointers is disallowed\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1047:20: note: the comparison reduces to \u2018(4 == 0)\u2019\n"
+}

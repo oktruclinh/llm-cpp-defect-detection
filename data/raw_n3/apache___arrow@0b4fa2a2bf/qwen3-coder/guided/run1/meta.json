@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@0b4fa2a2bf",
+  "project": "apache___arrow",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-25T14:57:31",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2088,
+  "tokens_out": 2298,
+  "test_path": "/home/azureuser/study/data/raw/apache___arrow@0b4fa2a2bf/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": "/tmp/tmpkpthxjmw/t.cpp:4:10: fatal error: arrow/schema.h: No such file or directory\n    4 | #include <arrow/schema.h>\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+}

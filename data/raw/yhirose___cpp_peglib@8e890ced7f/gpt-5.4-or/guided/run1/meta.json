@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@8e890ced7f",
+  "project": "yhirose___cpp_peglib",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:09:36",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2538,
+  "tokens_out": 2148,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@8e890ced7f/gpt-5.4-or/guided/run1/test.cpp",
+  "compile_err_tail": " At global scope:\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:748:7: warning: \u2018peg::Action::Fty peg::Action::make_adaptor(F, R (F::*)(const peg::SemanticValues&, peg::any&) const) [with F = {anonymous}::EnableAstTest_ExistingSemanticActionIsPreservedAndAstAddedToOtherRules_Test::TestBody()::<lambda(const peg::SemanticValues&, std::any&)>; R = auto]\u2019 used but never defined\n  748 |   Fty make_adaptor(F fn, R (F::*)(const SemanticValues &sv, any &dt) const) {\n      |       ^~~~~~~~~~~~\n"
+}

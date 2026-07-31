@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@be470f9332",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:13:16",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2706,
+  "tokens_out": 1827,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@be470f9332/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": "e&)\u2019\n 1510 | class Reference : public Ope\n      |       ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:1510:7: note:   no known conversion for argument 1 from \u2018const char [5]\u2019 to \u2018const peg::Reference&\u2019\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:1510:7: note: candidate: \u2018peg::Reference::Reference(peg::Reference&&)\u2019\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:1510:7: note:   no known conversion for argument 1 from \u2018const char [5]\u2019 to \u2018peg::Reference&&\u2019\n"
+}

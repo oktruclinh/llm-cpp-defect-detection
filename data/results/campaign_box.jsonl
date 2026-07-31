@@ -1,0 +1,15 @@
+{"defect_id": "nanomsg___nng@e3b8f31b04", "project": "nanomsg___nng", "model": "deepseek-chat", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@e3b8f31b04", "project": "nanomsg___nng", "model": "qwen3-coder", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@e3b8f31b04", "project": "nanomsg___nng", "model": "gemini-2.5-flash", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@6a59b15fba", "project": "nanomsg___nng", "model": "deepseek-chat", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@6a59b15fba", "project": "nanomsg___nng", "model": "qwen3-coder", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@6a59b15fba", "project": "nanomsg___nng", "model": "gemini-2.5-flash", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@111b241473", "project": "nanomsg___nng", "model": "deepseek-chat", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@111b241473", "project": "nanomsg___nng", "model": "qwen3-coder", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@111b241473", "project": "nanomsg___nng", "model": "gemini-2.5-flash", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@099b4435c3", "project": "danmar___cppcheck", "model": "deepseek-chat", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@099b4435c3", "project": "danmar___cppcheck", "model": "qwen3-coder", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@099b4435c3", "project": "danmar___cppcheck", "model": "gemini-2.5-flash", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@caa6ff7c2a", "project": "danmar___cppcheck", "model": "deepseek-chat", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@caa6ff7c2a", "project": "danmar___cppcheck", "model": "qwen3-coder", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@caa6ff7c2a", "project": "danmar___cppcheck", "model": "gemini-2.5-flash", "condition": "guided", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}

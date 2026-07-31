@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+  "project": "CLIUtils___CLI11",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T11:35:07",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2567,
+  "tokens_out": 2262,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/qwen3-coder/run2/test.cpp",
+  "compile_err_tail": "stBody()\u2019:\n/tmp/tmp05cg3m1w/t.cpp:92:10: error: \u2018class CLI::Option\u2019 has no member named \u2018set_flag_value\u2019; did you mean \u2018get_flag_value\u2019?\n   92 |     opt->set_flag_value(\"--verbose\", \"1\");\n      |          ^~~~~~~~~~~~~~\n      |          get_flag_value\n/tmp/tmp05cg3m1w/t.cpp:107:11: error: \u2018class CLI::Option\u2019 has no member named \u2018set_flag_value\u2019; did you mean \u2018get_flag_value\u2019?\n  107 |     opt2->set_flag_value(\"--verbose\", \"true\");\n      |           ^~~~~~~~~~~~~~\n      |           get_flag_value\n"
+}

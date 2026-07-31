@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6a13464059",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "context_rich",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:30:52",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4299,
+  "tokens_out": 3820,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/deepseek-chat/context_rich/run1/test.cpp",
+  "compile_err_tail": "r void fmt::v8::detail::check_pointer_type_spec(fmt::v8::presentation_type, ErrorHandler&&) [with ErrorHandler = CheckPointerTypeSpecTest_InvalidType_Test::TestBody()::<lambda(fmt::v8::string_view)>&]\u2019:\n/tmp/tmpoxwd55nb/t.cpp:75:5:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:2796:8: error: \u2018struct CheckPointerTypeSpecTest_InvalidType_Test::TestBody()::<lambda(using fmt::v8::string_view = class fmt::v8::basic_string_view<char>)>\u2019 has no member named \u2018on_error\u2019\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T16:56:27",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2659,
+  "tokens_out": 3477,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/gpt-5.4-or/run1/test.cpp",
+  "compile_err_tail": "E_WARNING_BELOW_\u2019\n 1318 |     statement;                                                    \\\n      |     ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1803:3: note: in expansion of macro \u2018GTEST_TEST_THROW_\u2019\n 1803 |   GTEST_TEST_THROW_(statement, expected_exception, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~\n/tmp/tmp52vmsfuu/t.cpp:131:5: note: in expansion of macro \u2018EXPECT_THROW\u2019\n  131 |     EXPECT_THROW(\n      |     ^~~~~~~~~~~~\n"
+}

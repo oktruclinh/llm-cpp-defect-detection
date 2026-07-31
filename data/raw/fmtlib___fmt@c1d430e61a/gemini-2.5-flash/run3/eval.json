@@ -1,0 +1,49 @@
+{
+ "defect_id": "fmtlib___fmt@c1d430e61a",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 9,
+ "n_valid": 3,
+ "n_invalid_on_fixed": 6,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "ChronoFormatterTest.PositiveDuration",
+  "ChronoFormatterTest.NegativeDuration",
+  "ChronoFormatterTest.MixedUnitsDuration",
+  "ChronoFormatterTest.CustomRatioDuration",
+  "ChronoFormatterTest.DifferentRepTypes",
+  "ChronoFormatterTest.DoubleNegativeSignPrevention"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": false,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   430,
+   440
+  ],
+  "hunk_lines_executed": [],
+  "hunk_executed": false,
+  "hunk_instrumented_lines": [
+   431,
+   433,
+   434,
+   435,
+   436,
+   437,
+   439
+  ],
+  "focal_lines_total": 664
+ },
+ "outcome": "not_reached"
+}

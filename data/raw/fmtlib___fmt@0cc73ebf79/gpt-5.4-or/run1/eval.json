@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@0cc73ebf79",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "Char = char]’\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1835:57:   required from ‘std::__cxx11::basic_string<Char> fmt::v7::format(const S&, Args&& ...) [with S = char [3]; Args = {{anonymous}::Probe&, detail::named_arg<char, int>}; Char = char]’\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/gpt-5.4-or/run1/test.cpp:76:30:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1073:9: error: static assertion failed: Cannot format argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#formatting-user-defined-types\n 1073 |         formattable,\n      |         ^~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1073:9: note: ‘formattable’ evaluates to false\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

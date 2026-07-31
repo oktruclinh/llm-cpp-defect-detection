@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@a3cfd1b8ad",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:35:09",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4549,
+  "tokens_out": 2486,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@a3cfd1b8ad/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": " [0-9]+\n      |         ^~~~~~\n/tmp/tmp_rcb3mh7/t.cpp:23:19: error: \u2018parser\u2019 was not declared in this scope; did you mean \u2018pause\u2019?\n   23 |     bool result = parser.parse(input);\n      |                   ^~~~~~\n      |                   pause\n/tmp/tmp_rcb3mh7/t.cpp:50:9: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018Number\u2019\n   50 |         Number <- [0-9]+\n      |         ^~~~~~\n/tmp/tmp_rcb3mh7/t.cpp:132:9: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018Number\u2019\n  132 |         Number <- [0-9]+\n      |         ^~~~~~\n"
+}

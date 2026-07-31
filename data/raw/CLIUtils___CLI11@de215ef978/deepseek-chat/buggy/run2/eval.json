@@ -1,0 +1,21 @@
+{
+ "defect_id": "CLIUtils___CLI11@de215ef978",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "ile included from /home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/CLI.hpp:30:\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/Option.hpp:317:16: note: declared protected here\n  317 |     callback_t callback_{};\n      |                ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@de215ef978/deepseek-chat/buggy/run2/test.cpp:85:11: error: ‘class CLI::Option’ has no member named ‘callback’; did you mean ‘CLI::callback_t CLI::Option::callback_’? (not accessible from this context)\n   85 |     opt2->callback([&callback_order]() { callback_order.push_back(2); });\n      |           ^~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/Option.hpp:317:16: note: declared protected here\n  317 |     callback_t callback_{};\n      |                ^~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

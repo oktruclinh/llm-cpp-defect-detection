@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@cf0da32fd0",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "     ^~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/run1/test.cpp:263:5: note: in expansion of macro ‘ASSERT_EQ’\n  263 |     ASSERT_EQ(first_elem.cast<int>(), 1);\n      |     ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/run1/test.cpp:266:48: error: expected primary-expression before ‘>’ token\n  266 |     auto vec = second_elem.cast<std::vector<int>>();\n      |                                                ^~\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/run1/test.cpp:266:51: error: expected primary-expression before ‘)’ token\n  266 |     auto vec = second_elem.cast<std::vector<int>>();\n      |                                                   ^\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

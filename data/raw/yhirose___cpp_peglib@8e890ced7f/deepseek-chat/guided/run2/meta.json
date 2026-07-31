@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@8e890ced7f",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:06:43",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3067,
+  "tokens_out": 2800,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@8e890ced7f/deepseek-chat/guided/run2/test.cpp",
+  "compile_err_tail": "(const EnableAstTest_WorksWithCustomAstType_Test::TestBody()::CustomAst&)\u2019\n  122 |     struct CustomAst : peg::Ast {\n      |            ^~~~~~~~~\n/tmp/tmp6dk9fxjb/t.cpp:122:12: note:   candidate expects 1 argument, 9 provided\n/tmp/tmp6dk9fxjb/t.cpp:122:12: note: candidate: \u2018EnableAstTest_WorksWithCustomAstType_Test::TestBody()::CustomAst::CustomAst(EnableAstTest_WorksWithCustomAstType_Test::TestBody()::CustomAst&&)\u2019\n/tmp/tmp6dk9fxjb/t.cpp:122:12: note:   candidate expects 1 argument, 9 provided\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@e72b630455",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:29:27",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4005,
+  "tokens_out": 2154,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@e72b630455/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": ":141:7: error: expected \u2018{\u2019 before \u2018;\u2019 token\n  141 |     });\n      |       ^\n/tmp/tmpjgi0tucb/t.cpp: In member function \u2018virtual void SemanticValuesTest_TransformWithLambda_Test::TestBody()\u2019:\n/tmp/tmpjgi0tucb/t.cpp:141:7: error: expected \u2018)\u2019 before \u2018;\u2019 token\n  141 |     });\n      |       ^\n      |       )\n/tmp/tmpjgi0tucb/t.cpp:139:44: note: to match this \u2018(\u2019\n  139 |     auto result = sv.transform<std::string>(0, 2, [](const peglib::any& v) {\n      |                                            ^\n"
+}

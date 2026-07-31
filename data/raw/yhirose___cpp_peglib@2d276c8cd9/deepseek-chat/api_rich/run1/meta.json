@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@2d276c8cd9",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "api_rich",
+  "seed": 1,
+  "timestamp": "2026-06-26T18:00:08",
+  "temperature": 0.2,
+  "shots": 1,
+  "compiled_on_fixed": true,
+  "tokens_in": 768,
+  "tokens_out": 1565,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@2d276c8cd9/deepseek-chat/api_rich/run1/test.cpp",
+  "compile_err_tail": ""
+}

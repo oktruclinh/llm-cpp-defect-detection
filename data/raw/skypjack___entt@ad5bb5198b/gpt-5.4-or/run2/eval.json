@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@ad5bb5198b",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "026/entt_spike/src/entt/meta/internal.hpp: In instantiation of ‘entt::internal::meta_storage::meta_storage(std::reference_wrapper<_Tp>) [with Type = const std::map<short int, double>]’:\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/meta.hpp:193:11:   required from ‘entt::meta_any::meta_any(std::reference_wrapper<_Tp>) [with Type = const std::map<short int, double>]’\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@ad5bb5198b/gpt-5.4-or/run2/test.cpp:164:44:   required from here\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/internal.hpp:110:20: error: invalid conversion from ‘const void*’ to ‘void*’ [-fpermissive]\n  110 |         instance = &value.get();\n      |                    ^~~~~~~~~~~~\n      |                    |\n      |                    const void*\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

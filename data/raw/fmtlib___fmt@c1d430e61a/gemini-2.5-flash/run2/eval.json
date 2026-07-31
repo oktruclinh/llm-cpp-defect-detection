@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@c1d430e61a",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "xpression before ‘>’ token\n  193 |   fmt::detail::chrono_formatter<std::chrono::milliseconds> formatter(tfc.ctx, out, d);\n      |                                                          ^\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c1d430e61a/gemini-2.5-flash/run2/test.cpp:193:60: error: ‘formatter’ was not declared in this scope; did you mean ‘fmt::v5::formatter’?\n  193 |   fmt::detail::chrono_formatter<std::chrono::milliseconds> formatter(tfc.ctx, out, d);\n      |                                                            ^~~~~~~~~\n      |                                                            fmt::v5::formatter\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:600:8: note: ‘fmt::v5::formatter’ declared here\n  600 | struct formatter {\n      |        ^~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

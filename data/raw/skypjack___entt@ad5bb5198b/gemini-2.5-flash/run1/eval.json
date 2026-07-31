@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@ad5bb5198b",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "de/c++/13/bits/stl_function.h:408:20: note:   ‘const MyKey’ is not derived from ‘const std::move_iterator<_IteratorL>’\n  408 |       { return __x < __y; }\n      |                ~~~~^~~~~\nIn file included from /usr/include/c++/13/bits/unique_ptr.h:36:\n/usr/include/c++/13/tuple:1961:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)’\n 1961 |     operator<(const tuple<_TElements...>& __t,\n      |     ^~~~~~~~\n/usr/include/c++/13/tuple:1961:5: note:   template argument deduction/substitution failed:\n/usr/include/c++/13/bits/stl_function.h:408:20: note:   ‘const MyKey’ is not derived from ‘const std::tuple<_UTypes ...>’\n  408 |       { return __x < __y; }\n      |                ~~~~^~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

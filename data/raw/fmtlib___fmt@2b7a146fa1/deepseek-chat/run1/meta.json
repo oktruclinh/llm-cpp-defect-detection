@@ -1,0 +1,13 @@
+{
+  "defect_id": "fmtlib___fmt@2b7a146fa1",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2885,
+  "tokens_out": 2821,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@2b7a146fa1/deepseek-chat/run1/test.cpp",
+  "compile_err_tail": "bstitution of \u2018template<class S> using fmt::v7::char_t = typename fmt::v7::detail::char_t_impl<S>::type [with S = std::locale]\u2019:\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1833:41:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:519:29: error: no type named \u2018type\u2019 in \u2018struct fmt::v7::detail::char_t_impl<std::locale, void>\u2019\n  519 | template <typename S> using char_t = typename detail::char_t_impl<S>::type;\n      |                             ^~~~~~\n"
+}

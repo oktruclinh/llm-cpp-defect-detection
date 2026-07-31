@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6a13464059",
+  "project": "fmtlib___fmt",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T11:39:04",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2548,
+  "tokens_out": 2194,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/qwen3-coder/run3/test.cpp",
+  "compile_err_tail": "TEST_TEST_THROW_(statement, expected_exception, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~\n/tmp/tmp4yf0x1f7/t.cpp:119:9: note: in expansion of macro \u2018EXPECT_THROW\u2019\n  119 |         EXPECT_THROW(fmt::format(\"{:+}\", static_cast<unsigned int>(42)),\n      |         ^~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:3123:31: note: declared here\n 3123 | FMT_NODISCARD FMT_INLINE auto format(format_string<T...> fmt, T&&... args)\n      |                               ^~~~~~\n"
+}

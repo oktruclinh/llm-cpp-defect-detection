@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@4a7e19e118",
+  "project": "apache___arrow",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-24T16:32:50",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2262,
+  "tokens_out": 1098,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/apache___arrow@4a7e19e118/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "on))                     \\\n      |                                      ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1842:32: note: in expansion of macro \u2018GTEST_ASSERT_TRUE\u2019\n 1842 | #define ASSERT_TRUE(condition) GTEST_ASSERT_TRUE(condition)\n      |                                ^~~~~~~~~~~~~~~~~\n/tmp/tmpt46ithv9/t.cpp:53:3: note: in expansion of macro \u2018ASSERT_TRUE\u2019\n   53 |   ASSERT_TRUE(varargs_large.is_variadic);\n      |   ^~~~~~~~~~~\n"
+}

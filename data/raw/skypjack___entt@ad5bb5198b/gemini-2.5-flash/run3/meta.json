@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@ad5bb5198b",
+  "project": "skypjack___entt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:32:29",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4355,
+  "tokens_out": 6232,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@ad5bb5198b/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "e: \u2018template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const tuple<_UTypes ...>&, const tuple<_UTypes ...>&)\u2019\n 1961 |     operator<(const tuple<_TElements...>& __t,\n      |     ^~~~~~~~\n/usr/include/c++/13/tuple:1961:5: note:   template argument deduction/substitution failed:\n/usr/include/c++/13/bits/stl_function.h:408:20: note:   \u2018const MyKey\u2019 is not derived from \u2018const std::tuple<_UTypes ...>\u2019\n  408 |       { return __x < __y; }\n      |                ~~~~^~~~~\n"
+}

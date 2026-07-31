@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@b92da07bed",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:41:57",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5867,
+  "tokens_out": 5204,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@b92da07bed/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "s ... _Args> std::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::make_shared(_Args&& ...)\u2019\n 1005 |     make_shared(_Args&&... __args)\n      |     ^~~~~~~~~~~\n/usr/include/c++/13/bits/shared_ptr.h:1005:5: note:   template argument deduction/substitution failed:\n/tmp/tmp7iy9ua00/t.cpp:250:5: error: \u2018peglib\u2019 is not a class, namespace, or enumeration\n  250 |     peglib::peg::Context ctx(\"\", input.c_str(), input.size(), 1,\n      |     ^~~~~~\n"
+}

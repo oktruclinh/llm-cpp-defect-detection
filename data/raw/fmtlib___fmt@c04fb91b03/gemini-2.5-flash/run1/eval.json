@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@c04fb91b03",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/gemini-2.5-flash/run1/test.cpp: In function ‘std::string format_value(const T&, fmt::v5::string_view)’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/gemini-2.5-flash/run1/test.cpp:7:27: error: ‘runtime’ is not a member of ‘fmt’\n    7 |   return fmt::format(fmt::runtime(format_str), value);\n      |                           ^~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

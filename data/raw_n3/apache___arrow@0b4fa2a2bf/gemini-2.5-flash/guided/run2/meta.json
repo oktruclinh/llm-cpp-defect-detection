@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@0b4fa2a2bf",
+  "project": "apache___arrow",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-25T14:59:12",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 458,
+  "tokens_out": 4096,
+  "test_path": "/home/azureuser/study/data/raw/apache___arrow@0b4fa2a2bf/gemini-2.5-flash/guided/run2/test.cpp",
+  "compile_err_tail": "e> std::make_shared(_Args&& ...) [with _Tp = arrow::Field; _Args = {const char (&)[5], const shared_ptr<arrow::DataType>&}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = arrow::Field]\u2019\n/home/azureuser/arrow/cpp/src/arrow/type.h:562:41:   required from here\n/usr/include/c++/13/bits/new_allocator.h:134:42: error: \u2018class std::__new_allocator<std::_Sp_counted_ptr_inplace<arrow::Field, std::allocator<void>, __gnu_cxx::_S_atomic> >\u2019 has no member named \u2018_M_max_size\u2019\n"
+}

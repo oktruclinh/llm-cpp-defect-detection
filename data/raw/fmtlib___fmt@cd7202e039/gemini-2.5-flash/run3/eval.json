@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@cd7202e039",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "no::duration<long int, std::ratio<3600> >; std::string = std::__cxx11::basic_string<char>; fmt::v9::string_view = fmt::v9::basic_string_view<char>]’\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@cd7202e039/gemini-2.5-flash/run3/test.cpp:90:5:   required from ‘void ChronoDurationTest_FractionalSecondsFormatting_Test<gtest_TypeParam_>::TestBody() [with gtest_TypeParam_ = std::chrono::duration<long int, std::ratio<3600> >]’\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@cd7202e039/gemini-2.5-flash/run3/test.cpp:32:1:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1919:35: error: ‘struct fmt::v9::detail::arg_data<fmt::v9::detail::value<fmt::v9::basic_format_context<fmt::v9::appender, char> >, char, 1, 0>’ has no member named ‘named_args’\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

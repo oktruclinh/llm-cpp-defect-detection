@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@020a21afc6",
+  "project": "CLIUtils___CLI11",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T11:33:41",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 1846,
+  "tokens_out": 1226,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@020a21afc6/qwen3-coder/run2/test.cpp",
+  "compile_err_tail": "~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/Validators.hpp:1037:42: error: expected primary-expression\n 1037 |                     throw ValidationError(std::string(\"Several matching lowercase unit representations are found: \") +\n      |                           ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n 1038 |                                           s);\n      |                                           ~~\n"
+}

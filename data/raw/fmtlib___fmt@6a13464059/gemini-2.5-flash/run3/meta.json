@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6a13464059",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:13:05",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3995,
+  "tokens_out": 5337,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "ng = std::__cxx11::basic_string<char>; fmt::v8::string_view = fmt::v8::basic_string_view<char>]\u2019\n/tmp/tmpyawr25oh/t.cpp:133:28:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1701:17: error: static assertion failed: Formatting of non-void pointers is disallowed.\n 1701 |   static_assert(formattable_pointer,\n      |                 ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1701:17: note: \u2018formattable_pointer\u2019 evaluates to false\n"
+}

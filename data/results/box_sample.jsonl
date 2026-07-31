@@ -1,0 +1,5 @@
+{"defect_id": "nanomsg___nng@e3b8f31b04", "project": "nanomsg___nng", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "n_invalid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@6a59b15fba", "project": "nanomsg___nng", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "n_invalid": 0, "detected": null}
+{"defect_id": "nanomsg___nng@111b241473", "project": "nanomsg___nng", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "n_invalid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@099b4435c3", "project": "danmar___cppcheck", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "n_invalid": 0, "detected": null}
+{"defect_id": "danmar___cppcheck@caa6ff7c2a", "project": "danmar___cppcheck", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "n_invalid": 0, "detected": null}

@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@ad5bb5198b",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "locator<_Tp1>’\n  813 |     { return __x.first == __y.first && __x.second == __y.second; }\n      |              ~~~~~~~~~~^~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_pair.h:812:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator==(const pair<_T1, _T2>&, const pair<_T1, _T2>&)’\n  812 |     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/13/bits/stl_pair.h:812:5: note:   template argument deduction/substitution failed:\n/usr/include/c++/13/bits/stl_pair.h:813:24: note:   ‘const MetaAssociativeContainerTest_CustomKeyType_Test::TestBody()::CustomKey’ is not derived from ‘const std::pair<_T1, _T2>’\n  813 |     { return __x.first == __y.first && __x.second == __y.second; }\n      |              ~~~~~~~~~~^~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

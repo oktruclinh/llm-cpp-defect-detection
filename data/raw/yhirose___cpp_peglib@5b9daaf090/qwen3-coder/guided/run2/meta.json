@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@5b9daaf090",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:39:00",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2783,
+  "tokens_out": 1757,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@5b9daaf090/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": "fiers_Test::TestBody()\u2019:\n/tmp/tmpc4j3wlj9/t.cpp:123:5: error: \u2018parser\u2019 was not declared in this scope; did you mean \u2018peg::parser\u2019?\n  123 |     parser parser;\n      |     ^~~~~~\n      |     peg::parser\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:2114:7: note: \u2018peg::parser\u2019 declared here\n 2114 | class parser\n      |       ^~~~~~\n/tmp/tmpc4j3wlj9/t.cpp:124:25: error: expected primary-expression before \u2018>>\u2019 token\n  124 |     parser[\"S\"] = \"a\" * >> \"b\";\n      |                         ^~\n"
+}

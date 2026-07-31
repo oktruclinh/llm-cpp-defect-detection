@@ -1,0 +1,13 @@
+{
+  "defect": "fmtlib___fmt@971fb584c3",
+  "question": "O2 vs O4 — is the get_arg(named-after-auto) bug observable through fmt::format?",
+  "input": "fmt::format(\"{} {name} {}\", 1, fmt::arg(\"name\", 2), 3)",
+  "model_expected": "1 2 3",
+  "buggy_commit": "7cea16380939",
+  "fixed_commit": "971fb584c3ea",
+  "buggy_result": "THROW: cannot switch from automatic to manual argument indexing",
+  "fixed_result": "1 2 2",
+  "verdict": "buggy != fixed on this input => a trigger input EXISTS through the fmt::format public surface => case (b) => O4",
+  "note": "The near-trigger test FindsNamedArgumentAmongPositionalArguments was excluded as invalid only because the model's expected value (\"1 2 3\") was wrong; the fixed version actually yields \"1 2 2\". The surface is capable of revealing the bug; the valid tests simply never supply the mixing input. Applies to both run1 and run2 (same defect/surface).",
+  "probe_method": "header-only fmt built at both commits (g++ -std=c++17 -DFMT_HEADER_ONLY), same input run on each"
+}

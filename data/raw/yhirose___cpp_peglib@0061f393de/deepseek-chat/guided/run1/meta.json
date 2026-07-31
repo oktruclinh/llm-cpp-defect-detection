@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@0061f393de",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T16:35:29",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5424,
+  "tokens_out": 3926,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@0061f393de/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "grammar(const char *s, const Rules &rules) {\n      |        ^~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:3871:8: note:   candidate expects 2 arguments, 3 provided\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:3876:8: note: candidate: \u2018bool peg::parser::load_grammar(const char*)\u2019\n 3876 |   bool load_grammar(const char *s) {\n      |        ^~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:3876:8: note:   candidate expects 1 argument, 3 provided\n"
+}

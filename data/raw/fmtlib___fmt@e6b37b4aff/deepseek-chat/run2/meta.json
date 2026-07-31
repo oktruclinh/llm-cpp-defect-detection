@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-23T17:56:00",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3206,
+  "tokens_out": 3475,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/run2/test.cpp",
+  "compile_err_tail": "st_OnlyMultiByte_Test::TestBody()\u2019:\n/tmp/tmpxuvc2w5b/t.cpp:129:31: error: \u2018fmt::detail\u2019 has not been declared\n  129 |     std::string result = fmt::detail::transcode(input);\n      |                               ^~~~~~\n/tmp/tmpxuvc2w5b/t.cpp: In member function \u2018virtual void TranscodeTest_WithBom_Test::TestBody()\u2019:\n/tmp/tmpxuvc2w5b/t.cpp:139:31: error: \u2018fmt::detail\u2019 has not been declared\n  139 |     std::string result = fmt::detail::transcode(input);\n      |                               ^~~~~~\n"
+}

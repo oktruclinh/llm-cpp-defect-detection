@@ -1,0 +1,80 @@
+{
+  "deepseek-chat": {
+    "_note": "v4-flash NON-thinking. Cheapest dev model. DEPRECATES 2026-07-24 -> migrate to deepseek-v4-flash.",
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 0.14,
+    "price_out_per_mtok": 0.28
+  },
+  "deepseek-v4-flash": {
+    "_note": "Explicit V4 flash id (survives the 2026-07-24 deprecation). Use NON-thinking mode for the scaled campaign + reproducibility. Verify the non-thinking toggle before the campaign run.",
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-v4-flash",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 0.14,
+    "price_out_per_mtok": 0.28
+  },
+  "deepseek-chat-t00": {
+    "_note": "temperature sensitivity arm (greedy). Same model as deepseek-chat.",
+    "provider": "deepseek", "base_url": "https://api.deepseek.com", "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY", "temperature": 0.0, "max_tokens": 4096,
+    "price_in_per_mtok": 0.14, "price_out_per_mtok": 0.28
+  },
+  "deepseek-chat-t08": {
+    "_note": "temperature sensitivity arm (diverse). Same model as deepseek-chat.",
+    "provider": "deepseek", "base_url": "https://api.deepseek.com", "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY", "temperature": 0.8, "max_tokens": 4096,
+    "price_in_per_mtok": 0.14, "price_out_per_mtok": 0.28
+  },
+  "qwen3-coder": {
+    "_note": "Campaign model 2 (Alibaba, code-specialized, open). Via OpenRouter (one key for qwen+gemini). VERIFY exact slug at openrouter.ai/models before the run; direct alt: DashScope OpenAI-compat endpoint.",
+    "provider": "openrouter",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "qwen/qwen3-coder-30b-a3b-instruct",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 0.07,
+    "price_out_per_mtok": 0.27
+  },
+  "gemini-2.5-flash": {
+    "_note": "Campaign model 3 (Google, different family). Via OpenRouter. VERIFY exact slug; direct alt: generativelanguage.googleapis.com/v1beta/openai.",
+    "provider": "openrouter",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "google/gemini-2.5-flash",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 0.15,
+    "price_out_per_mtok": 0.60
+  },
+  "gpt-5.4": {
+    "_note": "OPTIONAL frontier 'capability ceiling' — run on a SUBSAMPLE only, not the full campaign (cost). Or swap for claude-opus-4-8.",
+    "provider": "openai",
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-5.4",
+    "api_key_env": "OPENAI_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 2.50,
+    "price_out_per_mtok": 15.0
+  },
+  "gpt-5.4-or": {
+    "_note": "Frontier model (GPT-5.4) via OpenRouter (one key). Run on Tier-A only to close 'you didn't try the model that matters' (R10).",
+    "provider": "openrouter",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "openai/gpt-5.4",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 2.50,
+    "price_out_per_mtok": 15.0
+  }
+}

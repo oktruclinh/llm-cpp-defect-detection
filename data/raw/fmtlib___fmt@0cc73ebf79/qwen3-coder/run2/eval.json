@@ -1,0 +1,49 @@
+{
+ "defect_id": "fmtlib___fmt@0cc73ebf79",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 13,
+ "n_valid": 7,
+ "n_invalid_on_fixed": 6,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "FmtCoreTest.GetIdNamedArgumentNotFound",
+  "FmtCoreTest.GetIdSpecialCharacters",
+  "FmtCoreTest.GetIdNumericNames",
+  "FmtCoreTest.GetIdNestedFormatting",
+  "FmtCoreTest.GetIdMixedPositionalAndNamed",
+  "FmtCoreTest.GetIdUnicodeNames"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": true,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   1713,
+   1719
+  ],
+  "hunk_lines_executed": [
+   1715,
+   1717,
+   1719
+  ],
+  "hunk_executed": true,
+  "hunk_instrumented_lines": [
+   1715,
+   1717,
+   1719
+  ],
+  "focal_lines_total": 1868
+ },
+ "outcome": "reached_not_detected"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@c04fb91b03",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:27:20",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2794,
+  "tokens_out": 3817,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/gemini-2.5-flash/run1/test.cpp",
+  "compile_err_tail": " long long int; Char = char; typename std::enable_if<fmt::v5::internal::format_type<typename fmt::v5::buffer_context<Char>::type, T>::value>::type = void; typename fmt::v5::buffer_context<Char>::type = fmt::v5::basic_format_context<std::back_insert_iterator<fmt::v5::internal::basic_buffer<char> >, char>; decltype (ctx.out()) = std::back_insert_iterator<fmt::v5::internal::basic_buffer<char> >]\u2019\n 3212 |   auto format(const T &val, FormatContext &ctx) -> decltype(ctx.out()) {\n      |        ^~~~~~\n"
+}

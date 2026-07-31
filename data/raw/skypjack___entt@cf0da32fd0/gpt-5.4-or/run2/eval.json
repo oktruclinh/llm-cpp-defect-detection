@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@cf0da32fd0",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "token\n  254 |     std::string *mapped = entt::meta_any_cast<std::string>(&pair.second);\n      |                                                          ^\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gpt-5.4-or/run2/test.cpp:264:34: error: ‘meta_any_cast’ is not a member of ‘entt’; did you mean ‘meta_any’?\n  264 |     const int *key_again = entt::meta_any_cast<int>(&pair.first);\n      |                                  ^~~~~~~~~~~~~\n      |                                  meta_any\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gpt-5.4-or/run2/test.cpp:264:48: error: expected primary-expression before ‘int’\n  264 |     const int *key_again = entt::meta_any_cast<int>(&pair.first);\n      |                                                ^~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

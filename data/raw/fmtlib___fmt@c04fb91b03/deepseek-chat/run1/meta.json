@@ -1,0 +1,13 @@
+{
+  "defect_id": "fmtlib___fmt@c04fb91b03",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3549,
+  "tokens_out": 4180,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/deepseek-chat/run1/test.cpp",
+  "compile_err_tail": "                           ^\n/tmp/tmplajvs8gm/t.cpp:16:8: error: \u2018format_enum\u2019 is not a class template\n   16 | struct format_enum<OldStyle> : std::true_type {};\n      |        ^~~~~~~~~~~\n/tmp/tmplajvs8gm/t.cpp:16:28: error: \u2018fmt::format_enum\u2019 is not a template\n   16 | struct format_enum<OldStyle> : std::true_type {};\n      |                            ^\n/tmp/tmplajvs8gm/t.cpp:14:8: note: previous declaration here\n   14 | struct format_enum<Color> : std::true_type {};\n      |        ^~~~~~~~~~~\n"
+}

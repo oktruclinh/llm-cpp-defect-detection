@@ -1,0 +1,21 @@
+{
+ "defect_id": "skypjack___entt@cf0da32fd0",
+ "project": "skypjack___entt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/internal/gtest-internal.h:1457:38: note: in definition of macro ‘GTEST_TEST_BOOLEAN_’\n 1457 |           ::testing::AssertionResult(expression))                     \\\n      |                                      ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1846:33: note: in expansion of macro ‘GTEST_ASSERT_FALSE’\n 1846 | #define ASSERT_FALSE(condition) GTEST_ASSERT_FALSE(condition)\n      |                                 ^~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gpt-5.4-or/run1/test.cpp:175:5: note: in expansion of macro ‘ASSERT_FALSE’\n  175 |     ASSERT_FALSE(assoc.empty());\n      |     ^~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T16:57:09",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2432,
+  "tokens_out": 3229,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/gpt-5.4-or/run3/test.cpp",
+  "compile_err_tail": "/tmp/tmpuebsxb6f/t.cpp:4:10: fatal error: fmt/xchar.h: No such file or directory\n    4 | #include <fmt/xchar.h>\n      |          ^~~~~~~~~~~~~\ncompilation terminated.\n"
+}

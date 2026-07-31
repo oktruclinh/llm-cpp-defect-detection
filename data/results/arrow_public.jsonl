@@ -1,0 +1,6 @@
+{"defect_id": "apache___arrow@4a7e19e118", "model": "deepseek-chat", "outcome": "detected", "compiled": true, "n_valid": 10, "detected": true}
+{"defect_id": "apache___arrow@4a7e19e118", "model": "qwen3-coder", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "apache___arrow@4a7e19e118", "model": "gemini-2.5-flash", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "apache___arrow@3d0a9d58b6", "model": "deepseek-chat", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}
+{"defect_id": "apache___arrow@3d0a9d58b6", "model": "qwen3-coder", "outcome": "reached_not_detected", "compiled": true, "n_valid": 11, "detected": false}
+{"defect_id": "apache___arrow@3d0a9d58b6", "model": "gemini-2.5-flash", "outcome": "non_compilable", "compiled": false, "n_valid": 0, "detected": null}

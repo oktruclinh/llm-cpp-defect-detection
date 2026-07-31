@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:31:01",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5887,
+  "tokens_out": 7526,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "\\\n      |                                      ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1846:33: note: in expansion of macro \u2018GTEST_ASSERT_FALSE\u2019\n 1846 | #define ASSERT_FALSE(condition) GTEST_ASSERT_FALSE(condition)\n      |                                 ^~~~~~~~~~~~~~~~~~\n/tmp/tmpj6ql5fcq/t.cpp:240:5: note: in expansion of macro \u2018ASSERT_FALSE\u2019\n  240 |     ASSERT_FALSE(it_any.deref(deref_result_wrong_pair));\n      |     ^~~~~~~~~~~~\n"
+}

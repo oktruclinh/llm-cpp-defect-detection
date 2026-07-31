@@ -1,0 +1,26 @@
+{
+ "defect_id": "fmtlib___fmt@6a13464059",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 16,
+ "n_valid": 14,
+ "n_invalid_on_fixed": 2,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 1,
+ "real_bug_detected": true,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "FmtOnSignTest.CharAcceptsSignFlagAsSignedCharacterFormatting",
+  "FmtOnSignTest.SignFlagWorksTogetherWithWidthForSignedType"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [
+  "FmtOnSignTest.Int128AcceptsSignFlag"
+ ],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "outcome": "detected"
+}

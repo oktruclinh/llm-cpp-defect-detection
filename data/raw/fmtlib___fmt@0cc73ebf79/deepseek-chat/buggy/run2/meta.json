@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "buggy",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:10:18",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3888,
+  "tokens_out": 4719,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/buggy/run2/test.cpp",
+  "compile_err_tail": "atio<1, 1000> > >}; Char = char]\u2019\n/tmp/tmpmvwjf89x/t.cpp:134:37:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1073:9: error: static assertion failed: Cannot format argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#formatting-user-defined-types\n 1073 |         formattable,\n      |         ^~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1073:9: note: \u2018formattable\u2019 evaluates to false\n"
+}

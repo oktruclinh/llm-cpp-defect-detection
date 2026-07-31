@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@611cf0b3c6",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:14:37",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 3800,
+  "tokens_out": 5919,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@611cf0b3c6/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": ""
+}

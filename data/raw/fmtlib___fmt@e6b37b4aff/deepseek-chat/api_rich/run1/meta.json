@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "api_rich",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:55:15",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3151,
+  "tokens_out": 2619,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/api_rich/run1/test.cpp",
+  "compile_err_tail": ", v1, v2, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1896:3: note: in expansion of macro \u2018EXPECT_PRED_FORMAT2\u2019\n 1896 |   EXPECT_PRED_FORMAT2(::testing::internal::EqHelper::Compare, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/tmp/tmpcidao7bm/t.cpp:48:5: note: in expansion of macro \u2018EXPECT_EQ\u2019\n   48 |     EXPECT_EQ(static_cast<std::ptrdiff_t>(out.size()), it - out.begin());\n      |     ^~~~~~~~~\n"
+}

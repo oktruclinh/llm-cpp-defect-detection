@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@a3cfd1b8ad",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:35:44",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 6599,
+  "tokens_out": 6116,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@a3cfd1b8ad/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "                                 ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1846:33: note: in expansion of macro \u2018GTEST_ASSERT_FALSE\u2019\n 1846 | #define ASSERT_FALSE(condition) GTEST_ASSERT_FALSE(condition)\n      |                                 ^~~~~~~~~~~~~~~~~~\n/tmp/tmpslcb00ye/t.cpp:251:5: note: in expansion of macro \u2018ASSERT_FALSE\u2019\n  251 |     ASSERT_FALSE(g->exists(\"MyRule\")); // No new rules should be added\n      |     ^~~~~~~~~~~~\n"
+}

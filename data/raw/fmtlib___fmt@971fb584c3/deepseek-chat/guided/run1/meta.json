@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:44:28",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2697,
+  "tokens_out": 3561,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "with T = int*; string_view = basic_string_view<char>]\u2019\n/tmp/tmpswa0j4hf/t.cpp:136:55:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:474:42: error: static assertion failed: formatting of non-void pointers is disallowed\n  474 |     static_assert(std::is_same<T, void>::value,\n      |                                          ^~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:474:42: note: \u2018std::integral_constant<bool, false>::value\u2019 evaluates to false\n"
+}

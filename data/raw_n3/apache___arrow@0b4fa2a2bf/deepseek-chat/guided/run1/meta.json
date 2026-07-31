@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@0b4fa2a2bf",
+  "project": "apache___arrow",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-25T14:56:15",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2918,
+  "tokens_out": 4076,
+  "test_path": "/home/azureuser/study/data/raw/apache___arrow@0b4fa2a2bf/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "/tmp/tmp7c4u4k4y/t.cpp:6:10: fatal error: arrow/schema.h: No such file or directory\n    6 | #include \"arrow/schema.h\"\n      |          ^~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+}

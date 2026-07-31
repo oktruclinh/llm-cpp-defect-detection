@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@b92da07bed",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:42:34",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5383,
+  "tokens_out": 4096,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@b92da07bed/deepseek-chat/guided/run2/test.cpp",
+  "compile_err_tail": "const char*, const char*, const T1&, const T2&) [with T1 = int; T2 = std::nullptr_t]\u2019:\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1472:3: warning: control reaches end of non-void function [-Wreturn-type]\n 1472 |   }\n      |   ^\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1477:1: note: in expansion of macro \u2018GTEST_IMPL_CMP_HELPER_\u2019\n 1477 | GTEST_IMPL_CMP_HELPER_(NE, !=)\n      | ^~~~~~~~~~~~~~~~~~~~~~\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@de215ef978",
+  "project": "CLIUtils___CLI11",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:07:11",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4757,
+  "tokens_out": 6449,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@de215ef978/gemini-2.5-flash/run1/test.cpp",
+  "compile_err_tail": "/tmp/tmp8r4vd1p_/t.cpp:3:10: fatal error: CLI/Formatter.h: No such file or directory\n    3 | #include <CLI/Formatter.h> // Corrected header\n      |          ^~~~~~~~~~~~~~~~~\ncompilation terminated.\n"
+}

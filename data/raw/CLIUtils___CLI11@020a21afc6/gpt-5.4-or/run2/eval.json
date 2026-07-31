@@ -1,0 +1,26 @@
+{
+ "defect_id": "CLIUtils___CLI11@020a21afc6",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 12,
+ "n_valid": 10,
+ "n_invalid_on_fixed": 2,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 1,
+ "real_bug_detected": true,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "SplitProgramNameTest.EmptyQuotedProgramNameHandled",
+  "SplitProgramNameTest.UnterminatedQuotedProgramConsumesRestAsProgramName"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [
+  "SplitProgramNameTest.QuotedProgramOnlyReturnsEmptyRemainder"
+ ],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "outcome": "detected"
+}

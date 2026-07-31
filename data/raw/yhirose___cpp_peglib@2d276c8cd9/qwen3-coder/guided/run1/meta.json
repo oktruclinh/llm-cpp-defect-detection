@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@2d276c8cd9",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:20:07",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2556,
+  "tokens_out": 1665,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@2d276c8cd9/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": "     |                                                 ^~~~~~\n/tmp/tmpe0s2xmq1/t.cpp:100:19: error: \u2018peglib\u2019 has not been declared\n  100 |     parser[\"A\"] = peglib::ref(\"C\");\n      |                   ^~~~~~\n/tmp/tmpe0s2xmq1/t.cpp:101:19: error: \u2018peglib\u2019 has not been declared\n  101 |     parser[\"B\"] = peglib::lit(\"b\");\n      |                   ^~~~~~\n/tmp/tmpe0s2xmq1/t.cpp:102:19: error: \u2018peglib\u2019 has not been declared\n  102 |     parser[\"C\"] = peglib::lit(\"a\");\n      |                   ^~~~~~\n"
+}

@@ -1,0 +1,9 @@
+{
+  "defect": "fmtlib___fmt@96c18b26c2", "question": "O3 vs O4",
+  "bug": "printf: for non-numeric with '0' flag, buggy unconditionally forces align::right; fixed only overrides align::none/numeric (respects explicit user align)",
+  "buggy_commit": "981b517ccf2d", "fixed_commit": "96c18b26c28b",
+  "probe": "fmt::sprintf on strings/hex/char/pointer with 0-flag + explicit align, incl. the suite's own inputs (%-010s, %08x, %-08x, %020p, %#010x, ...)",
+  "result": "buggy == fixed on EVERY input tried, including the suite's actual pointer/hex 0-flag cases",
+  "verdict": "No input (tested) produces a buggy/fixed difference => there is nothing for any assertion to catch => the miss is driven by insufficient triggering input, not by weak assertions => O4 (favors coder1, not coder2's O3). Even a strong assertion would pass on both versions.",
+  "caveat": "No triggering input was found at all via the public sprintf surface for these types; if the difference is only reachable through an internal align::numeric state not settable via printf format strings, the practical labeling remains O4 for this suite."
+}

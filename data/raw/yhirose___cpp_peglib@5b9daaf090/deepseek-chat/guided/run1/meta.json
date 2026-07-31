@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@5b9daaf090",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:37:43",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3869,
+  "tokens_out": 4046,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@5b9daaf090/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": ".cpp:222:5: note: in expansion of macro \u2018EXPECT_TRUE\u2019\n  222 |     EXPECT_TRUE(parser.parse(input.c_str(), val, user_data));\n      |     ^~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:2173:10: note: candidate: \u2018bool peg::parser::parse(const char*, const char*) const\u2019\n 2173 |     bool parse(const char* s, const char* path = nullptr) const {\n      |          ^~~~~\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:2173:10: note:   candidate expects 2 arguments, 3 provided\n"
+}

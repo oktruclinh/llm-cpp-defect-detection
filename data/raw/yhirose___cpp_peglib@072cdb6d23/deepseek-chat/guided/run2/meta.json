@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@072cdb6d23",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:01:55",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4479,
+  "tokens_out": 4043,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@072cdb6d23/deepseek-chat/guided/run2/test.cpp",
+  "compile_err_tail": "is/kse2026/cpp_peglib_spike/peglib.h:3669:7: note:   no known conversion for argument 1 from \u2018const std::string\u2019 {aka \u2018const std::__cxx11::basic_string<char>\u2019} to \u2018const peg::parser&\u2019\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:3669:7: note: candidate: \u2018peg::parser::parser(peg::parser&&)\u2019\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:3669:7: note:   no known conversion for argument 1 from \u2018const std::string\u2019 {aka \u2018const std::__cxx11::basic_string<char>\u2019} to \u2018peg::parser&&\u2019\n"
+}

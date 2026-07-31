@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat-t08",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-23T21:57:30",
+  "temperature": 0.8,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2654,
+  "tokens_out": 2562,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat-t08/run1/test.cpp",
+  "compile_err_tail": "& fmt::v7::detail::named_arg<char, int>::operator=(fmt::v7::detail::named_arg<char, int>&&)\u2019 is implicitly deleted because the default definition would be ill-formed:\n  748 | template <typename Char, typename T> struct named_arg : view {\n      |                                             ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:748:45: error: non-static reference member \u2018const int& fmt::v7::detail::named_arg<char, int>::value\u2019, cannot use default assignment operator\n"
+}

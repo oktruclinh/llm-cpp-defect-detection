@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "buggy",
+  "seed": 1,
+  "timestamp": "2026-06-23T18:09:45",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3214,
+  "tokens_out": 3542,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/buggy/run1/test.cpp",
+  "compile_err_tail": ": \u2018format_to_n\u2019 is not a member of \u2018fmt\u2019\n  178 |     auto result = fmt::format_to_n(buffer, 5, \"{value}\", fmt::arg(\"value\", 12345));\n      |                        ^~~~~~~~~~~\n/tmp/tmpl3ervpr9/t.cpp: In member function \u2018virtual void NamedArgIdTest_FormattedSizeWithNamedArgs_Test::TestBody()\u2019:\n/tmp/tmpl3ervpr9/t.cpp:185:22: error: \u2018formatted_size\u2019 is not a member of \u2018fmt\u2019\n  185 |     auto size = fmt::formatted_size(\"{name}\", fmt::arg(\"name\", \"hello\"));\n      |                      ^~~~~~~~~~~~~~\n"
+}

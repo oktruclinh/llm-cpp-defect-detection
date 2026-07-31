@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@2b7a146fa1",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:45:59",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2582,
+  "tokens_out": 2730,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@2b7a146fa1/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1834:36: note: candidate: \u2018template<class S, class ... Args, class Char> std::__cxx11::basic_string<Char> fmt::v7::format(const S&, Args&& ...)\u2019\n 1834 | FMT_INLINE std::basic_string<Char> format(const S& format_str, Args&&... args) {\n      |                                    ^~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1834:36: note:   template argument deduction/substitution failed:\n"
+}

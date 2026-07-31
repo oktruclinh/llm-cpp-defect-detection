@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+  "project": "CLIUtils___CLI11",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T16:45:20",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2251,
+  "tokens_out": 2024,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gpt-5.4-or/run3/test.cpp",
+  "compile_err_tail": "appedValue_Test::TestBody()\u2019:\n/tmp/tmpv6ok6bvi/t.cpp:91:10: error: \u2018class CLI::Option\u2019 has no member named \u2018flag_text\u2019\n   91 |     opt->flag_text(\"enabled\");\n      |          ^~~~~~~~~\n/tmp/tmpv6ok6bvi/t.cpp: In member function \u2018virtual void {anonymous}::ConfigFlagValueMappingTest_EmptyExplicitValueDoesNotReplaceExistingValue_Test::TestBody()\u2019:\n/tmp/tmpv6ok6bvi/t.cpp:110:10: error: \u2018class CLI::Option\u2019 has no member named \u2018flag_text\u2019\n  110 |     opt->flag_text(\"true\");\n      |          ^~~~~~~~~\n"
+}

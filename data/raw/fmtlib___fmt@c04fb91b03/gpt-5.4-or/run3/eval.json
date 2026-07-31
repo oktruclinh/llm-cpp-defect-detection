@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@c04fb91b03",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "t> decltype (ctx.out()) fmt::v5::formatter<T, Char, typename std::enable_if<fmt::v5::internal::format_type<typename fmt::v5::buffer_context<Char>::type, T>::value>::type>::format(const T&, FormatContext&) [with T = int; Char = char]’\n 3212 |   auto format(const T &val, FormatContext &ctx) -> decltype(ctx.out()) {\n      |        ^~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:3212:8: note:   template argument deduction/substitution failed:\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:553:28: note:   cannot convert ‘*(const {anonymous}::SmallUnsigned*)arg’ (type ‘const {anonymous}::SmallUnsigned’) to type ‘const int&’\n  553 |     ctx.advance_to(f.format(*static_cast<const T*>(arg), ctx));\n      |                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

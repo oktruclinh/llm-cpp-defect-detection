@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@279d698e1b",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": ">]’\n  785 |     back_inserter(_Container& __x)\n      |                   ~~~~~~~~~~~~^~~\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@279d698e1b/deepseek-chat/buggy/run3/test.cpp:171:50: error: cannot bind non-const lvalue reference of type ‘std::__cxx11::basic_string<char>&’ to an rvalue of type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}\n  171 |     result = std::string(std::back_inserter(std::string{}).base(), it);\n      |                                                  ^~~~~~~~\n/usr/include/c++/13/bits/stl_iterator.h:785:31: note:   initializing argument 1 of ‘std::back_insert_iterator<_Container> std::back_inserter(_Container&) [with _Container = __cxx11::basic_string<char>]’\n  785 |     back_inserter(_Container& __x)\n      |                   ~~~~~~~~~~~~^~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

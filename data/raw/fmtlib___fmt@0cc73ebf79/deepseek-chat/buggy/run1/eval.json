@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@0cc73ebf79",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "Args_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/buggy/run1/test.cpp:178:24: error: ‘format_to_n’ is not a member of ‘fmt’\n  178 |     auto result = fmt::format_to_n(buffer, 5, \"{value}\", fmt::arg(\"value\", 12345));\n      |                        ^~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/buggy/run1/test.cpp: In member function ‘virtual void NamedArgIdTest_FormattedSizeWithNamedArgs_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/buggy/run1/test.cpp:185:22: error: ‘formatted_size’ is not a member of ‘fmt’\n  185 |     auto size = fmt::formatted_size(\"{name}\", fmt::arg(\"name\", \"hello\"));\n      |                      ^~~~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

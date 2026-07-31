@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "buggy",
+  "seed": 1,
+  "timestamp": "2026-06-23T18:24:55",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3040,
+  "tokens_out": 3026,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/buggy/run1/test.cpp",
+  "compile_err_tail": "ectorIteratorModify_Test::TestBody()\u2019:\n/tmp/tmpv8dgo6mb/t.cpp:144:35: error: \u2018forward_as_meta\u2019 is not a member of \u2018entt\u2019\n  144 |     entt::meta_any any_it = entt::forward_as_meta(it);\n      |                                   ^~~~~~~~~~~~~~~\n/tmp/tmpv8dgo6mb/t.cpp:145:60: error: \u2018deref_operator\u2019 is not a member of \u2018entt::meta_func\u2019\n  145 |     entt::meta_any result = any_it.invoke(entt::meta_func::deref_operator);\n      |                                                            ^~~~~~~~~~~~~~\n"
+}

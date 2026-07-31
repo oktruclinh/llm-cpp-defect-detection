@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "buggy",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:25:17",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2823,
+  "tokens_out": 2542,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/buggy/run2/test.cpp",
+  "compile_err_tail": "t, v1, v2, GTEST_FATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:2009:3: note: in expansion of macro \u2018ASSERT_PRED_FORMAT2\u2019\n 2009 |   ASSERT_PRED_FORMAT2(::testing::internal::CmpHelperFloatingPointEQ<double>, \\\n      |   ^~~~~~~~~~~~~~~~~~~\n/tmp/tmplk8m32i3/t.cpp:102:5: note: in expansion of macro \u2018ASSERT_DOUBLE_EQ\u2019\n  102 |     ASSERT_DOUBLE_EQ(pair->second.cast<double>(), 1.0);\n      |     ^~~~~~~~~~~~~~~~\n"
+}

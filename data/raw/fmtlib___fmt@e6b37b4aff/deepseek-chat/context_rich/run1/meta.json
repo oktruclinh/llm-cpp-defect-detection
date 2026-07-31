@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "context_rich",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:35:56",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3704,
+  "tokens_out": 3869,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/context_rich/run1/test.cpp",
+  "compile_err_tail": "e2026/fmt_spike/include/fmt/format-inl.h:568:8: note: candidate: \u2018void fmt::v6::internal::bigint::operator=(const fmt::v6::internal::bigint&)\u2019 (deleted)\n  568 |   void operator=(const bigint&) = delete;\n      |        ^~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format-inl.h:568:18: note:   no known conversion for argument 1 from \u2018long long unsigned int\u2019 to \u2018const fmt::v6::internal::bigint&\u2019\n  568 |   void operator=(const bigint&) = delete;\n      |                  ^~~~~~~~~~~~~\n"
+}

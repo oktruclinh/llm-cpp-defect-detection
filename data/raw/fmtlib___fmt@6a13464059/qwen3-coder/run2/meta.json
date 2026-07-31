@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6a13464059",
+  "project": "fmtlib___fmt",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T11:38:39",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2919,
+  "tokens_out": 2742,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/qwen3-coder/run2/test.cpp",
+  "compile_err_tail": " format_string<T ...> = basic_format_string<char, TestEnum>]\u2019\n/tmp/tmp_ybos207/t.cpp:115:5:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1707:7: error: static assertion failed: Cannot format an argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#udt\n 1707 |       formattable,\n      |       ^~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1707:7: note: \u2018formattable\u2019 evaluates to false\n"
+}

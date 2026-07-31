@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@be470f9332",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:13:41",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3748,
+  "tokens_out": 3866,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@be470f9332/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "ment 1 from \u2018const char*\u2019 to \u2018std::nullptr_t\u2019\n  375 |       function(nullptr_t) noexcept\n      |                ^~~~~~~~~\n/usr/include/c++/13/bits/std_function.h:368:7: note: candidate: \u2018std::function<_Res(_ArgTypes ...)>::function() [with _Res = long unsigned int; _ArgTypes = {const char*, long unsigned int, peg::SemanticValues&, std::any&}]\u2019\n  368 |       function() noexcept\n      |       ^~~~~~~~\n/usr/include/c++/13/bits/std_function.h:368:7: note:   candidate expects 0 arguments, 1 provided\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@be470f9332",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:14:03",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3736,
+  "tokens_out": 3590,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@be470f9332/gemini-2.5-flash/guided/run2/test.cpp",
+  "compile_err_tail": "ing::internal::EqHelper::Compare, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1925:31: note: in expansion of macro \u2018GTEST_ASSERT_EQ\u2019\n 1925 | #define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)\n      |                               ^~~~~~~~~~~~~~~\n/tmp/tmpq_080ipt/t.cpp:187:5: note: in expansion of macro \u2018ASSERT_EQ\u2019\n  187 |     ASSERT_EQ(nested_ref_b->args_[0]->rule_->name, \"C\");\n      |     ^~~~~~~~~\n"
+}

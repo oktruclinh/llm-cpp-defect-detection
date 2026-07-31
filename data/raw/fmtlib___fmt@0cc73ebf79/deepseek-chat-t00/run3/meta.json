@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat-t00",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-23T21:30:05",
+  "temperature": 0.0,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2613,
+  "tokens_out": 2282,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat-t00/run3/test.cpp",
+  "compile_err_tail": "                                               \\\n      |     ^~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1803:3: note: in expansion of macro \u2018GTEST_TEST_THROW_\u2019\n 1803 |   GTEST_TEST_THROW_(statement, expected_exception, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~\n/tmp/tmp2zc4sx9d/t.cpp:30:5: note: in expansion of macro \u2018EXPECT_THROW\u2019\n   30 |     EXPECT_THROW(fmt::format(\"{unknown}\", fmt::arg(\"name\", \"Bob\")),\n      |     ^~~~~~~~~~~~\n"
+}

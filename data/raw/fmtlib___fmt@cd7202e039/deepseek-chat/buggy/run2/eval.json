@@ -1,0 +1,50 @@
+{
+ "defect_id": "fmtlib___fmt@cd7202e039",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 10,
+ "n_valid": 1,
+ "n_invalid_on_fixed": 9,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "ChronoWriteFractionalSecondsTest.SecondsWithFractional",
+  "ChronoWriteFractionalSecondsTest.SecondsWithZeroFractional",
+  "ChronoWriteFractionalSecondsTest.VerySmallFractional",
+  "ChronoWriteFractionalSecondsTest.LargeFractional",
+  "ChronoWriteFractionalSecondsTest.NegativeSeconds",
+  "ChronoWriteFractionalSecondsTest.FloatRep",
+  "ChronoWriteFractionalSecondsTest.BoundaryAt60Seconds",
+  "ChronoWriteFractionalSecondsTest.ZeroDuration",
+  "ChronoWriteFractionalSecondsTest.LargeDuration"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": true,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   1838,
+   1844
+  ],
+  "hunk_lines_executed": [
+   1838,
+   1843
+  ],
+  "hunk_executed": true,
+  "hunk_instrumented_lines": [
+   1838,
+   1843
+  ],
+  "focal_lines_total": 2156
+ },
+ "outcome": "reached_not_detected"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@0061f393de",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T16:37:24",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5102,
+  "tokens_out": 3375,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@0061f393de/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": "peg\u2019\n  173 |     auto grammar = peg::perform_core(grammar_str, strlen(grammar_str), user_rules, start_rule, log);\n      |                         ^~~~~~~~~~~~\n/tmp/tmpdobkx3ka/t.cpp: In member function \u2018virtual void PeglibTest_PerformCoreWhitespaceHandling_Test::TestBody()\u2019:\n/tmp/tmpdobkx3ka/t.cpp:195:25: error: \u2018perform_core\u2019 is not a member of \u2018peg\u2019\n  195 |     auto grammar = peg::perform_core(grammar_str, strlen(grammar_str), {}, start_rule, log);\n      |                         ^~~~~~~~~~~~\n"
+}

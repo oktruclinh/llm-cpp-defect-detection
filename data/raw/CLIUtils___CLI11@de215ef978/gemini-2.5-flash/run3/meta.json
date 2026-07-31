@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@de215ef978",
+  "project": "CLIUtils___CLI11",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:08:31",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4600,
+  "tokens_out": 6276,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@de215ef978/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "rWithVal::from_file(const std::string&)\u2019:\n/tmp/tmpb42wgsn9/t.cpp:276:65: error: too many initializers for \u2018CLI::ConfigItem\u2019\n  276 |             items.emplace_back(CLI::ConfigItem{\"val\", \"10\", 0, 0});\n      |                                                                 ^\n/tmp/tmpb42wgsn9/t.cpp:277:62: error: too many initializers for \u2018CLI::ConfigItem\u2019\n  277 |             items.emplace_back(CLI::ConfigItem{\"--\", \"\", 0, 0});\n      |                                                              ^\n"
+}

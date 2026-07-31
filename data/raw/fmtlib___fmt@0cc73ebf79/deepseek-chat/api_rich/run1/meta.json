@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "api_rich",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:51:41",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3289,
+  "tokens_out": 2912,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/api_rich/run1/test.cpp",
+  "compile_err_tail": "atic assertion failed: passing views as lvalues is disallowed\n 1760 |   static_assert(count<(std::is_base_of<view, remove_reference_t<Args>>::value &&\n      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n 1761 |                        std::is_reference<Args>::value)...>() == 0,\n      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1761:62: note: the comparison reduces to \u2018(1 == 0)\u2019\n"
+}

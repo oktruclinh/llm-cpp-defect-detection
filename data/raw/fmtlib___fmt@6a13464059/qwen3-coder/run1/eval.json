@@ -1,0 +1,51 @@
+{
+ "defect_id": "fmtlib___fmt@6a13464059",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 10,
+ "n_valid": 8,
+ "n_invalid_on_fixed": 2,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "SignTest.TestNonIntegralTypesError",
+  "SignTest.TestBooleanFormatting"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": true,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   2819,
+   2825
+  ],
+  "hunk_lines_executed": [
+   2819,
+   2820,
+   2821,
+   2822,
+   2823,
+   2825
+  ],
+  "hunk_executed": true,
+  "hunk_instrumented_lines": [
+   2819,
+   2820,
+   2821,
+   2822,
+   2823,
+   2825
+  ],
+  "focal_lines_total": 3195
+ },
+ "outcome": "reached_not_detected"
+}

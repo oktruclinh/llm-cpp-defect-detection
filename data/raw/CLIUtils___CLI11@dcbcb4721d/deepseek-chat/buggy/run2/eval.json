@@ -1,0 +1,21 @@
+{
+ "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "uggy/run2/test.cpp:200:9: error: ‘class CLI::App’ has no member named ‘config_to_stream’; did you mean ‘config_to_str’?\n  200 |     app.config_to_stream(output, true, false, commentLead);\n      |         ^~~~~~~~~~~~~~~~\n      |         config_to_str\n/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/deepseek-chat/buggy/run2/test.cpp: In member function ‘virtual void ConfigOutputTest_DescriptionWithNewlinesAndSpaces_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/deepseek-chat/buggy/run2/test.cpp:213:9: error: ‘class CLI::App’ has no member named ‘config_to_stream’; did you mean ‘config_to_str’?\n  213 |     app.config_to_stream(output, true, false, commentLead);\n      |         ^~~~~~~~~~~~~~~~\n      |         config_to_str\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

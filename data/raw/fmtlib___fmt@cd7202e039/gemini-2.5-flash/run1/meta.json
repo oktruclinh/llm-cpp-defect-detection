@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@cd7202e039",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:22:53",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5665,
+  "tokens_out": 8156,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@cd7202e039/gemini-2.5-flash/run1/test.cpp",
+  "compile_err_tail": "> > >]\u2019\n/tmp/tmppfn2_4vq/t.cpp:73:5:   required from \u2018void ChronoDurationTest_BasicFractionalSeconds_Test<gtest_TypeParam_>::TestBody() [with gtest_TypeParam_ = std::chrono::duration<long int, std::ratio<3600> >]\u2019\n/tmp/tmppfn2_4vq/t.cpp:30:1:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:1919:35: error: \u2018struct fmt::v9::detail::arg_data<fmt::v9::detail::value<fmt::v9::basic_format_context<fmt::v9::appender, char> >, char, 1, 0>\u2019 has no member named \u2018named_args\u2019\n"
+}

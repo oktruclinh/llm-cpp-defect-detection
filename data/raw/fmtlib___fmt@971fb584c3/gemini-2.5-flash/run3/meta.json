@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:24:53",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3348,
+  "tokens_out": 3435,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "E_WARNING_BELOW_\u2019\n 1318 |     statement;                                                    \\\n      |     ^~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1803:3: note: in expansion of macro \u2018GTEST_TEST_THROW_\u2019\n 1803 |   GTEST_TEST_THROW_(statement, expected_exception, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~\n/tmp/tmp8xwy_4_d/t.cpp:130:5: note: in expansion of macro \u2018EXPECT_THROW\u2019\n  130 |     EXPECT_THROW(\n      |     ^~~~~~~~~~~~\n"
+}

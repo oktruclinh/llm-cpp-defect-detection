@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:04:09",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 2936,
+  "tokens_out": 3059,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/qwen3-coder/run1/test.cpp",
+  "compile_err_tail": ""
+}

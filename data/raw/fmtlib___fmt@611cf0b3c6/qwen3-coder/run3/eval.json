@@ -1,0 +1,50 @@
+{
+ "defect_id": "fmtlib___fmt@611cf0b3c6",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 9,
+ "n_valid": 4,
+ "n_invalid_on_fixed": 5,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "FormatOctalTest.OctalWithAltFlagAndPrecision",
+  "FormatOctalTest.OctalZeroValue",
+  "FormatOctalTest.OctalPrecisionVariations",
+  "FormatOctalTest.OctalPrecisionWithAltFlag",
+  "FormatOctalTest.OctalLargeValues"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": true,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   1441,
+   1447
+  ],
+  "hunk_lines_executed": [
+   1442,
+   1443,
+   1444,
+   1447
+  ],
+  "hunk_executed": true,
+  "hunk_instrumented_lines": [
+   1442,
+   1443,
+   1444,
+   1447
+  ],
+  "focal_lines_total": 3587
+ },
+ "outcome": "reached_not_detected"
+}

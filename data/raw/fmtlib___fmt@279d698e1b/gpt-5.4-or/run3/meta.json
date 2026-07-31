@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@279d698e1b",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T16:52:24",
+  "temperature": 0.2,
+  "shots": 1,
+  "compiled_on_fixed": true,
+  "tokens_in": 337,
+  "tokens_out": 1091,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@279d698e1b/gpt-5.4-or/run3/test.cpp",
+  "compile_err_tail": ""
+}

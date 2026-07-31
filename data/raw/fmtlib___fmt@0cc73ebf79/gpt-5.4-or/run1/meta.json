@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T16:49:06",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3387,
+  "tokens_out": 3543,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/gpt-5.4-or/run1/test.cpp",
+  "compile_err_tail": "\", arg.template get<const char*>());\n      |                                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\n/tmp/tmpk_h4ut9m/t.cpp:38:61: error: \u2018class fmt::v7::basic_format_arg<fmt::v7::basic_format_context<std::back_insert_iterator<fmt::v7::detail::buffer<char> >, char> >\u2019 has no member named \u2018get\u2019\n   38 |         return fmt::format_to(ctx.out(), \"{}\", arg.template get<fmt::string_view>());\n      |                                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\n"
+}

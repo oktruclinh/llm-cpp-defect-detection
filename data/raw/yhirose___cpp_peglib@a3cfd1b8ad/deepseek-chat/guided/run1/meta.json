@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@a3cfd1b8ad",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:32:07",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5220,
+  "tokens_out": 3502,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@a3cfd1b8ad/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "                   \\\n      |                                      ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1838:33: note: in expansion of macro \u2018GTEST_EXPECT_FALSE\u2019\n 1838 | #define EXPECT_FALSE(condition) GTEST_EXPECT_FALSE(condition)\n      |                                 ^~~~~~~~~~~~~~~~~~\n/tmp/tmp5d0_2efu/t.cpp:194:5: note: in expansion of macro \u2018EXPECT_FALSE\u2019\n  194 |     EXPECT_FALSE(parser.parse(\"ba\"));\n      |     ^~~~~~~~~~~~\n"
+}

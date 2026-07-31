@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "context_rich",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:35:27",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5059,
+  "tokens_out": 5362,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/context_rich/run1/test.cpp",
+  "compile_err_tail": ":basic_format_args<fmt::basic_context<char> >)'\n/usr/bin/ld: /tmp/ccAHTtmQ.o:t.cpp:(.text._ZN3fmt6formatIJiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEES6_NS_17basic_string_viewIcEEDpRKT_[_ZN3fmt6formatIJiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEES6_NS_17basic_string_viewIcEEDpRKT_]+0x7d): more undefined references to `fmt::vformat[abi:cxx11](fmt::basic_string_view<char>, fmt::basic_format_args<fmt::basic_context<char> >)' follow\ncollect2: error: ld returned 1 exit status\n"
+}

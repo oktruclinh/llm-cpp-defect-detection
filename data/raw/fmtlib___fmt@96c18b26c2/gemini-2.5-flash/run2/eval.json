@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@96c18b26c2",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "td::__new_allocator<_Tp>::allocate(int, const void*) [with _Tp = wchar_t]’:\n/usr/include/c++/13/bits/alloc_traits.h:482:28:   required from ‘static _Tp* std::allocator_traits<std::allocator<_Tp1> >::allocate(allocator_type&, int) [with _Tp = wchar_t; pointer = wchar_t*; allocator_type = std::allocator<wchar_t>]’\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:704:49:   required from ‘void fmt::v6::basic_memory_buffer<T, SIZE, Allocator>::grow(size_t) [with T = wchar_t; long unsigned int SIZE = 500; Allocator = std::allocator<wchar_t>; size_t = long unsigned int]’\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:695:6:   required from here\n/usr/include/c++/13/bits/new_allocator.h:134:42: error: ‘class std::__new_allocator<wchar_t>’ has no member named ‘_M_max_size’\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

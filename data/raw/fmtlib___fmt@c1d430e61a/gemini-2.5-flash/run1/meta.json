@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@c1d430e61a",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T12:21:28",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4102,
+  "tokens_out": 4928,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c1d430e61a/gemini-2.5-flash/run1/test.cpp",
+  "compile_err_tail": "/tmp/tmpjsfwmg2c/t.cpp:96:53: error: \u2018formatter\u2019 was not declared in this scope; did you mean \u2018fmt::v5::formatter\u2019?\n   96 |   std::chrono::milliseconds get_ms() const { return formatter.ms; }\n      |                                                     ^~~~~~~~~\n      |                                                     fmt::v5::formatter\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:600:8: note: \u2018fmt::v5::formatter\u2019 declared here\n  600 | struct formatter {\n      |        ^~~~~~~~~\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@c04fb91b03",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:27:47",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4596,
+  "tokens_out": 5626,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": "tution failed:\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:553:28: note:   cannot convert \u2018*(const EnumFormattingTest_EnumWithLongLongUnderlyingType_TruncationExpected_Test::TestBody()::TruncatedEnum*)arg\u2019 (type \u2018const EnumFormattingTest_EnumWithLongLongUnderlyingType_TruncationExpected_Test::TestBody()::TruncatedEnum\u2019) to type \u2018const int&\u2019\n  553 |     ctx.advance_to(f.format(*static_cast<const T*>(arg), ctx));\n      |                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-23T17:59:45",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 2830,
+  "tokens_out": 3709,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/run2/test.cpp",
+  "compile_err_tail": ""
+}

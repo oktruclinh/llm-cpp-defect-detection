@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T12:16:58",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4151,
+  "tokens_out": 4978,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/gemini-2.5-flash/run3/test.cpp",
+  "compile_err_tail": "mt::v7::operator==(basic_string_view<wchar_t>, basic_string_view<wchar_t>)\u2019\n  411 |   friend bool operator==(basic_string_view lhs, basic_string_view rhs) {\n      |               ^~~~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:411:44: note:   no known conversion for argument 1 from \u2018const char* const\u2019 to \u2018fmt::v7::basic_string_view<wchar_t>\u2019\n  411 |   friend bool operator==(basic_string_view lhs, basic_string_view rhs) {\n      |                          ~~~~~~~~~~~~~~~~~~^~~\n"
+}

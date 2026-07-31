@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@0b4fa2a2bf",
+  "project": "apache___arrow",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-25T14:58:36",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4766,
+  "tokens_out": 6330,
+  "test_path": "/home/azureuser/study/data/raw/apache___arrow@0b4fa2a2bf/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "(expr);                                                       \\\n      |                  ^~~~\n/tmp/tmps1ye7kek/t.cpp:267:22: error: \u2018class arrow::RecordBatchBuilder\u2019 has no member named \u2018Finish\u2019\n  267 |   ASSERT_OK(builder->Finish(&table));\n      |                      ^~~~~~\n/home/azureuser/arrow/cpp/src/arrow/testing/gtest_util.h:84:18: note: in definition of macro \u2018ASSERT_OK\u2019\n   84 |     auto _res = (expr);                                                       \\\n      |                  ^~~~\n"
+}

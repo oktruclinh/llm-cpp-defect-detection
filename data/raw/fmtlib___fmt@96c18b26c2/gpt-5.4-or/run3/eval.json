@@ -1,0 +1,30 @@
+{
+ "defect_id": "fmtlib___fmt@96c18b26c2",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 8,
+ "n_valid": 4,
+ "n_invalid_on_fixed": 4,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 3,
+ "real_bug_detected": true,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "PrintfCharFormattingTest.ZeroFlagDoesNotTriggerNumericAlignmentForChar",
+  "PrintfCharFormattingTest.NullCharacterIsFormattedAndPaddedCorrectly",
+  "PrintfCharFormattingTest.UnsignedCharUsesCharacterSemanticsNotIntegerSemantics",
+  "PrintfCharFormattingTest.SignedCharUsesCharacterSemanticsNotIntegerSemantics"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [
+  "PrintfCharFormattingTest.SignFlagsAreIgnoredForCharConversion",
+  "PrintfCharFormattingTest.AlternateFormIsIgnoredForCharConversion",
+  "PrintfCharFormattingTest.WidthAndAlignmentBehaveLikeNonNumericType"
+ ],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "outcome": "detected"
+}

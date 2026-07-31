@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-23T18:01:09",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3281,
+  "tokens_out": 3460,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/run3/test.cpp",
+  "compile_err_tail": "^~~~~~~~~~~~~~~\n/tmp/tmplzrih0eb/t.cpp:174:32: error: \u2018class entt::meta_any\u2019 has no member named \u2018as_ref\u2019\n  174 |     auto deref_result = it_any.as_ref().invoke(\"deref\"_hs);\n      |                                ^~~~~~\n/tmp/tmplzrih0eb/t.cpp:174:48: error: unable to find string literal operator \u2018operator\"\"_hs\u2019 with \u2018const char [6]\u2019, \u2018long unsigned int\u2019 arguments\n  174 |     auto deref_result = it_any.as_ref().invoke(\"deref\"_hs);\n      |                                                ^~~~~~~~~~\n"
+}

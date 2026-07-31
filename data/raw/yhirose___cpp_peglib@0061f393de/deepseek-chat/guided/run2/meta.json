@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@0061f393de",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T16:57:08",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5196,
+  "tokens_out": 3022,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@0061f393de/deepseek-chat/guided/run2/test.cpp",
+  "compile_err_tail": " |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1896:3: note: in expansion of macro \u2018EXPECT_PRED_FORMAT2\u2019\n 1896 |   EXPECT_PRED_FORMAT2(::testing::internal::EqHelper::Compare, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/tmp/tmpr9d70qfc/t.cpp:254:5: note: in expansion of macro \u2018EXPECT_EQ\u2019\n  254 |     EXPECT_EQ(result.value, \"term\");\n      |     ^~~~~~~~~\n"
+}

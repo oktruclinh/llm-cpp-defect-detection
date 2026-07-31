@@ -1,0 +1,17 @@
+{
+  "defect_id": "apache___arrow@0b4fa2a2bf",
+  "project": "apache___arrow",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-25T14:57:57",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2454,
+  "tokens_out": 3134,
+  "test_path": "/home/azureuser/study/data/raw/apache___arrow@0b4fa2a2bf/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": "                                            ^~\n/tmp/tmp4p5m2bgf/t.cpp:146:20: error: base operand of \u2018->\u2019 is not a pointer\n  146 |   ASSERT_OK(builder->Flush(&batch));\n      |                    ^~\n/tmp/tmp4p5m2bgf/t.cpp:154:20: error: base operand of \u2018->\u2019 is not a pointer\n  154 |   ASSERT_OK(builder->Flush(&batch));\n      |                    ^~\n/tmp/tmp4p5m2bgf/t.cpp:164:20: error: base operand of \u2018->\u2019 is not a pointer\n  164 |   ASSERT_OK(builder->Flush(&batch));\n      |                    ^~\n"
+}

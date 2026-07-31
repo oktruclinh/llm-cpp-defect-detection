@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T17:01:31",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3489,
+  "tokens_out": 3722,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gpt-5.4-or/run2/test.cpp",
+  "compile_err_tail": "ession))                     \\\n      |                                      ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1834:32: note: in expansion of macro \u2018GTEST_EXPECT_TRUE\u2019\n 1834 | #define EXPECT_TRUE(condition) GTEST_EXPECT_TRUE(condition)\n      |                                ^~~~~~~~~~~~~~~~~\n/tmp/tmpu9qeucor/t.cpp:208:5: note: in expansion of macro \u2018EXPECT_TRUE\u2019\n  208 |     EXPECT_TRUE(key_view.empty());\n      |     ^~~~~~~~~~~\n"
+}

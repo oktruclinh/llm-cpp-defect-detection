@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@2d276c8cd9",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:15:23",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 2533,
+  "tokens_out": 2720,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@2d276c8cd9/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": ""
+}

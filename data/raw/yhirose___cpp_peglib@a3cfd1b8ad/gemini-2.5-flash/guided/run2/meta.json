@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@a3cfd1b8ad",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:36:14",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5983,
+  "tokens_out": 4994,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@a3cfd1b8ad/gemini-2.5-flash/guided/run2/test.cpp",
+  "compile_err_tail": "/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1846:33: note: in expansion of macro \u2018GTEST_ASSERT_FALSE\u2019\n 1846 | #define ASSERT_FALSE(condition) GTEST_ASSERT_FALSE(condition)\n      |                                 ^~~~~~~~~~~~~~~~~~\n/tmp/tmp5opl11go/t.cpp:186:5: note: in expansion of macro \u2018ASSERT_FALSE\u2019\n  186 |     ASSERT_FALSE(g->parse(only_spacing.c_str(), \"Grammar\")) << \"Parsed only spacing/comments as a valid grammar.\";\n      |     ^~~~~~~~~~~~\n"
+}

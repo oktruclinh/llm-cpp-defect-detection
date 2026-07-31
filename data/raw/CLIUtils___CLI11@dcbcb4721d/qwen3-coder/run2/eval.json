@@ -1,0 +1,21 @@
+{
+ "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "callback_t(), std::string{}); }\n      |             ^~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/App.hpp:603:13: note:   candidate expects 1 argument, 3 provided\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/App.hpp:664:13: note: candidate: ‘CLI::Option* CLI::App::add_flag(std::string, std::function<void(long int)>, std::string)’\n  664 |     Option *add_flag(std::string flag_name,\n      |             ^~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/App.hpp:665:56: note:   no known conversion for argument 2 from ‘const char [10]’ to ‘std::function<void(long int)>’\n  665 |                      std::function<void(std::int64_t)> function,  ///< A function to call, void(std::int64_t)\n      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

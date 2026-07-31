@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@0061f393de",
+  "project": "yhirose___cpp_peglib",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T16:38:04",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 8160,
+  "tokens_out": 8192,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@0061f393de/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": ":pair<long unsigned int, char> > >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::pair<long unsigned int, char> > >]\u2019\n/usr/include/c++/13/bits/stl_map.h:219:7:   required from here\n/usr/include/c++/13/bits/new_allocator.h:134:42: error: \u2018class std::__new_allocator<std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char>, std::pair<long unsigned int, char> > > >\u2019 has no member named \u2018_M_max_size\u2019\n"
+}

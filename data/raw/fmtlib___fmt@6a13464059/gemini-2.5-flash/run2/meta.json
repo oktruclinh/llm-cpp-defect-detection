@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6a13464059",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:12:36",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3793,
+  "tokens_out": 4503,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6a13464059/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": "psa5ton3x/t.cpp: In member function \u2018virtual void OnSignTest_UInt128TypePlusSignError_Test::TestBody()\u2019:\n/tmp/tmpsa5ton3x/t.cpp:144:23: error: expected initializer before \u2018val\u2019\n  144 |   unsigned __int128_t val = static_cast<unsigned __int128_t>(1234567890123456789ULL);\n      |                       ^~~\n/tmp/tmpsa5ton3x/t.cpp:145:48: error: \u2018val\u2019 was not declared in this scope\n  145 |   std::string error_msg = format_value(\"{:+}\", val);\n      |                                                ^~~\n"
+}

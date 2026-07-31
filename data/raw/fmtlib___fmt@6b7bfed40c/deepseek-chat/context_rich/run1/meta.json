@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@6b7bfed40c",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "context_rich",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:36:30",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4674,
+  "tokens_out": 5832,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@6b7bfed40c/deepseek-chat/context_rich/run1/test.cpp",
+  "compile_err_tail": "|   ^~~~~~\n/tmp/tmps66mqhx_/t.cpp:351:37: error: cannot declare variable \u2018buf2\u2019 to be of abstract type \u2018fmt::v7::detail::buffer<char>\u2019\n  351 |     fmt::detail::buffer<char> buf1, buf2;\n      |                                     ^~~~\n/tmp/tmps66mqhx_/t.cpp:351:37: error: \u2018fmt::v7::detail::buffer<T>::~buffer() [with T = char]\u2019 is protected within this context\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:681:3: note: declared protected here\n  681 |   ~buffer() = default;\n      |   ^\n"
+}

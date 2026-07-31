@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@be470f9332",
+  "project": "yhirose___cpp_peglib",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:14:24",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2695,
+  "tokens_out": 2073,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@be470f9332/gpt-5.4-or/guided/run1/test.cpp",
+  "compile_err_tail": ": \u2018void operator<<(const testing::internal::Secret&, int)\u2019\n   71 | void operator<<(const testing::internal::Secret&, int);\n      |      ^~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest-message.h:71:17: note:   no known conversion for argument 1 from \u2018std::__cxx11::basic_stringstream<char>\u2019 to \u2018const testing::internal::Secret&\u2019\n   71 | void operator<<(const testing::internal::Secret&, int);\n      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+}

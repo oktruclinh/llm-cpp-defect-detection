@@ -1,0 +1,21 @@
+{
+ "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "alueMappingTest_NegativeFlagUsesConfiguredFalseValueName_Test::TestBody()’:\n/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@dcbcb4721d/gpt-5.4-or/run3/test.cpp:118:10: error: ‘class CLI::Option’ has no member named ‘default_flag_values’; did you mean ‘std::vector<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > > CLI::Option::default_flag_values_’? (not accessible from this context)\n  118 |     opt->default_flag_values({\"enabled\", \"disabled\"});\n      |          ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/CLI11_spike/include/CLI/Option.hpp:243:54: note: declared protected here\n  243 |     std::vector<std::pair<std::string, std::string>> default_flag_values_{};\n      |                                                      ^~~~~~~~~~~~~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

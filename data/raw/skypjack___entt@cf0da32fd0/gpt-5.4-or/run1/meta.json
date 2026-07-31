@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "fixed",
+  "seed": 1,
+  "timestamp": "2026-06-24T17:01:03",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2910,
+  "tokens_out": 2928,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gpt-5.4-or/run1/test.cpp",
+  "compile_err_tail": ") {\n      |                             ^\n/tmp/tmpewyp30ll/t.cpp:22:15: error: \u2018meta\u2019 is not a member of \u2018entt\u2019\n   22 |         entt::meta<Type>().type();\n      |               ^~~~\n/tmp/tmpewyp30ll/t.cpp:22:24: error: expected primary-expression before \u2018>\u2019 token\n   22 |         entt::meta<Type>().type();\n      |                        ^\n/tmp/tmpewyp30ll/t.cpp:22:26: error: expected primary-expression before \u2018)\u2019 token\n   22 |         entt::meta<Type>().type();\n      |                          ^\n"
+}

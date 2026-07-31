@@ -1,0 +1,13 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2656,
+  "tokens_out": 2366,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/deepseek-chat/run1/test.cpp",
+  "compile_err_tail": "                                     \\\n      |     ^~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1803:3: note: in expansion of macro \u2018GTEST_TEST_THROW_\u2019\n 1803 |   GTEST_TEST_THROW_(statement, expected_exception, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~\n/tmp/tmp9itmwi4o/t.cpp:48:5: note: in expansion of macro \u2018EXPECT_THROW\u2019\n   48 |     EXPECT_THROW(fmt::format(\"{nonexistent}\", fmt::arg(\"existing\", \"value\")),\n      |     ^~~~~~~~~~~~\n"
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:24:34",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3072,
+  "tokens_out": 4285,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": "t_args\u2019 is not a member of \u2018fmt\u2019; did you mean \u2018basic_format_args\u2019?\n   40 |     fmt::format_args args = fmt::make_format_args(fmt::arg(\"present\", 1));\n      |                                  ^~~~~~~~~~~~~~~~\n      |                                  basic_format_args\n/tmp/tmpi20qbc8f/t.cpp:41:23: error: variable \u2018FmtGetArgTest_NamedArgumentNotFound_Test::TestBody()::CustomContext ctx\u2019 has initializer but incomplete type\n   41 |     CustomContext ctx(args, eh);\n      |                       ^~~~\n"
+}

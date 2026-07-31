@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@0cc73ebf79",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "                                       ^~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest_pred_impl.h:144:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’\n  144 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1896:3: note: in expansion of macro ‘EXPECT_PRED_FORMAT2’\n 1896 |   EXPECT_PRED_FORMAT2(::testing::internal::EqHelper::Compare, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@0cc73ebf79/gemini-2.5-flash/run1/test.cpp:276:5: note: in expansion of macro ‘EXPECT_EQ’\n  276 |     EXPECT_EQ(w_args.get_id(\"wide_arg\"), -1);\n      |     ^~~~~~~~~\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

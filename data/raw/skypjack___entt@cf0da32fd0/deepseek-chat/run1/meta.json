@@ -1,0 +1,13 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4021,
+  "tokens_out": 4995,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/deepseek-chat/run1/test.cpp",
+  "compile_err_tail": " of macro \u2018ASSERT_EQ\u2019\n  265 |     ASSERT_EQ(first_elem.cast<int>(), 1);\n      |     ^~~~~~~~~\n/tmp/tmpc9q53axy/t.cpp:268:48: error: expected primary-expression before \u2018>\u2019 token\n  268 |     auto vec = second_elem.cast<std::vector<int>>();\n      |                                                ^~\n/tmp/tmpc9q53axy/t.cpp:268:51: error: expected primary-expression before \u2018)\u2019 token\n  268 |     auto vec = second_elem.cast<std::vector<int>>();\n      |                                                   ^\n"
+}

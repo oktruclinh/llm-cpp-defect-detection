@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@a3cfd1b8ad",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:33:45",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4409,
+  "tokens_out": 2425,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@a3cfd1b8ad/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": "t/gtest.h:1842:32: note: in expansion of macro \u2018GTEST_ASSERT_TRUE\u2019\n 1842 | #define ASSERT_TRUE(condition) GTEST_ASSERT_TRUE(condition)\n      |                                ^~~~~~~~~~~~~~~~~\n/tmp/tmptf0wkkej/t.cpp:125:5: note: in expansion of macro \u2018ASSERT_TRUE\u2019\n  125 |     ASSERT_TRUE(test_parser);\n      |     ^~~~~~~~~~~\n/tmp/tmptf0wkkej/t.cpp:128:19: error: \u2018test_parser\u2019 was not declared in this scope\n  128 |     bool result = test_parser.parse(\"test\");\n      |                   ^~~~~~~~~~~\n"
+}

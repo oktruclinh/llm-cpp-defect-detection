@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@e72b630455",
+  "project": "yhirose___cpp_peglib",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:28:00",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4945,
+  "tokens_out": 3852,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@e72b630455/deepseek-chat/guided/run1/test.cpp",
+  "compile_err_tail": "mpiihy2z2p/t.cpp:247:7: error: expected \u2018{\u2019 before \u2018;\u2019 token\n  247 |     });\n      |       ^\n/tmp/tmpiihy2z2p/t.cpp: In member function \u2018virtual void SemanticValuesTest_TransformWithLambda_Test::TestBody()\u2019:\n/tmp/tmpiihy2z2p/t.cpp:247:7: error: expected \u2018)\u2019 before \u2018;\u2019 token\n  247 |     });\n      |       ^\n      |       )\n/tmp/tmpiihy2z2p/t.cpp:245:36: note: to match this \u2018(\u2019\n  245 |     auto result = sv.transform<int>(0, sv.size(), [](const any& v) {\n      |                                    ^\n"
+}

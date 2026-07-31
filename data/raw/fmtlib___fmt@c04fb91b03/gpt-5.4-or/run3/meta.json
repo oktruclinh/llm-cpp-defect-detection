@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@c04fb91b03",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T16:59:32",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2538,
+  "tokens_out": 1971,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@c04fb91b03/gpt-5.4-or/run3/test.cpp",
+  "compile_err_tail": "ecltype(ctx.out()) {\n      |        ^~~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:3212:8: note:   template argument deduction/substitution failed:\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:553:28: note:   cannot convert \u2018*(const {anonymous}::ScopedCode*)arg\u2019 (type \u2018const {anonymous}::ScopedCode\u2019) to type \u2018const int&\u2019\n  553 |     ctx.advance_to(f.format(*static_cast<const T*>(arg), ctx));\n      |                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+}

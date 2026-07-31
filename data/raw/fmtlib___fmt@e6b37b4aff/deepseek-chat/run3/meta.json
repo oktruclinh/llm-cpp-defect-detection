@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@e6b37b4aff",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-23T17:56:24",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3042,
+  "tokens_out": 3151,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@e6b37b4aff/deepseek-chat/run3/test.cpp",
+  "compile_err_tail": "                    ^~~~\n/tmp/tmpbmddpcry/t.cpp: In member function \u2018virtual void TranscodeLoopTest_NullCharacter_Test::TestBody()\u2019:\n/tmp/tmpbmddpcry/t.cpp:143:10: error: \u2018fmt::detail\u2019 has not been declared\n  143 |     fmt::detail::write_escaped_string<char>(buf, with_null);\n      |          ^~~~~~\n/tmp/tmpbmddpcry/t.cpp:143:39: error: expected primary-expression before \u2018char\u2019\n  143 |     fmt::detail::write_escaped_string<char>(buf, with_null);\n      |                                       ^~~~\n"
+}

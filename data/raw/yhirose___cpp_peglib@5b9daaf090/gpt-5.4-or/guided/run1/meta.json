@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@5b9daaf090",
+  "project": "yhirose___cpp_peglib",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:40:45",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3286,
+  "tokens_out": 2978,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@5b9daaf090/gpt-5.4-or/guided/run1/test.cpp",
+  "compile_err_tail": " void]\u2019:\n/tmp/tmpb09viucf/t.cpp:19:3:   required from here\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest-assertion-result.h:167:9: error: passing \u2018const peg::parser\u2019 as \u2018this\u2019 argument discards qualifiers [-fpermissive]\n  167 |       : success_(success) {}\n      |         ^~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:2132:5: note:   in call to \u2018peg::parser::operator bool()\u2019\n 2132 |     operator bool() {\n      |     ^~~~~~~~\n"
+}

@@ -1,0 +1,44 @@
+{
+ "defect_id": "fmtlib___fmt@c04fb91b03",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 9,
+ "n_valid": 8,
+ "n_invalid_on_fixed": 1,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "EnumFormatterTest.LongEnumFormatting"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": true,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   3216,
+   3224
+  ],
+  "hunk_lines_executed": [
+   3216,
+   3219,
+   3221
+  ],
+  "hunk_executed": true,
+  "hunk_instrumented_lines": [
+   3216,
+   3219,
+   3221
+  ],
+  "focal_lines_total": 3962
+ },
+ "outcome": "reached_not_detected"
+}

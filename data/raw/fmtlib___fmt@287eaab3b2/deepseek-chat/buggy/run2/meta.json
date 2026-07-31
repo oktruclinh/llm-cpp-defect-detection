@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@287eaab3b2",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "buggy",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:08:48",
+  "temperature": 0.2,
+  "shots": 1,
+  "compiled_on_fixed": true,
+  "tokens_in": 318,
+  "tokens_out": 1449,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@287eaab3b2/deepseek-chat/buggy/run2/test.cpp",
+  "compile_err_tail": ""
+}

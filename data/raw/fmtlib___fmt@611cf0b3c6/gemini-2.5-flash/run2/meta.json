@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@611cf0b3c6",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:14:07",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4753,
+  "tokens_out": 5956,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@611cf0b3c6/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": " >, char>; std::nullptr_t = std::nullptr_t]\u2019\n  842 |   FMT_CONSTEXPR const void* map(std::nullptr_t val) { return val; }\n      |                             ^~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:842:48: note:   no known conversion for argument 1 from \u2018const FmtOctalTest_CustomTypeWithFormatter_Test::TestBody()::MyInt\u2019 to \u2018std::nullptr_t\u2019\n  842 |   FMT_CONSTEXPR const void* map(std::nullptr_t val) { return val; }\n      |                                 ~~~~~~~~~~~~~~~^~~\n"
+}

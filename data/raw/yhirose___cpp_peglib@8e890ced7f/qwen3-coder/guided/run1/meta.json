@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@8e890ced7f",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:07:35",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 1699,
+  "tokens_out": 1397,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@8e890ced7f/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": "ORMAT2_\u2019\n  144 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_NONFATAL_FAILURE_)\n      |   ^~~~~~~~~~~~~~~~~~~\n/home/truclinh/Thesis/kse2026/study/third_party/googletest/googletest/include/gtest/gtest.h:1898:3: note: in expansion of macro \u2018EXPECT_PRED_FORMAT2\u2019\n 1898 |   EXPECT_PRED_FORMAT2(::testing::internal::CmpHelperNE, val1, val2)\n      |   ^~~~~~~~~~~~~~~~~~~\n/tmp/tmp9kbxbran/t.cpp:106:5: note: in expansion of macro \u2018EXPECT_NE\u2019\n  106 |     EXPECT_NE(nullptr, ast);\n      |     ^~~~~~~~~\n"
+}

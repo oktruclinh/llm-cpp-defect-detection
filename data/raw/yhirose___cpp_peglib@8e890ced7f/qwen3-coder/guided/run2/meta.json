@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@8e890ced7f",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T17:07:55",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 2299,
+  "tokens_out": 1400,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@8e890ced7f/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": "entAstTypes_Test::TestBody()::CustomAst::CustomAst(const ParserAstTest_EnableAstWithDifferentAstTypes_Test::TestBody()::CustomAst&)\u2019\n/tmp/tmpvs_v8q0_/t.cpp:69:12: note:   candidate expects 1 argument, 9 provided\n/tmp/tmpvs_v8q0_/t.cpp:69:12: note: candidate: \u2018ParserAstTest_EnableAstWithDifferentAstTypes_Test::TestBody()::CustomAst::CustomAst(ParserAstTest_EnableAstWithDifferentAstTypes_Test::TestBody()::CustomAst&&)\u2019\n/tmp/tmpvs_v8q0_/t.cpp:69:12: note:   candidate expects 1 argument, 9 provided\n"
+}

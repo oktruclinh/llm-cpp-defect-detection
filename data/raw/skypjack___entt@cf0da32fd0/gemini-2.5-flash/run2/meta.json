@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@cf0da32fd0",
+  "project": "skypjack___entt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:30:27",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 5883,
+  "tokens_out": 8192,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@cf0da32fd0/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": "{}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = mutex]\u2019\n/usr/include/c++/13/condition_variable:285:64:   required from here\n/usr/include/c++/13/bits/new_allocator.h:134:42: error: \u2018class std::__new_allocator<std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<void>, __gnu_cxx::_S_atomic> >\u2019 has no member named \u2018_M_max_size\u2019\n  134 |         if (__builtin_expect(__n > this->_M_max_size(), false))\n      |                                    ~~~~~~^~~~~~~~~~~\n"
+}

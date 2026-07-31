@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@0061f393de",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 2,
+  "condition": "guided",
+  "seed": 2,
+  "timestamp": "2026-06-26T16:58:32",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4907,
+  "tokens_out": 2618,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@0061f393de/qwen3-coder/guided/run2/test.cpp",
+  "compile_err_tail": "dOp\u2019\n  189 |         AddOp = \"+\" / \"-\"\n      |         ^~~~~\n/tmp/tmpnymphnod/t.cpp:195:51: error: \u2018rules\u2019 was not declared in this scope\n  195 |     auto grammar = parse(grammar_str, start_rule, rules);\n      |                                                   ^~~~~\n/tmp/tmpnymphnod/t.cpp:195:20: error: \u2018parse\u2019 was not declared in this scope; did you mean \u2018pause\u2019?\n  195 |     auto grammar = parse(grammar_str, start_rule, rules);\n      |                    ^~~~~\n      |                    pause\n"
+}

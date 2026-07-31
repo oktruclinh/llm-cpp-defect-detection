@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@ad5bb5198b",
+  "project": "skypjack___entt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-23T18:01:38",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3196,
+  "tokens_out": 3524,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@ad5bb5198b/deepseek-chat/run2/test.cpp",
+  "compile_err_tail": "&)\u2019\n  812 |     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/13/bits/stl_pair.h:812:5: note:   template argument deduction/substitution failed:\n/usr/include/c++/13/bits/stl_pair.h:813:24: note:   \u2018const MetaAssociativeContainerTest_CustomKeyType_Test::TestBody()::CustomKey\u2019 is not derived from \u2018const std::pair<_T1, _T2>\u2019\n  813 |     { return __x.first == __y.first && __x.second == __y.second; }\n      |              ~~~~~~~~~~^~~~~~~~~~~~\n"
+}

@@ -1,0 +1,43 @@
+{
+ "defect_id": "CLIUtils___CLI11@dcbcb4721d",
+ "project": "CLIUtils___CLI11",
+ "repeat": 5,
+ "compiled_fixed": true,
+ "compiled_buggy": true,
+ "n_tests": 7,
+ "n_valid": 4,
+ "n_invalid_on_fixed": 3,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": false,
+ "real_bug_detected_strict": false,
+ "invalid_on_fixed_tests": [
+  "ConfigInlTest.GetFlagValueNormalCase",
+  "ConfigInlTest.GetFlagValueBooleanFlag",
+  "ConfigInlTest.GetFlagValueMultiValueOption"
+ ],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "",
+ "compile_err_buggy": "",
+ "reached_buggy": false,
+ "coverage": {
+  "compiled": true,
+  "gcov_found": true,
+  "hunk_range": [
+   344,
+   349
+  ],
+  "hunk_lines_executed": [],
+  "hunk_executed": false,
+  "hunk_instrumented_lines": [
+   346,
+   347,
+   348,
+   349
+  ],
+  "focal_lines_total": 375
+ },
+ "outcome": "not_reached"
+}

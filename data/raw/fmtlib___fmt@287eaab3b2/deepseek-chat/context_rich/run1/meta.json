@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@287eaab3b2",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "context_rich",
+  "seed": 1,
+  "timestamp": "2026-06-24T15:31:29",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3971,
+  "tokens_out": 2741,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@287eaab3b2/deepseek-chat/context_rich/run1/test.cpp",
+  "compile_err_tail": "insert_iterator<std::__cxx11::basic_string<char> >\u2019 has no member named \u2018begin\u2019\n 2415 |   typedef decltype(internal::declval<Range>().begin()) iterator;\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/format.h:2424:61: error: using invalid field \u2018fmt::v5::basic_writer<Range>::out_\u2019\n 2424 |   auto reserve(std::size_t n) -> decltype(internal::reserve(out_, n)) {\n      |                                                             ^~~~\n"
+}

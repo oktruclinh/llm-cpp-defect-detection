@@ -1,0 +1,17 @@
+{
+  "defect_id": "yhirose___cpp_peglib@5b9daaf090",
+  "project": "yhirose___cpp_peglib",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-06-26T17:38:39",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3587,
+  "tokens_out": 3340,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/yhirose___cpp_peglib@5b9daaf090/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": " |     peg::parser\n/home/truclinh/Thesis/kse2026/cpp_peglib_spike/peglib.h:2114:7: note: \u2018peg::parser\u2019 declared here\n 2114 | class parser\n      |       ^~~~~~\n/tmp/tmpgfogwr8f/t.cpp:234:25: error: invalid operands of types \u2018const char [2]\u2019 and \u2018const char [2]\u2019 to binary \u2018operator>>\u2019\n  234 |     parser.R(\"S\") = \"a\" >> \"b\" >> \"c\";\n      |                     ~~~ ^~ ~~~\n      |                     |      |\n      |                     |      const char [2]\n      |                     const char [2]\n"
+}

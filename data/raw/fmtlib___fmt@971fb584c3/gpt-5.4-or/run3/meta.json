@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@971fb584c3",
+  "project": "fmtlib___fmt",
+  "model": "gpt-5.4-or",
+  "model_version": "openai/gpt-5.4-20260305",
+  "run_id": 3,
+  "condition": "fixed",
+  "seed": 3,
+  "timestamp": "2026-06-24T16:56:00",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 1711,
+  "tokens_out": 1751,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/gpt-5.4-or/run3/test.cpp",
+  "compile_err_tail": "/tmp/tmpq7jdnzlr/t.cpp: In member function \u2018virtual void {anonymous}::FmtNamedArgumentsGetArgTest_SupportsLongArgumentName_Test::TestBody()\u2019:\n/tmp/tmpq7jdnzlr/t.cpp:37:24: error: \u2018make_format_args\u2019 is not a member of \u2018fmt\u2019; did you mean \u2018basic_format_args\u2019?\n   37 |       format_str, fmt::make_format_args(fmt::arg(long_name.c_str(), 99)));\n      |                        ^~~~~~~~~~~~~~~~\n      |                        basic_format_args\n"
+}

@@ -1,0 +1,13 @@
+{
+  "defect_id": "CLIUtils___CLI11@020a21afc6",
+  "project": "CLIUtils___CLI11",
+  "model": "deepseek-chat",
+  "model_version": "deepseek-v4-flash",
+  "run_id": 1,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 3159,
+  "tokens_out": 3950,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/CLIUtils___CLI11@020a21afc6/deepseek-chat/run1/test.cpp",
+  "compile_err_tail": ""
+}

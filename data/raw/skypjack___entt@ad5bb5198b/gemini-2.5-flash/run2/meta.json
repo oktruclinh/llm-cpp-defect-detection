@@ -1,0 +1,17 @@
+{
+  "defect_id": "skypjack___entt@ad5bb5198b",
+  "project": "skypjack___entt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 2,
+  "condition": "fixed",
+  "seed": 2,
+  "timestamp": "2026-06-24T12:31:56",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 4480,
+  "tokens_out": 5632,
+  "test_path": "/home/truclinh/Thesis/kse2026/study/data/raw/skypjack___entt@ad5bb5198b/gemini-2.5-flash/run2/test.cpp",
+  "compile_err_tail": "ike/src/entt/meta/meta.hpp:193:11:   required from \u2018entt::meta_any::meta_any(std::reference_wrapper<_Tp>) [with Type = const std::map<MyKey, MyValue>]\u2019\n/tmp/tmpe6ik5rhj/t.cpp:166:70:   required from here\n/home/truclinh/Thesis/kse2026/entt_spike/src/entt/meta/internal.hpp:110:20: error: invalid conversion from \u2018const void*\u2019 to \u2018void*\u2019 [-fpermissive]\n  110 |         instance = &value.get();\n      |                    ^~~~~~~~~~~~\n      |                    |\n      |                    const void*\n"
+}

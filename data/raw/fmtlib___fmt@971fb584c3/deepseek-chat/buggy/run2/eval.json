@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@971fb584c3",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "clude/fmt/core.h:811:10:   required from ‘fmt::arg_store<Context, Args ...> fmt::make_args(const Args& ...) [with Context = basic_context<wchar_t>; Args = {basic_arg<basic_context<wchar_t> >}]’\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:965:49:   required from ‘std::wstring fmt::format(wstring_view, const Args& ...) [with Args = {basic_arg<basic_context<wchar_t> >}; std::wstring = std::__cxx11::basic_string<wchar_t>; wstring_view = basic_string_view<wchar_t>]’\n/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/deepseek-chat/buggy/run2/test.cpp:95:5:   required from here\n/home/truclinh/Thesis/kse2026/fmt_spike/include/fmt/core.h:536:50: error: ‘fmt::basic_context<wchar_t>::formatter_type<fmt::basic_arg<fmt::basic_context<wchar_t> > > f’ has incomplete type\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}

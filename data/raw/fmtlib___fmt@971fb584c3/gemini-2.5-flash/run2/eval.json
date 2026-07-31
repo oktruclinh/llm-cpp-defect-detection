@@ -1,0 +1,21 @@
+{
+ "defect_id": "fmtlib___fmt@971fb584c3",
+ "project": "fmtlib___fmt",
+ "repeat": 5,
+ "compiled_fixed": false,
+ "compiled_buggy": false,
+ "n_tests": 0,
+ "n_valid": 0,
+ "n_invalid_on_fixed": 0,
+ "n_flaky_fixed": 0,
+ "n_flaky_buggy": 0,
+ "n_detecting": 0,
+ "real_bug_detected": null,
+ "real_bug_detected_strict": null,
+ "invalid_on_fixed_tests": [],
+ "flaky_fixed_tests": [],
+ "detecting_tests": [],
+ "compile_err_fixed": "/home/truclinh/Thesis/kse2026/study/data/raw/fmtlib___fmt@971fb584c3/gemini-2.5-flash/run2/test.cpp:3:10: fatal error: fmt/compile.h: No such file or directory\n    3 | #include \"fmt/compile.h\" // For compiled format strings, if needed\n      |          ^~~~~~~~~~~~~~~\ncompilation terminated.\n",
+ "compile_err_buggy": "",
+ "outcome": "non_compilable"
+}
