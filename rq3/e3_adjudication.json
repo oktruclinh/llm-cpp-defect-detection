@@ -1,9 +1,9 @@
 {
   "provenance": {
     "frozen44_source": "/home/truclinh/Thesis/kse2026/study/data/taxonomy/rq3_frozen44.csv",
-    "coding_sheet_rows": 47,
+    "coding_sheet_rows": 60,
     "coding_sheet_composition": {
-      "main campaign": 31,
+      "main campaign": 44,
       "buggy-arm": 16
     },
     "per_coder_files_rows": {
@@ -12,73 +12,7 @@
     },
     "per_coder_disagreements": 4,
     "in_round1_not_in_frozen44": [],
-    "in_frozen44_not_in_round1": [
-      [
-        "CLIUtils___CLI11@020a21afc6",
-        "gpt-5.4-or",
-        "3"
-      ],
-      [
-        "fmtlib___fmt@287eaab3b2",
-        "gpt-5.4-or",
-        "1"
-      ],
-      [
-        "fmtlib___fmt@287eaab3b2",
-        "gpt-5.4-or",
-        "2"
-      ],
-      [
-        "fmtlib___fmt@287eaab3b2",
-        "gpt-5.4-or",
-        "3"
-      ],
-      [
-        "fmtlib___fmt@6a13464059",
-        "gpt-5.4-or",
-        "2"
-      ],
-      [
-        "fmtlib___fmt@6a13464059",
-        "gpt-5.4-or",
-        "3"
-      ],
-      [
-        "fmtlib___fmt@971fb584c3",
-        "gpt-5.4-or",
-        "1"
-      ],
-      [
-        "fmtlib___fmt@971fb584c3",
-        "gpt-5.4-or",
-        "2"
-      ],
-      [
-        "fmtlib___fmt@cd7202e039",
-        "gpt-5.4-or",
-        "1"
-      ],
-      [
-        "fmtlib___fmt@cd7202e039",
-        "gpt-5.4-or",
-        "3"
-      ],
-      [
-        "fmtlib___fmt@fc6e0fe992",
-        "gpt-5.4-or",
-        "1"
-      ],
-      [
-        "fmtlib___fmt@fc6e0fe992",
-        "gpt-5.4-or",
-        "2"
-      ],
-      [
-        "fmtlib___fmt@fc6e0fe992",
-        "gpt-5.4-or",
-        "3"
-      ]
-    ],
+    "in_frozen44_not_in_round1": [],
     "WARNING": "rq3_coder1.csv / rq3_coder2.csv hold the FIRST annotation round only (47 suites, including 16 from the buggy-generation arm that never enter the paper). They show 4 disagreements and give kappa = 0.80. The paper's kappa is computed on the coder1/coder2 columns of rq3_frozen44.csv, which merge round 1 with a second round covering the 13 GPT-5.4 suites and show 6 disagreements. The two must not be confused.",
     "RESOLVED_BY": "analysis/rq3_reconcile_labels.py now emits the missing round-2 files (rq3_delta_coder{1,2}.csv) and a self-contained merged record (rq3_labels_merged44.csv) from which kappa = 0.72 recomputes directly."
   },

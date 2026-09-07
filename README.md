@@ -29,6 +29,7 @@ python3 analysis/e2_robustness_arms.py     # arm inventory + temperature reconci
 python3 analysis/e3_adjudication_trace.py  # what the adjudication probes changed
 python3 analysis/e4_derived_numbers.py     # numbers derived from the 41-suite population
 python3 analysis/rq3_reconcile_labels.py   # rebuild the per-coder records, recompute kappa
+python3 analysis/audit_paper_numbers.py    # recompute EVERY number in the paper; exit 1 on any mismatch
 ```
 
 Requires Python 3.10+ and no third-party packages. Two analyses additionally need a C++
@@ -120,7 +121,7 @@ Every quantity in the paper, with the file that contains it and the command that
 | Cross-configuration bounds | repair 68→45 %, compiler 68→68 %, guided prompt no decrease | `analysis/e5_cross_config_probe.py` |
 | Cross-configuration probe | 4 of 12 compile under the internal configuration | `analysis/e5d_probe_generate.py` → `data/results/e5d_probe.md` |
 | RQ1 agreement | κ = 0.56 on 25 cells | `rq1_labmate.csv` vs `rq1_final.csv`; `analysis/rq1_labmate_kappa.py` |
-| Classifier fit | 94 % of audited labels | `analysis/rq1_finalize.py` |
+| Classifier fit | 94 % (68 of 72) | `rq1_final.csv`, rows where `clf_code == final_code`; recomputed by `analysis/audit_paper_numbers.py`. `rq1_finalize.py` reproduces it from the audit worksheets, which are withheld as free-text annotator notes, so it does not run against the shipped tree |
 
 The three-way prompt ablation (71 / 42 / 78 % compilation, 2 of 14 detections) predates
 per-cell logging: its generated suites are under `data/raw/`, but no aggregated `.jsonl` exists
@@ -167,6 +168,12 @@ real money. It is not needed to verify any number in the paper.
   accepts it, but adherence is provider-dependent. Reproduce from the shipped outputs.
 - **Model versions drift.** Hosted model identifiers change; `config/MODELS_PROVENANCE.md`
   records the exact provider, API model id, endpoint, decoding parameters, and access dates.
+- **Some annotation tooling does not run against the shipped tree.** `rq1_finalize.py`,
+  `make_adjudication.py`, `make_rq1_audit_html.py`, `make_rq1_labmate_html.py` and
+  `apply_adjudication.py` read the audit worksheets (`rq1_audit_review.csv`,
+  `ADJUDICATION.md`, …), which carry free-text annotator reasoning and are deliberately
+  withheld. Every number they produced is recomputable from the shipped label files —
+  run `analysis/audit_paper_numbers.py`, which checks all of them against the paper.
 - **No LLM was used for annotation.** All RQ1 and RQ3 labels are human. Agreement statistics use
   the independently assigned labels, computed before disagreements were resolved.
 - **RQ3 was annotated in two rounds.** Round 1 covered 47 suites, including 16 from the

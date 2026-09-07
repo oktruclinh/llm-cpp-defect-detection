@@ -1,0 +1,4 @@
+/home/truclinh/Thesis/kse2026/artifact/data/raw/fmtlib___fmt@c04fb91b03/gpt-5.4-or/run1/test.cpp:1:10: fatal error: gtest/gtest.h: No such file or directory
+    1 | #include <gtest/gtest.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.

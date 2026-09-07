@@ -1,0 +1,4 @@
+/home/truclinh/Thesis/kse2026/artifact/data/raw/fmtlib___fmt@0cc73ebf79/gemini-2.5-flash/run1/test.cpp:2:10: fatal error: gtest/gtest.h: No such file or directory
+    2 | #include <gtest/gtest.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.

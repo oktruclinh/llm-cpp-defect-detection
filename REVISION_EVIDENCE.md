@@ -404,3 +404,35 @@ paper quotes; Python's default banker's rounding would print 12 %. A reviewer re
 
 **Release.** The package is tagged `kse2026-camera-ready`, and the paper's Data availability
 statement points at that tag rather than at `main`.
+
+### Full numeric audit
+
+`analysis/audit_paper_numbers.py` transcribes every numeric claim in the paper and recomputes
+it from `data/`, one row per claim, exiting non-zero on any mismatch. It is the last gate
+before tagging.
+
+```
+$ python3 analysis/audit_paper_numbers.py
+...
+checked 87 claims, 0 mismatch(es)
+```
+
+Coverage: Table I campaign sizes; the subject pool (241 records, tiers 19/26/48, pool 93) and
+the 24 directly-callable focal functions; RQ1 per-model non-compilation and all five Table II
+categories; the internal campaign at both granularities; every RQ2 denominator, detection
+count and per-model rate in Table IV; the RQ3 population, split and single-defect
+concentrations; both reliability figures (RQ1 κ = 0.56 on 25 cells, classifier fit 94 %); the
+Arrow and BugsC++ probes; and every robustness arm including the cross-configuration bounds.
+
+Two things this pass turned up, neither of which changes a number in the paper:
+
+- **Table II is sourced from `rq1_final_adjudicated.csv`, not `rq1_final.csv`.** The two differ
+  by one cell, which moves 43/18/15/17/7 to the published 44/17/15/18/6. The README already
+  pointed at the right file; the distinction is now explicit in `CODEBOOK.md`.
+- **Five annotation-tooling scripts do not run against the shipped tree** — `rq1_finalize.py`,
+  `make_adjudication.py`, `make_rq1_audit_html.py`, `make_rq1_labmate_html.py`,
+  `apply_adjudication.py` — because they read audit worksheets that carry free-text annotator
+  reasoning and are deliberately withheld. The README previously cited `rq1_finalize.py` as the
+  source of the 94 % classifier fit, which a reader could not reproduce. That figure is now
+  attributed to `rq1_final.csv` (rows where `clf_code == final_code`, 68 of 72) and is checked
+  by the audit script.

@@ -1,0 +1,92 @@
+defect_id,model,auto_suggest
+fmtlib___fmt@2b7a146fa1,gemini-2.5-flash,Type mismatch / bad conversion / ambiguous overload
+fmtlib___fmt@2b7a146fa1,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@0cc73ebf79,gemini-2.5-flash,Other / uncategorized
+fmtlib___fmt@0cc73ebf79,gemini-2.5-flash,Type mismatch / bad conversion / ambiguous overload
+fmtlib___fmt@0cc73ebf79,gemini-2.5-flash,Malformed C++ syntax (template/generic syntax errors)
+fmtlib___fmt@0cc73ebf79,gpt-5.4-or,static_assert / unsatisfied trait (e.g. type not formattable)
+fmtlib___fmt@0cc73ebf79,gpt-5.4-or,Other / uncategorized
+fmtlib___fmt@0cc73ebf79,gpt-5.4-or,Other / uncategorized
+fmtlib___fmt@0cc73ebf79,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@0cc73ebf79,deepseek-chat,static_assert / unsatisfied trait (e.g. type not formattable)
+fmtlib___fmt@0cc73ebf79,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@0cc73ebf79,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@0cc73ebf79,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@0cc73ebf79,deepseek-chat,static_assert / unsatisfied trait (e.g. type not formattable)
+skypjack___entt@ad5bb5198b,gemini-2.5-flash,Template / overload deduction failure
+skypjack___entt@ad5bb5198b,gemini-2.5-flash,Other / uncategorized
+skypjack___entt@ad5bb5198b,gemini-2.5-flash,static_assert / unsatisfied trait (e.g. type not formattable)
+skypjack___entt@ad5bb5198b,gpt-5.4-or,Other / uncategorized
+skypjack___entt@ad5bb5198b,gpt-5.4-or,Other / uncategorized
+skypjack___entt@ad5bb5198b,gpt-5.4-or,Type mismatch / bad conversion / ambiguous overload
+skypjack___entt@ad5bb5198b,qwen3-coder,Other / uncategorized
+skypjack___entt@ad5bb5198b,qwen3-coder,Other / uncategorized
+skypjack___entt@ad5bb5198b,qwen3-coder,Other / uncategorized
+skypjack___entt@ad5bb5198b,deepseek-chat,Template / overload deduction failure
+skypjack___entt@ad5bb5198b,deepseek-chat,Other / uncategorized
+skypjack___entt@ad5bb5198b,deepseek-chat,Template / overload deduction failure
+skypjack___entt@ad5bb5198b,deepseek-chat,Other / uncategorized
+skypjack___entt@ad5bb5198b,deepseek-chat,Other / uncategorized
+skypjack___entt@ad5bb5198b,deepseek-chat,Other / uncategorized
+fmtlib___fmt@6b7bfed40c,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@cd7202e039,gemini-2.5-flash,Template / overload deduction failure
+fmtlib___fmt@cd7202e039,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@971fb584c3,gemini-2.5-flash,static_assert / unsatisfied trait (e.g. type not formattable)
+fmtlib___fmt@971fb584c3,gemini-2.5-flash,Other / uncategorized
+fmtlib___fmt@971fb584c3,gemini-2.5-flash,Missing include / unknown type
+fmtlib___fmt@971fb584c3,gpt-5.4-or,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@971fb584c3,deepseek-chat,Other / uncategorized
+fmtlib___fmt@971fb584c3,deepseek-chat,Missing include / unknown type
+fmtlib___fmt@971fb584c3,deepseek-chat,Other / uncategorized
+fmtlib___fmt@971fb584c3,deepseek-chat,Other / uncategorized
+fmtlib___fmt@971fb584c3,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@971fb584c3,deepseek-chat,Missing include / unknown type
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+CLIUtils___CLI11@020a21afc6,qwen3-coder,Malformed C++ syntax (template/generic syntax errors)
+CLIUtils___CLI11@020a21afc6,qwen3-coder,Malformed C++ syntax (template/generic syntax errors)
+fmtlib___fmt@611cf0b3c6,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@611cf0b3c6,gemini-2.5-flash,Other / uncategorized
+skypjack___entt@cf0da32fd0,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+skypjack___entt@cf0da32fd0,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+skypjack___entt@cf0da32fd0,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+skypjack___entt@cf0da32fd0,gpt-5.4-or,Other / uncategorized
+skypjack___entt@cf0da32fd0,gpt-5.4-or,Other / uncategorized
+skypjack___entt@cf0da32fd0,gpt-5.4-or,Hallucinated/wrong API (member/function/overload does not exist)
+skypjack___entt@cf0da32fd0,deepseek-chat,Malformed C++ syntax (template/generic syntax errors)
+skypjack___entt@cf0da32fd0,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+skypjack___entt@cf0da32fd0,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+skypjack___entt@cf0da32fd0,deepseek-chat,Other / uncategorized
+skypjack___entt@cf0da32fd0,deepseek-chat,Other / uncategorized
+fmtlib___fmt@279d698e1b,deepseek-chat,"Reference / value-category binding (lvalue/rvalue, const)"
+fmtlib___fmt@6a13464059,gemini-2.5-flash,static_assert / unsatisfied trait (e.g. type not formattable)
+fmtlib___fmt@6a13464059,gemini-2.5-flash,static_assert / unsatisfied trait (e.g. type not formattable)
+fmtlib___fmt@6a13464059,gemini-2.5-flash,static_assert / unsatisfied trait (e.g. type not formattable)
+fmtlib___fmt@6a13464059,qwen3-coder,Other / uncategorized
+fmtlib___fmt@6a13464059,qwen3-coder,static_assert / unsatisfied trait (e.g. type not formattable)
+CLIUtils___CLI11@de215ef978,gemini-2.5-flash,Other / uncategorized
+CLIUtils___CLI11@de215ef978,gemini-2.5-flash,Other / uncategorized
+CLIUtils___CLI11@de215ef978,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@c1d430e61a,gemini-2.5-flash,Other / uncategorized
+fmtlib___fmt@c1d430e61a,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@e6b37b4aff,gpt-5.4-or,Missing include / unknown type
+fmtlib___fmt@e6b37b4aff,gpt-5.4-or,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@e6b37b4aff,gpt-5.4-or,Missing include / unknown type
+fmtlib___fmt@e6b37b4aff,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@e6b37b4aff,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+CLIUtils___CLI11@dcbcb4721d,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+CLIUtils___CLI11@dcbcb4721d,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+CLIUtils___CLI11@dcbcb4721d,gpt-5.4-or,Hallucinated/wrong API (member/function/overload does not exist)
+CLIUtils___CLI11@dcbcb4721d,qwen3-coder,Type mismatch / bad conversion / ambiguous overload
+CLIUtils___CLI11@dcbcb4721d,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,gpt-5.4-or,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,gpt-5.4-or,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,gpt-5.4-or,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,qwen3-coder,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,deepseek-chat,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@c04fb91b03,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@c04fb91b03,deepseek-chat,Template / overload deduction failure
+fmtlib___fmt@287eaab3b2,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)
+fmtlib___fmt@287eaab3b2,gemini-2.5-flash,Hallucinated/wrong API (member/function/overload does not exist)

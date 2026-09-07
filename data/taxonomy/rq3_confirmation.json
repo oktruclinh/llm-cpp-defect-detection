@@ -4,23 +4,23 @@
     "name": "get_id_no_named_arg",
     "defect": "fmtlib___fmt@0cc73ebf79",
     "expect": "DETECTED",
-    "outcome": "detected",
-    "detected": true
+    "outcome": "non_compilable",
+    "detected": false
   },
   {
     "finding": "F1/O4",
     "name": "on_sign_int128",
     "defect": "fmtlib___fmt@6a13464059",
     "expect": "DETECTED",
-    "outcome": "detected",
-    "detected": true
+    "outcome": "non_compilable",
+    "detected": false
   },
   {
     "finding": "F2/O2",
     "name": "write_char_via_format_string",
     "defect": "fmtlib___fmt@287eaab3b2",
     "expect": "NOT detected (invisible)",
-    "outcome": "reached_not_detected",
+    "outcome": "non_compilable",
     "detected": false
   },
   {
@@ -28,7 +28,7 @@
     "name": "write_char_via_format_to_ptr",
     "defect": "fmtlib___fmt@287eaab3b2",
     "expect": "DETECTED (visible)",
-    "outcome": "detected",
-    "detected": true
+    "outcome": "non_compilable",
+    "detected": false
   }
 ]

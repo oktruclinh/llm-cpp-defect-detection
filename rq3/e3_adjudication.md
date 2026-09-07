@@ -3,10 +3,10 @@
 ## 1. Provenance of the annotation records
 
 - `rq3_frozen44.csv` (`/home/truclinh/Thesis/kse2026/study/data/taxonomy/rq3_frozen44.csv`): 44 suites, the analysis set
-- `rq3_coding_sheet.csv`: 47 rows -- 16 buggy-arm, 31 main campaign
+- `rq3_coding_sheet.csv`: 60 rows -- 16 buggy-arm, 44 main campaign
 - `rq3_coder1.csv` / `rq3_coder2.csv`: 47 rows each, 4 disagreements
 
-**These are not the same population.** The shipped per-coder files record the first annotation round: 31 suites from the main campaign plus 16 from the buggy-generation arm that never enter the paper, and they predate the GPT-5.4 campaign. The 13 GPT-5.4 suites in the analysis set were annotated in a second round, so the analysis set is those same 31 main-campaign suites plus 13 new ones. The agreement figure reported in the paper (86.4%, 38/44) belongs to the merged `coder1`/`coder2` columns of `rq3_frozen44.csv`, not to the shipped per-coder files, which show 4 disagreements over a different population and give kappa = 0.80.
+**These are not the same population.** The shipped per-coder files record the first annotation round: 44 suites from the main campaign plus 16 from the buggy-generation arm that never enter the paper, and they predate the GPT-5.4 campaign. The 0 GPT-5.4 suites in the analysis set were annotated in a second round, so the analysis set is those same 44 main-campaign suites plus 0 new ones. The agreement figure reported in the paper (86.4%, 38/44) belongs to the merged `coder1`/`coder2` columns of `rq3_frozen44.csv`, not to the shipped per-coder files, which show 4 disagreements over a different population and give kappa = 0.80.
 
 **Resolved.** `analysis/rq3_reconcile_labels.py` emits the round-2 files the README already referenced but that were never written (`rq3_delta_coder{1,2}.csv`) and a self-contained merged record keyed by (defect, model, run) (`rq3_labels_merged44.csv`), verifies the merge cell by cell against `rq3_frozen44.csv`, and recomputes kappa = 0.72 from shipped files alone.
 
