@@ -312,6 +312,11 @@ text already defers it as future work.
 | Threats (internal validity) | replace "campaigns differ in prompt, compiler, repair" with the measured bounds | E5 |
 | Conclusion | add the Figure 1 caption qualification and the defect-level rate | E1 |
 | Introduction | foreground the three differences from Yang et al. | R2 |
+| Threats | "39 of the 41 RQ3 suites come from fmt"; "8 of the 29 infection and 8 of the 12 propagation" | E4 derived |
+| §IV-D model families | share range 17-37% -> **13-37%** (recomputed on the 41-suite population) | E4 derived |
+| §RQ2 inline CI | 11% (95% CI 7-18%) -> **1.5-25.5%**, matching the cluster-bootstrap convention the table caption declares | E1 |
+| Preamble | delete the unused `\DetectPooled` / `\InternalWall` / `\ReachedMissed` macros, which still carried pre-revision numbers | housekeeping |
+| Data availability | point at the immutable tag `kse2026-camera-ready`, not the branch | release |
 
 ---
 
@@ -329,3 +334,73 @@ text already defers it as future work.
 | `data/results/e5_cross_config.{md,json}` | `analysis/e5_cross_config_probe.py` | repair / compiler / prompt decomposition |
 | `data/results/e5_clang_recompile.csv` | " | per-cell g++ vs clang outcome |
 | `data/results/e5d_probe.{md,jsonl}` | `analysis/e5d_probe_generate.py` | the 12-cell probe |
+| `rq3/e4_derived_numbers.{md,json}` | `analysis/e4_derived_numbers.py` | every quantity the paper derives from the 41-suite population |
+| `data/taxonomy/rq3_delta_coder{1,2}.csv` | `analysis/rq3_reconcile_labels.py` | annotation round 2 (13 GPT-5.4 suites), previously referenced by the README but never written |
+| `data/taxonomy/rq3_labels_merged44.csv` | " | self-contained per-coder record; kappa = 0.72 recomputes from it |
+| `data/taxonomy/rq3_kappa_verification.json` | " | kappa for both populations plus the cell-by-cell merge check |
+
+---
+
+## 9. Traceability defects fixed in the package
+
+Three problems that a reviewer recomputing our figures from the shipped files would have hit.
+All are closed by `analysis/rq3_reconcile_labels.py` plus one file restore.
+
+| defect | symptom | fix |
+|---|---|---|
+| κ not reproducible | `rq3_coder1.csv` / `rq3_coder2.csv` cover annotation **round 1 only** — 47 suites, 16 of them from the buggy-generation arm that is not in the paper — and give **κ = 0.80** over 4 disagreements | `rq3_labels_merged44.csv` now carries the 44-suite record keyed by (defect, model, run), with a `round` column. κ = 0.72 over 6 disagreements recomputes from it directly |
+| files promised but absent | the README referenced `rq3_delta_coder{1,2}.csv` for annotation round 2; they were never written | emitted from the 13 GPT-5.4 rows of `rq3_frozen44.csv`; the merge is verified cell by cell against that file (0 mismatches) |
+| probe evidence dropped | the artifact copy of `rq3_frozen44.csv` had lost the `adjudication_reason` column that the working copy kept | restored; all six resolutions now ship with the reason that settled them |
+
+Round 1 is left exactly as shipped, because the annotation tooling (`apply_adjudication.py`,
+`make_rq3_html.py`, `make_rq3_packet.py`) joins it positionally against
+`rq3_coding_sheet.csv` by row order and would break if it were filtered or reordered.
+`CODEBOOK.md` now states which file backs which number.
+
+Verification, one command:
+
+```
+$ python3 analysis/rq3_reconcile_labels.py
+  analysis set (44):  kappa = 0.720  agreement 86.4%  disagreements 6   <- the published value
+  round-1 file (47):  kappa = 0.796  agreement 91.5%  disagreements 4   <- a different population
+  merge verified against rq3_frozen44.csv: 0 mismatches
+```
+
+---
+
+## 10. Camera-ready verification
+
+Built from `study/paper/ieee/main.tex` with a clean `latexmk -C && latexmk -pdf`:
+**6 pages, 0 errors, 0 overfull vboxes, no oversized overfull hboxes.**
+
+Every edit in §7 was checked against the extracted PDF text, and every superseded number was
+searched for:
+
+| superseded | occurrences in the PDF |
+|---|---|
+| CI 7–18 %, 17 % to 37 %, 68/32, 44/141, 30 infection, 14 propagation, 81 never, 57 %, 31 % | **0** |
+| `[TODO:` / `[VERIFY:` render | **0** |
+
+The five remaining occurrences of the literal "44" are all correct: three read "the 44 suites
+flagged by the whole-suite measurement" (the pre-reclassification population, which the paper
+now names explicitly) and two are the 44 % row of the RQ1 taxonomy table.
+
+Two stale values were found and corrected during this pass rather than merely reported:
+
+- §RQ2 quoted the conditional rate as `11% (95% CI 7--18%)`, a cell-level Wilson interval, while
+  the table caption declares that pooled intervals are defect-cluster bootstraps. It now reads
+  `11% (95% CI 1.5--25.5%)`, which is the bootstrap interval for the same quantity. Quoting the
+  Wilson interval here was exactly the overstated precision Reviewer #3 objected to.
+- §IV-D still carried the model-families share range `17% to 37%`, computed on the 44-suite
+  population. On the 41-suite population it is `13% to 37%` (Gemini 3/24, Qwen 14/38,
+  DeepSeek 12/39, GPT-5.4 12/40).
+
+Also removed: the unused `\DetectPooled`, `\InternalWall` and `\ReachedMissed` macros, which
+were referenced nowhere but still held pre-revision numbers (7–18 %, 126/126, 31 %).
+
+Gemini's share is **3/24 = 12.5 % exactly**. Rounded half up that is 13 %, which is what the
+paper quotes; Python's default banker's rounding would print 12 %. A reviewer recomputing gets
+12.5 %, consistent with 13 % and not with 12 %.
+
+**Release.** The package is tagged `kse2026-camera-ready`, and the paper's Data availability
+statement points at that tag rather than at `main`.
