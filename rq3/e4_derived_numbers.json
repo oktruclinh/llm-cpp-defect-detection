@@ -1,0 +1,90 @@
+{
+  "project_composition": {
+    "pop44": {
+      "CLIUtils": 2,
+      "fmtlib": 42
+    },
+    "pop41": {
+      "CLIUtils": 2,
+      "fmtlib": 39
+    }
+  },
+  "concentration": {
+    "44": {
+      "infection_total": 30,
+      "infection_top": "96c18b26",
+      "infection_top_n": 8,
+      "propagation_total": 14,
+      "propagation_top": "287eaab3",
+      "propagation_top_n": 8
+    },
+    "41": {
+      "infection_total": 29,
+      "infection_top": "96c18b26",
+      "infection_top_n": 8,
+      "propagation_total": 12,
+      "propagation_top": "287eaab3",
+      "propagation_top_n": 8
+    }
+  },
+  "model_families": {
+    "per_model": {
+      "Gemini-2.5-Flash": {
+        "eligible": 24,
+        "n44": 4,
+        "pct44": 17,
+        "n41": 3,
+        "pct41": 13,
+        "pct41_exact": 12.5,
+        "wilson41_pct": [
+          4,
+          31
+        ]
+      },
+      "Qwen3-Coder-30B": {
+        "eligible": 38,
+        "n44": 14,
+        "pct44": 37,
+        "n41": 14,
+        "pct41": 37,
+        "pct41_exact": 36.8,
+        "wilson41_pct": [
+          23,
+          53
+        ]
+      },
+      "DeepSeek-V4-flash": {
+        "eligible": 39,
+        "n44": 13,
+        "pct44": 33,
+        "n41": 12,
+        "pct41": 31,
+        "pct41_exact": 30.8,
+        "wilson41_pct": [
+          19,
+          46
+        ]
+      },
+      "GPT-5.4": {
+        "eligible": 40,
+        "n44": 13,
+        "pct44": 33,
+        "n41": 12,
+        "pct41": 30,
+        "pct41_exact": 30.0,
+        "wilson41_pct": [
+          18,
+          45
+        ]
+      }
+    },
+    "range_pop44": "17% to 37%",
+    "range_pop41": "13% to 37%"
+  },
+  "cross_check": {
+    "eligible_total": 141,
+    "reached_not_caught_41": 41,
+    "never_reached_41": 84,
+    "detections": 16
+  }
+}

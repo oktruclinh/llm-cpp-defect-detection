@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777284-JMMhL9LKHDr7C8eUCNfK",
+ "object": "chat.completion",
+ "created": 1788777284,
+ "model": "qwen/qwen3-coder-30b-a3b-instruct",
+ "provider": "Novita",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <gtest/gtest.h>\n#include <entt/meta/meta.hpp>\n#include <entt/container/dense_map.hpp>\n#include <unordered_map>\n#include <map>\n\nTEST(MetaAssociativeContainerTest, ConstructWithDenseMap) {\n    entt::dense_map<int, std::string> container;\n    \n    // Test that we can construct meta_associative_container with dense_map\n    entt::meta_associative_container meta_container(container);\n    \n    // Verify key_only_container flag is set correctly\n    EXPECT_FALSE(meta_container.key_only_container);\n    \n    // Verify function pointers are properly initialized\n    EXPECT_NE(meta_container.key_type_fn, nullptr);\n    EXPECT_NE(meta_container.mapped_type_fn, nullptr);\n    EXPECT_NE(meta_container.value_type_fn, nullptr);\n}\n\nTEST(MetaAssociativeContainerTest, ConstructWithUnorderedMap) {\n    std::unordered_map<int, double> container;\n    \n    // Test that we can construct meta_associative_container with unordered_map\n    entt::meta_associative_container meta_container(container);\n    \n    // Verify key_only_container flag is set correctly\n    EXPECT_FALSE(meta_container.key_only_container);\n    \n    // Verify function pointers are properly initialized\n    EXPECT_NE(meta_container.key_type_fn, nullptr);\n    EXPECT_NE(meta_container.mapped_type_fn, nullptr);\n    EXPECT_NE(meta_container.value_type_fn, nullptr);\n}\n\nTEST(MetaAssociativeContainerTest, ConstructWithMap) {\n    std::map<std::string, int> container;\n    \n    // Test that we can construct meta_associative_container with map\n    entt::meta_associative_container meta_container(container);\n    \n    // Verify key_only_container flag is set correctly\n    EXPECT_FALSE(meta_container.key_only_container);\n    \n    // Verify function pointers are properly initialized\n    EXPECT_NE(meta_container.key_type_fn, nullptr);\n    EXPECT_NE(meta_container.mapped_type_fn, nullptr);\n    EXPECT_NE(meta_container.value_type_fn, nullptr);\n}\n\nTEST(MetaAssociativeContainerTest, KeyOnlyContainerDetection) {\n    // Test with a container that should be detected as key-only\n    // Note: This requires a specific container type that satisfies key-only criteria\n    \n    // For now, just verify the constructor doesn't crash with various containers\n    std::map<int, int> regular_map;\n    entt::dense_map<int, int> dense_map;\n    \n    entt::meta_associative_container meta_map(regular_map);\n    entt::meta_associative_container meta_dense(dense_map);\n    \n    // Both should have key_only_container = false since they have both key and mapped types\n    EXPECT_FALSE(meta_map.key_only_container);\n    EXPECT_FALSE(meta_dense.key_only_container);\n}\n\nTEST(MetaAssociativeContainerTest, EmptyContainerConstruction) {\n    // Test construction with empty containers\n    std::unordered_map<float, bool> empty_unordered_map;\n    std::map<std::string, int> empty_map;\n    \n    entt::meta_associative_container meta_unordered(empty_unordered_map);\n    entt::meta_associative_container meta_map(empty_map);\n    \n    // Should still initialize all members properly\n    EXPECT_FALSE(meta_unordered.key_only_container);\n    EXPECT_FALSE(meta_map.key_only_container);\n    \n    EXPECT_NE(meta_unordered.key_type_fn, nullptr);\n    EXPECT_NE(meta_unordered.mapped_type_fn, nullptr);\n    EXPECT_NE(meta_unordered.value_type_fn, nullptr);\n    \n    EXPECT_NE(meta_map.key_type_fn, nullptr);\n    EXPECT_NE(meta_map.mapped_type_fn, nullptr);\n    EXPECT_NE(meta_map.value_type_fn, nullptr);\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 423,
+  "completion_tokens": 731,
+  "total_tokens": 1154,
+  "cost": 0.00022698,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00022698,
+   "upstream_inference_prompt_cost": 2.961e-05,
+   "upstream_inference_completions_cost": 0.00019737
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

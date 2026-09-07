@@ -1,0 +1,239 @@
+{
+  "main_tierA": {
+    "cells": 228,
+    "defects": 19,
+    "models": [
+      "gemini-2.5-flash",
+      "qwen3-coder",
+      "deepseek-chat",
+      "gpt-5.4-or"
+    ],
+    "runs_per_defect_model": 3,
+    "temperature": 0.2,
+    "prompt": "minimal (focal function source + path)",
+    "condition": "fixed",
+    "detected_defects": [
+      "020a21afc6",
+      "611cf0b3c6",
+      "6a13464059",
+      "96c18b26c2"
+    ],
+    "per_model_detections": {
+      "gemini-2.5-flash": 1,
+      "qwen3-coder": 2,
+      "deepseek-chat": 5,
+      "gpt-5.4-or": 8
+    }
+  },
+  "arm_temperature": {
+    "script": "aggregate/sensitivity_temp.py",
+    "data": "data/results/sensitivity_temp.jsonl",
+    "design": "4 fmt defects x 3 temperatures x 3 runs x 1 model (deepseek-chat) = 36 cells",
+    "model": "deepseek-chat (deepseek-v4-flash) only",
+    "project_coverage": "fmt only -- CLI11 and entt absent",
+    "defects": [
+      "6a13464059",
+      "611cf0b3c6",
+      "287eaab3b2",
+      "0cc73ebf79"
+    ],
+    "selection_rule_verbatim": "sample spanning outcomes seen at 0.2 (2 detected, 1 reached-not-detected, 1 non-compilable)",
+    "selection_is_outcome_dependent": true,
+    "overlap_with_detectable4": [
+      "611cf0b3c6",
+      "6a13464059"
+    ],
+    "overlap_rate": "2/4",
+    "tierA_base_rate": "4/19",
+    "provenance": {
+      "0.0": "newly generated (model config deepseek-chat-t00)",
+      "0.2": "REUSED from the main Tier A campaign cache (no new generation)",
+      "0.8": "newly generated (model config deepseek-chat-t08)"
+    },
+    "arm02_reproduces_main_campaign_cells": true,
+    "deepseek_detections_in_subset": 5,
+    "deepseek_detections_in_full_arm": 5,
+    "subset_captures_all_detections": true,
+    "fisher_p_subset_vs_remainder": 0.0002,
+    "per_temperature": {
+      "0.0": {
+        "cells": 12,
+        "detections": 4,
+        "non_compilable": 3,
+        "per_defect": {
+          "0cc73eb": "0/3",
+          "287eaab": "0/3",
+          "611cf0b": "3/3",
+          "6a13464": "1/3"
+        },
+        "outcomes": {
+          "reached_not_detected": 5,
+          "detected": 4,
+          "non_compilable": 3
+        }
+      },
+      "0.2": {
+        "cells": 12,
+        "detections": 5,
+        "non_compilable": 3,
+        "per_defect": {
+          "0cc73eb": "0/3",
+          "287eaab": "0/3",
+          "611cf0b": "3/3",
+          "6a13464": "2/3"
+        },
+        "outcomes": {
+          "detected": 5,
+          "reached_not_detected": 4,
+          "non_compilable": 3
+        }
+      },
+      "0.8": {
+        "cells": 12,
+        "detections": 2,
+        "non_compilable": 3,
+        "per_defect": {
+          "0cc73eb": "0/3",
+          "287eaab": "0/3",
+          "611cf0b": "2/3",
+          "6a13464": "0/3"
+        },
+        "outcomes": {
+          "reached_not_detected": 7,
+          "detected": 2,
+          "non_compilable": 3
+        }
+      }
+    },
+    "bookkeeping_error": false
+  },
+  "arm_generation_source": {
+    "script": "aggregate/run_tier.py --condition {fixed,buggy}",
+    "data": [
+      "data/results/rows_tierA_deepseek-chat_fixed.jsonl",
+      "data/results/rows_tierA_deepseek-chat_buggy.jsonl"
+    ],
+    "design": "19 Tier A defects x 3 runs x 1 model (deepseek-chat), paired on defect and run",
+    "model": "deepseek-chat only",
+    "projects": "fmt, CLI11, entt (full Tier A)",
+    "temperature": 0.2,
+    "arms": {
+      "fixed": {
+        "cells": 57,
+        "defects": 19,
+        "compiled": 42,
+        "compile_rate": 74,
+        "detections": 5,
+        "detected_defects": [
+          "611cf0b3c6",
+          "6a13464059"
+        ]
+      },
+      "buggy": {
+        "cells": 57,
+        "defects": 19,
+        "compiled": 38,
+        "compile_rate": 67,
+        "detections": 3,
+        "detected_defects": [
+          "611cf0b3c6"
+        ]
+      }
+    },
+    "note": "This arm is NOT outcome-selected: it covers the full Tier A defect set."
+  },
+  "arm_prompt_paired": {
+    "script": "scripts/campaign_api_rich.py",
+    "data": "data/results/campaign_api_rich.jsonl",
+    "design": "24 defects x 2 prompts x 1 run x 1 model (deepseek-chat) = 48 cells",
+    "model": "deepseek-chat only",
+    "MIXED_BENCHMARK_WARNING": "the 24 defects are fmt(14) from Defects4C + cpp-peglib(10) from BugsC++ -- the paper does not disclose that this arm crosses the two benchmarks",
+    "arms": {
+      "api_rich": {
+        "cells": 24,
+        "defects": 24,
+        "projects": {
+          "fmtlib___fmt": 14,
+          "yhirose___cpp_peglib": 10
+        },
+        "compiled": 15,
+        "detections": 2,
+        "detected_defects": [
+          "287eaab3b2",
+          "611cf0b3c6"
+        ]
+      },
+      "guided": {
+        "cells": 24,
+        "defects": 24,
+        "projects": {
+          "fmtlib___fmt": 14,
+          "yhirose___cpp_peglib": 10
+        },
+        "compiled": 14,
+        "detections": 2,
+        "detected_defects": [
+          "611cf0b3c6",
+          "6a13464059"
+        ]
+      }
+    }
+  },
+  "arm_prompt_threeway": {
+    "script": "scripts/ablation_a.py (+ a third 'guided' variant)",
+    "source_of_record": "study/FINDINGS.md C11 (console log: study/logs/api_rich.log)",
+    "design": "14 fmt defects x 3 prompts x 1 run x 1 model (deepseek-chat) = 14 cells per prompt",
+    "model": "deepseek-chat only",
+    "projects": "fmt only",
+    "compile_rate": {
+      "minimal": "71%",
+      "context_rich": "42%",
+      "guided": "78%"
+    },
+    "detections": {
+      "minimal": "2/14",
+      "context_rich": "2/14",
+      "guided": "2/14"
+    },
+    "note": "per-cell rows for the three-way arm are not in data/results/; only the aggregate is recorded in FINDINGS.md C11"
+  },
+  "arm_model_families": {
+    "data": [
+      "data/results/rows_tierA_gemini-2.5-flash_fixed.jsonl",
+      "data/results/rows_tierA_qwen3-coder_fixed.jsonl",
+      "data/results/rows_tierA_deepseek-chat_fixed.jsonl",
+      "data/results/rows_tierA_gpt-5.4-or_fixed.jsonl"
+    ],
+    "design": "19 Tier A defects x 4 models x 3 runs = 228 cells (the main campaign itself)",
+    "per_model": {
+      "gemini-2.5-flash": {
+        "cells": 57,
+        "eligible": 24,
+        "detections": 1,
+        "reached_not_caught": 4,
+        "reached_not_caught_share": 17
+      },
+      "qwen3-coder": {
+        "cells": 57,
+        "eligible": 38,
+        "detections": 2,
+        "reached_not_caught": 14,
+        "reached_not_caught_share": 37
+      },
+      "deepseek-chat": {
+        "cells": 57,
+        "eligible": 39,
+        "detections": 5,
+        "reached_not_caught": 13,
+        "reached_not_caught_share": 33
+      },
+      "gpt-5.4-or": {
+        "cells": 57,
+        "eligible": 40,
+        "detections": 8,
+        "reached_not_caught": 13,
+        "reached_not_caught_share": 32
+      }
+    }
+  }
+}

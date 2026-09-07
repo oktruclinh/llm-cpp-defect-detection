@@ -1,0 +1,92 @@
+defect_id,project,condition,category,first_error
+fmtlib___fmt@2b7a146fa1,fmtlib___fmt,fixed,Type mismatch / bad conversion / ambiguous overload,
+fmtlib___fmt@2b7a146fa1,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Type mismatch / bad conversion / ambiguous overload,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Malformed C++ syntax (template/generic syntax errors),expected primary-expression before ‘catch’
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: Cannot format argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#formatting-us
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: Cannot format argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#formatting-us
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,buggy,Hallucinated/wrong API (member/function/overload does not exist),‘format_to_n’ is not a member of ‘fmt’
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,buggy,Template / overload deduction failure,
+fmtlib___fmt@0cc73ebf79,fmtlib___fmt,buggy,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: formatting of non-void pointers is disallowed
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Template / overload deduction failure,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: hash function must be invocable with an argument of key type
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Type mismatch / bad conversion / ambiguous overload,invalid conversion from ‘const void*’ to ‘void*’ [-fpermissive]
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Template / overload deduction failure,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,fixed,Template / overload deduction failure,
+skypjack___entt@ad5bb5198b,skypjack___entt,buggy,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,buggy,Other / uncategorized,
+skypjack___entt@ad5bb5198b,skypjack___entt,buggy,Other / uncategorized,
+fmtlib___fmt@6b7bfed40c,fmtlib___fmt,buggy,Hallucinated/wrong API (member/function/overload does not exist),‘max_size’ is not a member of ‘std::allocator_traits<std::allocator<char> >’
+fmtlib___fmt@cd7202e039,fmtlib___fmt,fixed,Template / overload deduction failure,"no type named ‘type’ in ‘struct std::enable_if<false, int>’"
+fmtlib___fmt@cd7202e039,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),"‘struct fmt::v9::detail::arg_data<fmt::v9::detail::value<fmt::v9::basic_format_context<fmt::v9::appender, char> >, char, 1, 0>’ has no member named ‘named_args’"
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: formatting of non-void pointers is disallowed
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,Missing include / unknown type,fmt/compile.h: No such file or directory
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘runtime’ is not a member of ‘fmt’
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,Missing include / unknown type,‘fmt::basic_context<wchar_t>::formatter_type<fmt::basic_arg<fmt::basic_context<wchar_t> > > f’ has incomplete type
+fmtlib___fmt@971fb584c3,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@971fb584c3,fmtlib___fmt,buggy,Other / uncategorized,
+fmtlib___fmt@971fb584c3,fmtlib___fmt,buggy,Hallucinated/wrong API (member/function/overload does not exist),no matching function for call to ‘fmt::basic_context<char>::basic_context(fmt::format_args&)’
+fmtlib___fmt@971fb584c3,fmtlib___fmt,buggy,Missing include / unknown type,‘fmt::basic_context<wchar_t>::formatter_type<fmt::basic_arg<fmt::basic_context<wchar_t> > > f’ has incomplete type
+fmtlib___fmt@96c18b26c2,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘class std::__new_allocator<wchar_t>’ has no member named ‘_M_max_size’
+CLIUtils___CLI11@020a21afc6,CLIUtils___CLI11,fixed,Malformed C++ syntax (template/generic syntax errors),expected primary-expression
+CLIUtils___CLI11@020a21afc6,CLIUtils___CLI11,fixed,Malformed C++ syntax (template/generic syntax errors),expected primary-expression
+fmtlib___fmt@611cf0b3c6,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),"‘class std::__new_allocator<std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<void>, __gnu_cxx::_S_atomic> >’ has no member named ‘_M_max_size’"
+fmtlib___fmt@611cf0b3c6,fmtlib___fmt,fixed,Other / uncategorized,
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘forward_as_meta’ is not a member of ‘entt’
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Hallucinated/wrong API (member/function/overload does not exist),"‘class std::__new_allocator<std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<void>, __gnu_cxx::_S_atomic> >’ has no member named ‘_M_max_size’"
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Hallucinated/wrong API (member/function/overload does not exist),"‘class std::__new_allocator<std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<void>, __gnu_cxx::_S_atomic> >’ has no member named ‘_M_max_size’"
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Other / uncategorized,
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Other / uncategorized,"invalid ‘static_cast’ from type ‘std::remove_reference<std::pair<const int, {anonymous}::boxed_int>&>::type’ {aka ‘std::pair<const int, {anonymous}::boxed_int>’"
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘meta_any_cast’ is not a member of ‘entt’; did you mean ‘meta_any’?
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Malformed C++ syntax (template/generic syntax errors),expected primary-expression before ‘>’ token
+skypjack___entt@cf0da32fd0,skypjack___entt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘class entt::meta_any’ has no member named ‘as_ref’
+skypjack___entt@cf0da32fd0,skypjack___entt,buggy,Hallucinated/wrong API (member/function/overload does not exist),‘forward_as_meta’ is not a member of ‘entt’
+skypjack___entt@cf0da32fd0,skypjack___entt,buggy,Other / uncategorized,
+skypjack___entt@cf0da32fd0,skypjack___entt,buggy,Other / uncategorized,
+fmtlib___fmt@279d698e1b,fmtlib___fmt,buggy,"Reference / value-category binding (lvalue/rvalue, const)",cannot bind non-const lvalue reference of type ‘std::__cxx11::basic_string<char>&’ to an rvalue of type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+fmtlib___fmt@6a13464059,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: Formatting of non-void pointers is disallowed.
+fmtlib___fmt@6a13464059,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: Cannot format an argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#udt
+fmtlib___fmt@6a13464059,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: Formatting of non-void pointers is disallowed.
+fmtlib___fmt@6a13464059,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@6a13464059,fmtlib___fmt,fixed,static_assert / unsatisfied trait (e.g. type not formattable),static assertion failed: Cannot format an argument. To make type T formattable provide a formatter<T> specialization: https://fmt.dev/latest/api.html#udt
+CLIUtils___CLI11@de215ef978,CLIUtils___CLI11,fixed,Other / uncategorized,
+CLIUtils___CLI11@de215ef978,CLIUtils___CLI11,fixed,Other / uncategorized,
+CLIUtils___CLI11@de215ef978,CLIUtils___CLI11,buggy,Hallucinated/wrong API (member/function/overload does not exist),‘class CLI::Option’ has no member named ‘callback’; did you mean ‘CLI::callback_t CLI::Option::callback_’? (not accessible from this context)
+fmtlib___fmt@c1d430e61a,fmtlib___fmt,fixed,Other / uncategorized,
+fmtlib___fmt@c1d430e61a,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘formatter’ was not declared in this scope; did you mean ‘fmt::v5::formatter’?
+fmtlib___fmt@e6b37b4aff,fmtlib___fmt,fixed,Missing include / unknown type,fmt/xchar.h: No such file or directory
+fmtlib___fmt@e6b37b4aff,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘fmt::detail’ has not been declared
+fmtlib___fmt@e6b37b4aff,fmtlib___fmt,fixed,Missing include / unknown type,fmt/xchar.h: No such file or directory
+fmtlib___fmt@e6b37b4aff,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘fmt::detail’ has not been declared
+fmtlib___fmt@e6b37b4aff,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘fmt::detail’ has not been declared
+CLIUtils___CLI11@dcbcb4721d,CLIUtils___CLI11,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘class CLI::Option’ has no member named ‘set_config_option_key’
+CLIUtils___CLI11@dcbcb4721d,CLIUtils___CLI11,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘class CLI::App’ has no member named ‘parse_config’; did you mean ‘_parse_config’?
+CLIUtils___CLI11@dcbcb4721d,CLIUtils___CLI11,fixed,Hallucinated/wrong API (member/function/overload does not exist),"‘class CLI::Option’ has no member named ‘default_flag_values’; did you mean ‘std::vector<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<"
+CLIUtils___CLI11@dcbcb4721d,CLIUtils___CLI11,fixed,Type mismatch / bad conversion / ambiguous overload,
+CLIUtils___CLI11@dcbcb4721d,CLIUtils___CLI11,buggy,Hallucinated/wrong API (member/function/overload does not exist),‘class CLI::App’ has no member named ‘config_to_stream’; did you mean ‘config_to_str’?
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘runtime’ is not a member of ‘fmt’
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,fixed,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,buggy,Hallucinated/wrong API (member/function/overload does not exist),‘class std::__cxx11::basic_string<char>’ has no member named ‘resize’
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,buggy,Template / overload deduction failure,
+fmtlib___fmt@c04fb91b03,fmtlib___fmt,buggy,Template / overload deduction failure,
+fmtlib___fmt@287eaab3b2,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘class std::__cxx11::basic_string<char>’ has no member named ‘resize’
+fmtlib___fmt@287eaab3b2,fmtlib___fmt,fixed,Hallucinated/wrong API (member/function/overload does not exist),‘appender’ is not a member of ‘fmt’

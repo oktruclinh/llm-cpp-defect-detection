@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777469-1fFkxa46No7z4PEgJMS2",
+ "object": "chat.completion",
+ "created": 1788777469,
+ "model": "google/gemini-2.5-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <fmt/core.h>\n#include <gtest/gtest.h>\n\n// Helper function to create a format string with named arguments\ntemplate <typename... Args>\nstd::string format_with_named_args(fmt::string_view format_str, Args&&... args) {\n  return fmt::format(format_str, std::forward<Args>(args)...);\n}\n\nTEST(FormatArgStoreTest, GetIdNormalCases) {\n  // Test with a single named argument\n  auto f1 = fmt::format(\"Hello {name}\", fmt::arg(\"name\", \"World\"));\n  // The actual value of id is implementation-dependent, but it should be non-negative\n  // and consistent for the same named argument within the same format call.\n  // We can't directly call get_id, so we'll test its effect through formatting.\n  // This test primarily ensures that named arguments are correctly processed\n  // and can be retrieved.\n\n  // To test get_id, we need to access the internal `format_arg_store` or similar\n  // structure. Since the prompt explicitly states to \"Do NOT call internal/implementation\n  // symbols\", and `get_id` is a method of `format_arg_store`, which is an internal\n  // detail, we cannot directly test `get_id` as a standalone function.\n\n  // The `get_id` function is used internally by `fmt::format` to resolve named arguments.\n  // Therefore, the best way to test its *behavior* through the public API is to\n  // ensure that named arguments are correctly substituted in the output.\n  // If `get_id` were buggy, named arguments would likely not be resolved correctly.\n\n  EXPECT_EQ(fmt::format(\"Hello {name}!\", fmt::arg(\"name\", \"World\")), \"Hello World!\");\n  EXPECT_EQ(fmt::format(\"{greeting}, {name}!\", fmt::arg(\"name\", \"Alice\"), fmt::arg(\"greeting\", \"Hi\")), \"Hi, Alice!\");\n  EXPECT_EQ(fmt::format(\"{0}, {name}!\", 123, fmt::arg(\"name\", \"Bob\")), \"123, Bob!\");\n}\n\nTEST(FormatArgStoreTest, GetIdMultipleNamedArgs) {\n  EXPECT_EQ(fmt::format(\"First: {first}, Second: {second}\", fmt::arg(\"first\", 1), fmt::arg(\"second\", 2)), \"First: 1, Second: 2\");\n  EXPECT_EQ(fmt::format(\"{a} {b} {c}\", fmt::arg(\"a\", 'A'), fmt::arg(\"b\", 'B'), fmt::arg(\"c\", 'C')), \"A B C\");\n}\n\nTEST(FormatArgStoreTest, GetIdMixedPositionalAndNamedArgs) {\n  EXPECT_EQ(fmt::format(\"{0} {name} {1}\", 10, 20, fmt::arg(\"name\", \"Middle\")), \"10 Middle 20\");\n  EXPECT_EQ(fmt::format(\"{name} {0}\", fmt::arg(\"name\", \"Start\"), 30), \"Start 30\");\n  EXPECT_EQ(fmt::format(\"{0} {name}\", 40, fmt::arg(\"name\", \"End\")), \"40 End\");\n}\n\nTEST(FormatArgStoreTest, GetIdDuplicateNamedArgs) {\n  // When duplicate named arguments are provided, the first one should be used.\n  // The behavior of `get_id` for duplicates is to return the ID of the first match.\n  // This is implicitly tested by the formatting output.\n  EXPECT_EQ(fmt::format(\"{name}\", fmt::arg(\"name\", \"First\"), fmt::arg(\"name\", \"Second\")), \"First\");\n  EXPECT_EQ(fmt::format(\"{name} {name}\", fmt::arg(\"name\", \"First\"), fmt::arg(\"name\", \"Second\")), \"First First\");\n}\n\nTEST(FormatArgStoreTest, GetIdNonExistentNamedArg) {\n  // If a named argument is requested in the format string but not provided,\n  // fmt::format will throw an exception. This indirectly tests that `get_id`\n  // would not find the argument and lead to this error path.\n  EXPECT_THROW(fmt::format(\"Hello {nonexistent_name}\"), fmt::format_error);\n  EXPECT_THROW(fmt::format(\"{0} {nonexistent_name}\", 123), fmt::format_error);\n}\n\nTEST(FormatArgStoreTest, GetIdNoNamedArgsProvided) {\n  // If no named arguments are provided, `has_named_args()` would be false,\n  // and `get_id` would return -1. This is implicitly tested by ensuring\n  // that formatting without named args works as expected.\n  EXPECT_EQ(fmt::format(\"Hello World\"), \"Hello World\");\n  EXPECT_EQ(fmt::format(\"Value: {0}\", 123), \"Value: 123\");\n}\n\nTEST(FormatArgStoreTest, GetIdEmptyNamedArgName) {\n  // An empty string as a named argument name is not typically supported\n  // and would likely lead to a format_error if used in the format string.\n  // If `get_id` were called with an empty name, it should not match anything.\n  // We test the public API behavior.\n  EXPECT_THROW(fmt::format(\"Hello {}\", fmt::arg(\"\", \"World\")), fmt::format_error);\n  EXPECT_THROW(fmt::format(\"Hello {name}\", fmt::arg(\"\", \"World\")), fmt::format_error); // The empty name arg is ignored\n}\n\nTEST(FormatArgStoreTest, GetIdLongNamedArgName) {\n  std::string long_name(200, 'a');\n  std::string format_str = fmt::format(\"Hello {{{}}}\", long_name);\n  EXPECT_EQ(fmt::format(format_str, fmt::arg(long_name.c_str(), \"World\")), \"Hello World\");\n}\n\nTEST(FormatArgStoreTest, GetIdSpecialCharactersInNamedArgName) {\n  // Named argument names can contain alphanumeric characters and underscores.\n  // Other special characters might lead to parsing errors in the format string.\n  // We test valid cases.\n  EXPECT_EQ(fmt::format(\"Value: {my_arg_1}\", fmt::arg(\"my_arg_1\", 123)), \"Value: 123\");\n  EXPECT_EQ(fmt::format(\"Value: {__arg__}\", fmt::arg(\"__arg__\", \"test\")), \"Value: test\");\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 475,
+  "completion_tokens": 1478,
+  "total_tokens": 1953,
+  "cost": 0.0038375,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0038375,
+   "upstream_inference_prompt_cost": 0.0001425,
+   "upstream_inference_completions_cost": 0.003695
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

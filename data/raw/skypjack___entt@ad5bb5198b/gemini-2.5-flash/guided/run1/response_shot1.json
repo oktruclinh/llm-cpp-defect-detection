@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777301-Hs0ZnS0zVvrXHV8tuEPM",
+ "object": "chat.completion",
+ "created": 1788777301,
+ "model": "google/gemini-2.5-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <gtest/gtest.h>\n#include <map>\n#include <set>\n#include <string>\n#include <type_traits>\n#include <unordered_map>\n#include <vector>\n\n#include <entt/core/type_info.hpp>\n#include <entt/meta/container.hpp>\n#include <entt/meta/factory.hpp>\n#include <entt/meta/meta.hpp>\n#include <entt/meta/resolve.hpp>\n#include <entt/meta/type_traits.hpp>\n\n// Helper struct to register types for testing\nstruct MyKey {};\nstruct MyValue {};\n\n// Define a simple key-only container for testing\nnamespace entt {\ntemplate<>\nstruct is_key_only_meta_associative_container<std::set<int>> : std::true_type {};\n} // namespace entt\n\nTEST(MetaAssociativeContainerTest, KeyOnlyContainerDetection) {\n    // Register types to make them discoverable by EnTT's meta system\n    entt::meta<int>().type(\"int\");\n    entt::meta<std::set<int>>().type(\"std::set<int>\");\n    entt::meta<std::map<int, std::string>>().type(\"std::map<int, std::string>\");\n\n    // Test a key-only container (std::set<int>)\n    std::set<int> set_container;\n    auto meta_set_type = entt::resolve<std::set<int>>();\n    ASSERT_TRUE(meta_set_type);\n    ASSERT_TRUE(meta_set_type.is_associative_container());\n\n    auto meta_set_container = meta_set_type.as_associative_container();\n    ASSERT_TRUE(meta_set_container);\n    ASSERT_TRUE(meta_set_container.key_only()); // Should be true due to specialization\n\n    // Test a key-value container (std::map<int, std::string>)\n    std::map<int, std::string> map_container;\n    auto meta_map_type = entt::resolve<std::map<int, std::string>>();\n    ASSERT_TRUE(meta_map_type);\n    ASSERT_TRUE(meta_map_type.is_associative_container());\n\n    auto meta_map_container = meta_map_type.as_associative_container();\n    ASSERT_TRUE(meta_map_container);\n    ASSERT_FALSE(meta_map_container.key_only()); // Should be false by default\n}\n\nTEST(MetaAssociativeContainerTest, KeyAndValueTypeRetrieval) {\n    // Register types for testing\n    entt::meta<int>().type(\"int\");\n    entt::meta<std::string>().type(\"std::string\");\n    entt::meta<MyKey>().type(\"MyKey\");\n    entt::meta<MyValue>().type(\"MyValue\");\n    entt::meta<std::map<int, std::string>>().type(\"std::map<int, std::string>\");\n    entt::meta<std::unordered_map<MyKey, MyValue>>().type(\"std::unordered_map<MyKey, MyValue>\");\n    entt::meta<std::set<int>>().type(\"std::set<int>\");\n\n    // Test std::map<int, std::string>\n    std::map<int, std::string> map_container;\n    auto meta_map_type = entt::resolve<std::map<int, std::string>>();\n    ASSERT_TRUE(meta_map_type);\n    auto meta_map_container = meta_map_type.as_associative_container();\n    ASSERT_TRUE(meta_map_container);\n\n    ASSERT_EQ(meta_map_container.key_type(), entt::resolve<int>());\n    ASSERT_EQ(meta_map_container.mapped_type(), entt::resolve<std::string>());\n    // For key-value containers, value_type is std::pair<const Key, Value>\n    ASSERT_EQ(meta_map_container.value_type(), entt::resolve<std::pair<const int, std::string>>());\n\n    // Test std::unordered_map<MyKey, MyValue>\n    std::unordered_map<MyKey, MyValue> unordered_map_container;\n    auto meta_unordered_map_type = entt::resolve<std::unordered_map<MyKey, MyValue>>();\n    ASSERT_TRUE(meta_unordered_map_type);\n    auto meta_unordered_map_container = meta_unordered_map_type.as_associative_container();\n    ASSERT_TRUE(meta_unordered_map_container);\n\n    ASSERT_EQ(meta_unordered_map_container.key_type(), entt::resolve<MyKey>());\n    ASSERT_EQ(meta_unordered_map_container.mapped_type(), entt::resolve<MyValue>());\n    ASSERT_EQ(meta_unordered_map_container.value_type(), entt::resolve<std::pair<const MyKey, MyValue>>());\n\n    // Test std::set<int> (key-only container)\n    std::set<int> set_container;\n    auto meta_set_type = entt::resolve<std::set<int>>();\n    ASSERT_TRUE(meta_set_type);\n    auto meta_set_container = meta_set_type.as_associative_container();\n    ASSERT_TRUE(meta_set_container);\n\n    ASSERT_EQ(meta_set_container.key_type(), entt::resolve<int>());\n    ASSERT_EQ(meta_set_container.mapped_type(), entt::meta_type{}); // Key-only containers have no mapped type\n    ASSERT_EQ(meta_set_container.value_type(), entt::resolve<int>()); // For key-only, value_type is Key\n}\n\nTEST(MetaAssociativeContainerTest, NonAssociativeContainer) {\n    // Register a non-associative container type\n    entt::meta<std::vector<int>>().type(\"std::vector<int>\");\n\n    auto meta_vector_type = entt::resolve<std::vector<int>>();\n    ASSERT_TRUE(meta_vector_type);\n    ASSERT_FALSE(meta_vector_type.is_associative_container());\n\n    // Attempting to get as_associative_container should return an invalid handle\n    auto meta_vector_container = meta_vector_type.as_associative_container();\n    ASSERT_FALSE(meta_vector_container);\n\n    // Calling methods on an invalid handle should return default/invalid values\n    ASSERT_FALSE(meta_vector_container.key_only());\n    ASSERT_EQ(meta_vector_container.key_type(), entt::meta_type{});\n    ASSERT_EQ(meta_vector_container.mapped_type(), entt::meta_type{});\n    ASSERT_EQ(meta_vector_container.value_type(), entt::meta_type{});\n}\n\nTEST(MetaAssociativeContainerTest, UnregisteredTypes) {\n    // Do not register MyKey or MyValue\n    struct UnregisteredKey {};\n    struct UnregisteredValue {};\n\n    // Register the map type, but not its key/value types\n    entt::meta<std::map<UnregisteredKey, UnregisteredValue>>().type(\"std::map<UnregisteredKey, UnregisteredValue>\");\n\n    std::map<UnregisteredKey, UnregisteredValue> container;\n    auto meta_type = entt::resolve<std::map<UnregisteredKey, UnregisteredValue>>();\n    ASSERT_TRUE(meta_type);\n    ASSERT_TRUE(meta_type.is_associative_container());\n\n    auto meta_container = meta_type.as_associative_container();\n    ASSERT_TRUE(meta_container);\n\n    // The key_type and mapped_type should still be resolved correctly,\n    // even if the types themselves aren't explicitly registered with entt::meta<T>().type(\"Name\")\n    // because entt::resolve<T>() can still find their type_info.\n    ASSERT_EQ(meta_container.key_type(), entt::resolve<UnregisteredKey>());\n    ASSERT_EQ(meta_container.mapped_type(), entt::resolve<UnregisteredValue>());\n    ASSERT_EQ(meta_container.value_type(), entt::resolve<std::pair<const UnregisteredKey, UnregisteredValue>>());\n\n    // Verify that the resolved types are indeed 'valid' meta_types,\n    // even if they don't have a user-defined name or properties.\n    ASSERT_TRUE(meta_container.key_type());\n    ASSERT_TRUE(meta_container.mapped_type());\n    ASSERT_TRUE(meta_container.value_type());\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 475,
+  "completion_tokens": 2014,
+  "total_tokens": 2489,
+  "cost": 0.0051775,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0051775,
+   "upstream_inference_prompt_cost": 0.0001425,
+   "upstream_inference_completions_cost": 0.005035
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,186 @@
+{
+  "internal_campaign": {
+    "pre_audit_defects": 23,
+    "pre_audit_cells": 138,
+    "reclassified_to_public": [
+      "nanomsg___nng@6a59b15fba",
+      "nanomsg___nng@e3b8f31b04"
+    ],
+    "reclassified_cells": 12,
+    "reclassified_cells_that_compiled": 2,
+    "audited_internal_defects": 21,
+    "audited_internal_cells": 126,
+    "cells_that_compiled": 0,
+    "defects_with_any_compiling_suite": 0,
+    "VERIFIED_zero_of_21": true,
+    "per_project_defects": {
+      "KhronosGroup___SPIRV-Tools": 5,
+      "danmar___cppcheck": 15,
+      "nanomsg___nng": 1
+    },
+    "per_attempt": "0/126",
+    "per_attempt_wilson_pct": [
+      0.0,
+      3.0
+    ],
+    "per_defect": "0/21",
+    "per_defect_wilson_pct": [
+      0.0,
+      15.5
+    ],
+    "models": [
+      "deepseek-chat",
+      "gemini-2.5-flash",
+      "qwen3-coder"
+    ],
+    "runs": [
+      1,
+      2
+    ]
+  },
+  "tierA": {
+    "cells": 228,
+    "defects": 19,
+    "eligible_suites": 141,
+    "detections": 16,
+    "detected_defects": [
+      "020a21afc6",
+      "611cf0b3c6",
+      "6a13464059",
+      "96c18b26c2"
+    ],
+    "VERIFIED_four_of_19": true,
+    "paper_claimed_detectable4": [
+      "020a21afc6",
+      "611cf0b3c6",
+      "6a13464059",
+      "96c18b26c2"
+    ],
+    "per_attempt_conditional": {
+      "point": "16/141",
+      "pct": 11.3,
+      "wilson_pct": [
+        7.1,
+        17.6
+      ],
+      "cluster_bootstrap_pct": {
+        "ci_low_pct": 1.5,
+        "ci_high_pct": 25.5,
+        "median_pct": 10.6,
+        "n_resamples": 10000,
+        "n_degenerate_dropped": 0,
+        "n_clusters": 19
+      }
+    },
+    "per_attempt_unconditional": {
+      "point": "16/228",
+      "pct": 7.0,
+      "wilson_pct": [
+        4.4,
+        11.1
+      ],
+      "cluster_bootstrap_pct": {
+        "ci_low_pct": 0.9,
+        "ci_high_pct": 15.8,
+        "median_pct": 6.6,
+        "n_resamples": 10000,
+        "n_degenerate_dropped": 0,
+        "n_clusters": 19
+      }
+    },
+    "per_defect": {
+      "point": "4/19",
+      "pct": 21.1,
+      "wilson_pct": [
+        8.5,
+        43.3
+      ]
+    }
+  },
+  "per_model": {
+    "gemini-2.5-flash": {
+      "detections": 1,
+      "cells": 57,
+      "wilson_pct": [
+        0.3,
+        9.3
+      ],
+      "cluster_bootstrap_pct": {
+        "ci_low_pct": 0.0,
+        "ci_high_pct": 5.3,
+        "median_pct": 1.8,
+        "n_resamples": 10000,
+        "n_degenerate_dropped": 0,
+        "n_clusters": 19
+      },
+      "defects_detected": [
+        "611cf0b3c6"
+      ],
+      "per_defect": "1/19"
+    },
+    "qwen3-coder": {
+      "detections": 2,
+      "cells": 57,
+      "wilson_pct": [
+        1.0,
+        11.9
+      ],
+      "cluster_bootstrap_pct": {
+        "ci_low_pct": 0.0,
+        "ci_high_pct": 10.5,
+        "median_pct": 3.5,
+        "n_resamples": 10000,
+        "n_degenerate_dropped": 0,
+        "n_clusters": 19
+      },
+      "defects_detected": [
+        "611cf0b3c6"
+      ],
+      "per_defect": "1/19"
+    },
+    "deepseek-chat": {
+      "detections": 5,
+      "cells": 57,
+      "wilson_pct": [
+        3.8,
+        18.9
+      ],
+      "cluster_bootstrap_pct": {
+        "ci_low_pct": 0.0,
+        "ci_high_pct": 22.8,
+        "median_pct": 8.8,
+        "n_resamples": 10000,
+        "n_degenerate_dropped": 0,
+        "n_clusters": 19
+      },
+      "defects_detected": [
+        "611cf0b3c6",
+        "6a13464059"
+      ],
+      "per_defect": "2/19"
+    },
+    "gpt-5.4-or": {
+      "detections": 8,
+      "cells": 57,
+      "wilson_pct": [
+        7.3,
+        25.3
+      ],
+      "cluster_bootstrap_pct": {
+        "ci_low_pct": 3.5,
+        "ci_high_pct": 28.1,
+        "median_pct": 14.0,
+        "n_resamples": 10000,
+        "n_degenerate_dropped": 0,
+        "n_clusters": 19
+      },
+      "defects_detected": [
+        "020a21afc6",
+        "611cf0b3c6",
+        "6a13464059",
+        "96c18b26c2"
+      ],
+      "per_defect": "4/19"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@0cc73ebf79",
+  "project": "fmtlib___fmt",
+  "model": "gemini-2.5-flash",
+  "model_version": "google/gemini-2.5-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-09-07T17:38:10",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": false,
+  "tokens_in": 3215,
+  "tokens_out": 3717,
+  "test_path": "/home/truclinh/Thesis/kse2026/artifact/data/raw/fmtlib___fmt@0cc73ebf79/gemini-2.5-flash/guided/run1/test.cpp",
+  "compile_err_tail": "T_EQ(fmt::format(\"{a} {b} {c}\", fmt::arg(\"a\", 'A'), fmt::arg(\"b\", 'B'), fmt::arg(\"c\", 'C\")), \"A B C\");\n      |   ^~~~~~~~~\n/tmp/tmpya_ps6ni/t.cpp:35:12: error: expected \u2018}\u2019 at end of input\n   35 |   EXPECT_EQ(fmt::format(\"{a} {b} {c}\", fmt::arg(\"a\", 'A'), fmt::arg(\"b\", 'B'), fmt::arg(\"c\", 'C\")), \"A B C\");\n      |            ^\n/tmp/tmpya_ps6ni/t.cpp:33:50: note: to match this \u2018{\u2019\n   33 | TEST(FormatArgStoreTest, GetIdMultipleNamedArgs) {\n      |                                                  ^\n"
+}

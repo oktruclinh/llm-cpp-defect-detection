@@ -1,0 +1,17 @@
+{
+  "defect_id": "CLIUtils___CLI11@020a21afc6",
+  "project": "CLIUtils___CLI11",
+  "model": "deepseek-v4-flash-or",
+  "model_version": "deepseek/deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-09-07T17:29:45",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 1388,
+  "tokens_out": 6703,
+  "test_path": "/home/truclinh/Thesis/kse2026/artifact/data/raw/CLIUtils___CLI11@020a21afc6/deepseek-v4-flash-or/guided/run1/test.cpp",
+  "compile_err_tail": ""
+}

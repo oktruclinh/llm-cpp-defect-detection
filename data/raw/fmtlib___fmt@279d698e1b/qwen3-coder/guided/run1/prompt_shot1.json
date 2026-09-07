@@ -1,0 +1,10 @@
+[
+ {
+  "role": "system",
+  "content": "You are an expert C++ developer who writes high-quality unit tests with the GoogleTest framework. You write tests that both maximize coverage and contain meaningful assertions that would FAIL if the code under test is wrong."
+ },
+ {
+  "role": "user",
+  "content": "Write a complete, self-contained GoogleTest source file (.cpp) that unit-tests the following focal function from the project `fmtlib___fmt`.\n\nFocal file: `include/fmt/format.h`\nFocal function (taken from the FIXED, correct version of the code):\n```cpp\n                              make_checked(p, s.size()));\n    }\n    if (prefix_size != 0) p[-1] = static_cast<Char>('-');\n    using iterator = remove_reference_t<decltype(reserve(out, 0))>;\n    auto data = buffer.data();\n    out = write_padded<align::right>(out, specs, size, size, [=](iterator it) {\n      return copy_str<Char>(data, data + size, it);\n    });\n```\n\nRequirements:\n- Exercise the focal function's behavior through the library's PUBLIC API; include the appropriate public header(s) of `fmtlib___fmt`.\n- Include `<gtest/gtest.h>`. Do NOT write a `main()` (a gtest main is linked separately).\n- Cover normal cases AND edge cases (boundaries, empty/zero, error paths) relevant to this function.\n- Assertions must encode the CORRECT expected behavior so that a buggy implementation would make a test fail. Avoid assertions that merely echo whatever the code returns.\n- Output ONLY the .cpp file inside a single ```cpp code block. No prose.\n\nIMPORTANT for compilation: test the focal function's behavior ONLY through the project's PUBLIC, top-level API (e.g. `fmt::format`, public library functions in the project's public headers). Do NOT call internal/implementation symbols — anything in a `detail`/`internal` namespace, or with prefixes like `nni_`, `*_impl` — these are not part of the public API and will not link. Include the correct PUBLIC header of the project."
+ }
+]

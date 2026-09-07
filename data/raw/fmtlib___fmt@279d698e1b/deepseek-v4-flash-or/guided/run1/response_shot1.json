@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777494-B6g4lZJnzYMQbEFxnBNj",
+ "object": "chat.completion",
+ "created": 1788777494,
+ "model": "deepseek/deepseek-v4-flash",
+ "provider": "DigitalOcean",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <gtest/gtest.h>\n#include <fmt/format.h>\n#include <string>\n#include <vector>\n#include <limits>\n\n// Tests for the formatter's handling of negative numbers with custom width/precision\n// This exercises the focal function's path where a negative number is formatted\n// with padding, and the '-' prefix is placed correctly\n\nTEST(NegativeNumberFormatTest, DefaultFormatNegativeInt) {\n    // Basic negative integer formatting\n    EXPECT_EQ(fmt::format(\"{}\", -42), \"-42\");\n    EXPECT_EQ(fmt::format(\"{}\", -1), \"-1\");\n    EXPECT_EQ(fmt::format(\"{}\", -1000), \"-1000\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntWithWidth) {\n    // Negative number with width - should be right-aligned with '-' prefix before padding\n    EXPECT_EQ(fmt::format(\"{:5}\", -42),  \"  -42\");\n    EXPECT_EQ(fmt::format(\"{:6}\", -42), \"   -42\");\n    EXPECT_EQ(fmt::format(\"{:3}\", -42), \"-42\");  // width equals size\n    EXPECT_EQ(fmt::format(\"{:2}\", -42), \"-42\");  // width less than size\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntZeroWidth) {\n    // Zero width should not affect output\n    EXPECT_EQ(fmt::format(\"{:0}\", -42), \"-42\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntWithPrecision) {\n    // Precision can increase number width including sign\n    EXPECT_EQ(fmt::format(\"{:.5}\", -42),   \"-00042\");\n    EXPECT_EQ(fmt::format(\"{:.3}\", -42),   \"-042\");\n    EXPECT_EQ(fmt::format(\"{:.2}\", -42),   \"-42\");\n    EXPECT_EQ(fmt::format(\"{:.1}\", -42),   \"-42\");  // precision less than digits\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntWithWidthAndPrecision) {\n    // Both width and precision - width includes sign\n    EXPECT_EQ(fmt::format(\"{:8.5}\", -42),  \"  -00042\");\n    EXPECT_EQ(fmt::format(\"{:8.3}\", -42),  \"    -042\");\n    EXPECT_EQ(fmt::format(\"{:5.3}\", -42),  \" -042\");\n    EXPECT_EQ(fmt::format(\"{:4.3}\", -42),  \"-042\");  // width equals padded size\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntLeftAligned) {\n    // Left alignment - '-' prefix stays at leftmost, padding on right\n    EXPECT_EQ(fmt::format(\"{:<5}\", -42), \"-42  \");\n    EXPECT_EQ(fmt::format(\"{:<6}\", -42), \"-42   \");\n    EXPECT_EQ(fmt::format(\"{:<3}\", -42), \"-42\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntCenterAligned) {\n    // Center alignment with sign\n    EXPECT_EQ(fmt::format(\"{:^5}\", -42), \" -42 \");\n    EXPECT_EQ(fmt::format(\"{:^6}\", -42), \" -42  \");\n    EXPECT_EQ(fmt::format(\"{:^7}\", -42), \"  -42  \");\n}\n\nTEST(NegativeNumberFormatTest, NegativeLongLong) {\n    // Larger integer types\n    EXPECT_EQ(fmt::format(\"{}\", -100000000000LL), \"-100000000000\");\n    EXPECT_EQ(fmt::format(\"{:20}\", -1234567890123LL), \"    -1234567890123\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeDouble) {\n    // Floating point negative - width includes sign\n    EXPECT_EQ(fmt::format(\"{}\", -3.14), \"-3.14\");\n    EXPECT_EQ(fmt::format(\"{:10}\", -3.14), \"     -3.14\");\n    EXPECT_EQ(fmt::format(\"{:10.2}\", -3.14), \"     -3.14\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeDoubleWithPrecision) {\n    // Precision controlled double\n    EXPECT_EQ(fmt::format(\"{:.1}\", -3.14), \"-3.1\");\n    EXPECT_EQ(fmt::format(\"{:.3}\", -3.14), \"-3.140\");\n    EXPECT_EQ(fmt::format(\"{:8.1}\", -3.14), \"    -3.1\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeDoubleZeroPrecision) {\n    // Zero precision rounding\n    EXPECT_EQ(fmt::format(\"{:.0f}\", -3.9), \"-4\");\n    EXPECT_EQ(fmt::format(\"{:.0f}\", -3.1), \"-3\");\n}\n\nTEST(NegativeNumberFormatTest, MinimumIntNegative) {\n    // Minimum integer value (special case in some representations)\n    EXPECT_EQ(fmt::format(\"{}\", std::numeric_limits<int>::min()), \"-2147483648\");\n    EXPECT_EQ(fmt::format(\"{:15}\", std::numeric_limits<int>::min()), \"    -2147483648\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeZeroFloat) {\n    // Negative zero formatting\n    EXPECT_EQ(fmt::format(\"{}\", -0.0), \"-0.0\");\n    EXPECT_EQ(fmt::format(\"{:5}\", -0.0), \" -0.0\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntWithFillChar) {\n    // Custom fill character\n    EXPECT_EQ(fmt::format(\"{:*>5}\", -42), \"**-42\");\n    EXPECT_EQ(fmt::format(\"{:*<5}\", -42), \"-42**\");\n    EXPECT_EQ(fmt::format(\"{:*^5}\", -42), \"-42**\");  // center with odd width\n    EXPECT_EQ(fmt::format(\"{:*^6}\", -42), \"*-42**\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeIntWithSignOption) {\n    // Sign options - '-' is default for negatives\n    EXPECT_EQ(fmt::format(\"{:+}\", 42),  \"+42\");\n    EXPECT_EQ(fmt::format(\"{:+}\", -42), \"-42\");\n    EXPECT_EQ(fmt::format(\"{: }\", 42),  \" 42\");\n    EXPECT_EQ(fmt::format(\"{: }\", -42), \"-42\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeBinaryFormat) {\n    // Alternate formats - binary\n    // Correct behavior is a bit tricky: sign should prefix the representation\n    EXPECT_EQ(fmt::format(\"{:b}\", -1),  \"-1\");\n    EXPECT_EQ(fmt::format(\"{:#b}\", -1), \"-0b1\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeHexFormat) {\n    EXPECT_EQ(fmt::format(\"{:x}\", -255),  \"-ff\");\n    EXPECT_EQ(fmt::format(\"{:#x}\", -255), \"-0xff\");\n}\n\nTEST(NegativeNumberFormatTest, NegativeOctalFormat) {\n    EXPECT_EQ(fmt::format(\"{:o}\", -8),  \"-10\");\n    EXPECT_EQ(fmt::format(\"{:#o}\", -8), \"-010\");\n}\n\nTEST(NegativeNumberFormatTest, VeryLargeWidth) {\n    // Large width should still work (just produces large string)\n    // This tests that the implementation doesn't have overflow issues with sizes\n    std::string result = fmt::format(\"{:100}\", -42);\n    EXPECT_EQ(result.size(), 100);\n    EXPECT_EQ(result.substr(97), \" -42\");  // last 4 chars should be right-aligned negative\n    EXPECT_EQ(result[0], ' ');  // first char should be padding\n}\n\nTEST(NegativeNumberFormatTest, NegativeNumberInTable) {\n    // Formatting multiple values (pathological combination)\n    std::vector<int> values = {1, -2, 3, -4, 5};\n    std::string result;\n    for (auto v : values) {\n        result += fmt::format(\"{:5}\", v);\n    }\n    EXPECT_EQ(result, \"    1   -2    3   -4    5\");\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 437,
+  "completion_tokens": 1740,
+  "total_tokens": 2177,
+  "cost": 0.0003219923,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0003219923,
+   "upstream_inference_prompt_cost": 2.96723e-05,
+   "upstream_inference_completions_cost": 0.00029232
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

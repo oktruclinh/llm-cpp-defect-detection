@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "frozen44_source": "/home/truclinh/Thesis/kse2026/study/data/taxonomy/rq3_frozen44.csv",
+    "coding_sheet_rows": 47,
+    "coding_sheet_composition": {
+      "main campaign": 31,
+      "buggy-arm": 16
+    },
+    "per_coder_files_rows": {
+      "rq3_coder1.csv": 47,
+      "rq3_coder2.csv": 47
+    },
+    "per_coder_disagreements": 4,
+    "in_round1_not_in_frozen44": [],
+    "in_frozen44_not_in_round1": [
+      [
+        "CLIUtils___CLI11@020a21afc6",
+        "gpt-5.4-or",
+        "3"
+      ],
+      [
+        "fmtlib___fmt@287eaab3b2",
+        "gpt-5.4-or",
+        "1"
+      ],
+      [
+        "fmtlib___fmt@287eaab3b2",
+        "gpt-5.4-or",
+        "2"
+      ],
+      [
+        "fmtlib___fmt@287eaab3b2",
+        "gpt-5.4-or",
+        "3"
+      ],
+      [
+        "fmtlib___fmt@6a13464059",
+        "gpt-5.4-or",
+        "2"
+      ],
+      [
+        "fmtlib___fmt@6a13464059",
+        "gpt-5.4-or",
+        "3"
+      ],
+      [
+        "fmtlib___fmt@971fb584c3",
+        "gpt-5.4-or",
+        "1"
+      ],
+      [
+        "fmtlib___fmt@971fb584c3",
+        "gpt-5.4-or",
+        "2"
+      ],
+      [
+        "fmtlib___fmt@cd7202e039",
+        "gpt-5.4-or",
+        "1"
+      ],
+      [
+        "fmtlib___fmt@cd7202e039",
+        "gpt-5.4-or",
+        "3"
+      ],
+      [
+        "fmtlib___fmt@fc6e0fe992",
+        "gpt-5.4-or",
+        "1"
+      ],
+      [
+        "fmtlib___fmt@fc6e0fe992",
+        "gpt-5.4-or",
+        "2"
+      ],
+      [
+        "fmtlib___fmt@fc6e0fe992",
+        "gpt-5.4-or",
+        "3"
+      ]
+    ],
+    "WARNING": "rq3_coder1.csv / rq3_coder2.csv hold the FIRST annotation round only (47 suites, including 16 from the buggy-generation arm that never enter the paper). They show 4 disagreements and give kappa = 0.80. The paper's kappa is computed on the coder1/coder2 columns of rq3_frozen44.csv, which merge round 1 with a second round covering the 13 GPT-5.4 suites and show 6 disagreements. The two must not be confused.",
+    "RESOLVED_BY": "analysis/rq3_reconcile_labels.py now emits the missing round-2 files (rq3_delta_coder{1,2}.csv) and a self-contained merged record (rq3_labels_merged44.csv) from which kappa = 0.72 recomputes directly."
+  },
+  "kappa_pre_adjudication": {
+    "n": 44,
+    "kappa": 0.72,
+    "observed_agreement": 0.8636,
+    "expected_agreement": 0.5124,
+    "n_disagreements": 6,
+    "coder1_distribution": {
+      "O4": 28,
+      "O2": 16
+    },
+    "coder2_distribution": {
+      "O4": 28,
+      "O2": 13,
+      "O3": 3
+    }
+  },
+  "weak_assertion_O3": {
+    "proposed_by_coder1": 0,
+    "proposed_by_coder2": 3,
+    "suites_with_any_O3_proposal": 3,
+    "of_which_inside_the_disagreements": 3,
+    "distinct_defects": [
+      "fmtlib___fmt@96c18b26c2"
+    ],
+    "surviving_in_final_labels": 0,
+    "all_O3_are_disagreements": true
+  },
+  "adjudication": {
+    "n_disagreements": 6,
+    "n_unique_defects_probed": 3,
+    "probed_defects": [
+      "fmtlib___fmt@96c18b26c2",
+      "fmtlib___fmt@971fb584c3",
+      "fmtlib___fmt@c04fb91b03"
+    ],
+    "probe_files": [
+      "data/taxonomy/rq3_probe_96c18b26c2.json",
+      "data/taxonomy/rq3_probe_971fb584.json",
+      "data/taxonomy/rq3_probe_c04fb91b.json"
+    ],
+    "final_overturned_coder1": 2,
+    "final_overturned_coder2": 4,
+    "final_introduced_a_new_label": 0,
+    "agreed_suites_untouched": 38,
+    "labels_changed_by_probe_relative_to_annotation": "6/12"
+  }
+}

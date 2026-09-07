@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@279d698e1b",
+  "project": "fmtlib___fmt",
+  "model": "qwen3-coder",
+  "model_version": "qwen/qwen3-coder-30b-a3b-instruct",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-09-07T17:42:43",
+  "temperature": 0.2,
+  "shots": 2,
+  "compiled_on_fixed": true,
+  "tokens_in": 1900,
+  "tokens_out": 1971,
+  "test_path": "/home/truclinh/Thesis/kse2026/artifact/data/raw/fmtlib___fmt@279d698e1b/qwen3-coder/guided/run1/test.cpp",
+  "compile_err_tail": ""
+}

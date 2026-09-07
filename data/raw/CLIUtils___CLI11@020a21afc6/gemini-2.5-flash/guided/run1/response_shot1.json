@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777045-3wvpxBn1yVyUG2dNIiZF",
+ "object": "chat.completion",
+ "created": 1788777045,
+ "model": "google/gemini-2.5-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <gtest/gtest.h>\n#include <CLI/CLI.hpp> // Public API header\n\n// This test suite focuses on the behavior of the internal parsing logic\n// that extracts the command line and program name, which is indirectly\n// exercised when CLI11 processes command line arguments.\n// The focal function's logic is about stripping the program name from\n// the command line string. We'll test this by providing various\n// command line strings to CLI::App::parse and observing the effect\n// on argument parsing.\n\nTEST(CLIValidatorsTest, StripProgramNameNormalCase) {\n    CLI::App app{\"Test App\"};\n    std::string arg1_val;\n    app.add_option(\"--arg1\", arg1_val, \"Argument 1\");\n\n    // Simulate a command line where the program name is present\n    std::vector<std::string> args = {\"./my_program\", \"--arg1\", \"value1\"};\n    app.parse(args);\n\n    // The program name should be stripped, and --arg1 should be parsed correctly\n    ASSERT_EQ(arg1_val, \"value1\");\n}\n\nTEST(CLIValidatorsTest, StripProgramNameNoProgramName) {\n    CLI::App app{\"Test App\"};\n    std::string arg1_val;\n    app.add_option(\"--arg1\", arg1_val, \"Argument 1\");\n\n    // Simulate a command line where the program name is NOT explicitly present\n    // (e.g., when called from a shell script or directly with arguments)\n    std::vector<std::string> args = {\"--arg1\", \"value1\"};\n    app.parse(args);\n\n    // The parsing should still work correctly, as if the first element was the program name\n    ASSERT_EQ(arg1_val, \"value1\");\n}\n\nTEST(CLIValidatorsTest, StripProgramNameEmptyCommandLine) {\n    CLI::App app{\"Test App\"};\n    // No options added, just parsing an empty command line\n\n    std::vector<std::string> args = {}; // Empty command line\n    // Parsing an empty command line should not throw an error and should result in no options being set.\n    ASSERT_NO_THROW(app.parse(args));\n}\n\nTEST(CLIValidatorsTest, StripProgramNameOnlyProgramName) {\n    CLI::App app{\"Test App\"};\n    // No options added\n\n    std::vector<std::string> args = {\"./my_program\"}; // Only program name\n    // Parsing only the program name should not throw an error.\n    ASSERT_NO_THROW(app.parse(args));\n}\n\nTEST(CLIValidatorsTest, StripProgramNameProgramNameWithSpaces) {\n    CLI::App app{\"Test App\"};\n    std::string arg1_val;\n    app.add_option(\"--arg1\", arg1_val, \"Argument 1\");\n\n    // Simulate a command line where the program name has spaces (unlikely for argv[0],\n    // but possible if the commandline string is constructed differently internally)\n    // The internal logic should still correctly identify the first token as the program name.\n    std::vector<std::string> args = {\"/path/to/my program\", \"--arg1\", \"value1\"};\n    app.parse(args);\n\n    ASSERT_EQ(arg1_val, \"value1\");\n}\n\nTEST(CLIValidatorsTest, StripProgramNameMultipleArguments) {\n    CLI::App app{\"Test App\"};\n    std::string arg1_val;\n    int arg2_val = 0;\n    app.add_option(\"--arg1\", arg1_val, \"Argument 1\");\n    app.add_option(\"--arg2\", arg2_val, \"Argument 2\");\n\n    std::vector<std::string> args = {\"./app\", \"--arg1\", \"val1\", \"--arg2\", \"123\"};\n    app.parse(args);\n\n    ASSERT_EQ(arg1_val, \"val1\");\n    ASSERT_EQ(arg2_val, 123);\n}\n\nTEST(CLIValidatorsTest, StripProgramNameSubcommand) {\n    CLI::App app{\"Test App\"};\n    auto sub = app.add_subcommand(\"sub\", \"A subcommand\");\n    std::string sub_arg_val;\n    sub->add_option(\"--sub_arg\", sub_arg_val, \"Subcommand argument\");\n\n    std::vector<std::string> args = {\"./main_app\", \"sub\", \"--sub_arg\", \"sub_value\"};\n    app.parse(args);\n\n    ASSERT_TRUE(sub->parsed());\n    ASSERT_EQ(sub_arg_val, \"sub_value\");\n}\n\nTEST(CLIValidatorsTest, StripProgramNameNoArgumentsAfterProgramName) {\n    CLI::App app{\"Test App\"};\n    // No options added\n\n    std::vector<std::string> args = {\"./my_program\"};\n    ASSERT_NO_THROW(app.parse(args));\n    // No arguments should be parsed, and no errors should occur.\n}\n\nTEST(CLIValidatorsTest, StripProgramNameWithPositionalArguments) {\n    CLI::App app{\"Test App\"};\n    std::string pos_arg_val;\n    app.add_option(\"pos_arg\", pos_arg_val, \"Positional argument\");\n\n    std::vector<std::string> args = {\"./my_program\", \"positional_value\"};\n    app.parse(args);\n\n    ASSERT_EQ(pos_arg_val, \"positional_value\");\n}\n\nTEST(CLIValidatorsTest, StripProgramNameWithMixedArguments) {\n    CLI::App app{\"Test App\"};\n    std::string opt_arg_val;\n    std::string pos_arg_val;\n    app.add_option(\"--opt_arg\", opt_arg_val, \"Optional argument\");\n    app.add_option(\"pos_arg\", pos_arg_val, \"Positional argument\");\n\n    std::vector<std::string> args = {\"./my_program\", \"--opt_arg\", \"opt_value\", \"pos_value\"};\n    app.parse(args);\n\n    ASSERT_EQ(opt_arg_val, \"opt_value\");\n    ASSERT_EQ(pos_arg_val, \"pos_value\");\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 409,
+  "completion_tokens": 1421,
+  "total_tokens": 1830,
+  "cost": 0.0036752,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0036752,
+   "upstream_inference_prompt_cost": 0.0001227,
+   "upstream_inference_completions_cost": 0.0035525
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

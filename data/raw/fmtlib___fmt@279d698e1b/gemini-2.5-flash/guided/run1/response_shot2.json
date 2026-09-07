@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777785-MQh8PQ57LpMKRG7H67ME",
+ "object": "chat.completion",
+ "created": 1788777785,
+ "model": "google/gemini-2.5-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <fmt/format.h>\n#include <gtest/gtest.h>\n\n// Helper function to format an integer with specific specs and return the result as a string.\ntemplate <typename T>\nstd::string format_integer(T value, fmt::string_view format_str) {\n  // Use fmt::format directly with the format string, as fmt::runtime is for dynamic format strings\n  // that are not known at compile time. Here, format_str is known at compile time for the format() call.\n  return fmt::format(format_str, value);\n}\n\nTEST(FmtFormatIntegerTest, BasicFormatting) {\n  // Test basic integer formatting\n  EXPECT_EQ(format_integer(123, \"{}\"), \"123\");\n  EXPECT_EQ(format_integer(-456, \"{}\"), \"-456\");\n  EXPECT_EQ(format_integer(0, \"{}\"), \"0\");\n}\n\nTEST(FmtFormatIntegerTest, WidthAndAlignment) {\n  // Test width and alignment\n  EXPECT_EQ(format_integer(123, \"{:5}\"), \"  123\");\n  EXPECT_EQ(format_integer(123, \"{:<5}\"), \"123  \");\n  EXPECT_EQ(format_integer(123, \"{:^5}\"), \" 123 \");\n  EXPECT_EQ(format_integer(-123, \"{:5}\"), \" -123\");\n  EXPECT_EQ(format_integer(-123, \"{:<5}\"), \"-123 \");\n  EXPECT_EQ(format_integer(-123, \"{:^5}\"), \"-123 \"); // Centered negative number\n  EXPECT_EQ(format_integer(0, \"{:5}\"), \"    0\");\n}\n\nTEST(FmtFormatIntegerTest, FillCharacter) {\n  // Test fill character\n  EXPECT_EQ(format_integer(123, \"{:*<5}\"), \"123**\");\n  EXPECT_EQ(format_integer(123, \"{:*>5}\"), \"**123\");\n  EXPECT_EQ(format_integer(123, \"{:*^5}\"), \"*123*\");\n  EXPECT_EQ(format_integer(-123, \"{:*^6}\"), \"*-123*\");\n  EXPECT_EQ(format_integer(-123, \"{:*>6}\"), \"**-123\");\n}\n\nTEST(FmtFormatIntegerTest, SignSpecifier) {\n  // Test sign specifiers\n  EXPECT_EQ(format_integer(123, \"{:+}\"), \"+123\");\n  EXPECT_EQ(format_integer(-123, \"{:+}\"), \"-123\");\n  EXPECT_EQ(format_integer(0, \"{:+}\"), \"+0\");\n\n  EXPECT_EQ(format_integer(123, \"{: }\"), \" 123\");\n  EXPECT_EQ(format_integer(-123, \"{: }\"), \"-123\");\n  EXPECT_EQ(format_integer(0, \"{: }\"), \" 0\");\n\n  EXPECT_EQ(format_integer(123, \"{:-}\"), \"123\"); // Default for positive\n  EXPECT_EQ(format_integer(-123, \"{:-}\"), \"-123\");\n  EXPECT_EQ(format_integer(0, \"{:-}\"), \"0\");\n}\n\nTEST(FmtFormatIntegerTest, ZeroPadding) {\n  // Test zero padding\n  EXPECT_EQ(format_integer(123, \"{:05}\"), \"00123\");\n  EXPECT_EQ(format_integer(-123, \"{:05}\"), \"-0123\");\n  EXPECT_EQ(format_integer(0, \"{:05}\"), \"00000\");\n  EXPECT_EQ(format_integer(123, \"{:01}\"), \"123\"); // Width less than number of digits\n}\n\nTEST(FmtFormatIntegerTest, CombinedSpecs) {\n  // Test combined specifiers\n  EXPECT_EQ(format_integer(123, \"{:0=+6}\"), \"+00123\");\n  EXPECT_EQ(format_integer(-123, \"{:0= 6}\"), \"-00123\");\n  EXPECT_EQ(format_integer(42, \"{:*>+8}\"), \"***+0042\");\n  EXPECT_EQ(format_integer(-42, \"{:*> 8}\"), \"***-0042\");\n}\n\nTEST(FmtFormatIntegerTest, LargeNumbers) {\n  // Test with large numbers (long long)\n  EXPECT_EQ(format_integer(123456789012345LL, \"{}\"), \"123456789012345\");\n  EXPECT_EQ(format_integer(-98765432109876LL, \"{}\"), \"-98765432109876\");\n  EXPECT_EQ(format_integer(std::numeric_limits<long long>::max(), \"{}\"), \"9223372036854775807\");\n  EXPECT_EQ(format_integer(std::numeric_limits<long long>::min(), \"{}\"), \"-9223372036854775808\");\n}\n\nTEST(FmtFormatIntegerTest, UnsignedNumbers) {\n  // Test unsigned integers\n  EXPECT_EQ(format_integer(123U, \"{}\"), \"123\");\n  EXPECT_EQ(format_integer(0U, \"{}\"), \"0\");\n  EXPECT_EQ(format_integer(std::numeric_limits<unsigned int>::max(), \"{}\"), \"4294967295\");\n  EXPECT_EQ(format_integer(std::numeric_limits<unsigned long long>::max(), \"{}\"), \"18446744073709551615\");\n}\n\nTEST(FmtFormatIntegerTest, PrecisionSpecifierIgnoredForIntegers) {\n  // Precision specifier is ignored for integers, but should not cause errors.\n  EXPECT_EQ(format_integer(123, \"{:.2}\"), \"123\");\n  EXPECT_EQ(format_integer(123, \"{:5.2}\"), \"  123\");\n}\n\nTEST(FmtFormatIntegerTest, AlternateFormIgnoredForDecimal) {\n  // Alternate form (#) is ignored for decimal integers, but should not cause errors.\n  EXPECT_EQ(format_integer(123, \"{:#}\"), \"123\");\n  EXPECT_EQ(format_integer(123, \"{:#5}\"), \"  123\");\n}\n\nTEST(FmtFormatIntegerTest, NegativeWidth) {\n  // Negative width is not standard and typically results in an error or is ignored.\n  // fmtlib handles it by making it positive.\n  EXPECT_EQ(format_integer(123, \"{:-5}\"), \"123  \"); // Equivalent to {:<5}\n  EXPECT_EQ(format_integer(123, \"{:--5}\"), \"123  \"); // Equivalent to {:<5}\n}\n\nTEST(FmtFormatIntegerTest, EmptyFormatString) {\n  // Empty format string should just convert to string\n  EXPECT_EQ(format_integer(123, \"{}\"), \"123\");\n  EXPECT_EQ(format_integer(-123, \"{}\"), \"-123\");\n  EXPECT_EQ(format_integer(0, \"{}\"), \"0\");\n}\n\nTEST(FmtFormatIntegerTest, CustomFillWithZeroPadding) {\n  // Custom fill character with zero padding is not allowed and should throw an error.\n  // However, the focal function is about writing the padded output, not parsing the format string.\n  // We test valid combinations that reach the focal function.\n  // Zero padding implies '0' as fill char and right alignment, and sign handling.\n  EXPECT_EQ(format_integer(123, \"{:05}\"), \"00123\");\n  EXPECT_EQ(format_integer(-123, \"{:05}\"), \"-0123\");\n  EXPECT_EQ(format_integer(123, \"{:0=+6}\"), \"+00123\");\n  EXPECT_EQ(format_integer(-123, \"{:0= 6}\"), \"-00123\");\n}\n\nTEST(FmtFormatIntegerTest, MaxWidth) {\n  // Test with a very large width to ensure buffer handling\n  std::string expected_output(1000, ' ');\n  expected_output += \"123\";\n  EXPECT_EQ(format_integer(123, \"{:1003}\"), expected_output);\n\n  expected_output = std::string(999, ' ');\n  expected_output += \"-123\";\n  EXPECT_EQ(format_integer(-123, \"{:1003}\"), expected_output);\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2532,
+  "completion_tokens": 2086,
+  "total_tokens": 4618,
+  "cost": 0.0059746,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0059746,
+   "upstream_inference_prompt_cost": 0.0007596,
+   "upstream_inference_completions_cost": 0.005215
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

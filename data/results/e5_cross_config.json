@@ -1,0 +1,73 @@
+{
+  "A_repair_budget": {
+    "per_model": {
+      "gemini-2.5-flash": {
+        "cells": 57,
+        "compiled_with_repair": 26,
+        "compiled_zero_repair": 17,
+        "pct_with_repair": 46,
+        "pct_zero_repair": 30,
+        "delta_points": 16
+      },
+      "qwen3-coder": {
+        "cells": 57,
+        "compiled_with_repair": 48,
+        "compiled_zero_repair": 30,
+        "pct_with_repair": 84,
+        "pct_zero_repair": 53,
+        "delta_points": 32
+      },
+      "deepseek-chat": {
+        "cells": 57,
+        "compiled_with_repair": 42,
+        "compiled_zero_repair": 28,
+        "pct_with_repair": 74,
+        "pct_zero_repair": 49,
+        "delta_points": 25
+      },
+      "gpt-5.4-or": {
+        "cells": 57,
+        "compiled_with_repair": 40,
+        "compiled_zero_repair": 27,
+        "pct_with_repair": 70,
+        "pct_zero_repair": 47,
+        "delta_points": 23
+      }
+    },
+    "pooled_with_repair": "156/228",
+    "pooled_zero_repair": "102/228"
+  },
+  "B_compiler": {
+    "compiler": "clang++-18",
+    "note": "clang-16 + libc++ unavailable on this machine; clang-18 + libstdc++ substituted",
+    "pooled_gpp": "156/228",
+    "pooled_clang": "154/228",
+    "per_model": {
+      "gemini-2.5-flash": {
+        "cells": 57,
+        "gpp": 26,
+        "clang": 26
+      },
+      "qwen3-coder": {
+        "cells": 57,
+        "gpp": 48,
+        "clang": 48
+      },
+      "deepseek-chat": {
+        "cells": 57,
+        "gpp": 42,
+        "clang": 40
+      },
+      "gpt-5.4-or": {
+        "cells": 57,
+        "gpp": 40,
+        "clang": 40
+      }
+    }
+  },
+  "C_prompt": {
+    "guided_on_fmt": "11/14",
+    "minimal_on_fmt_main_campaign": "32/42",
+    "note": "same model (deepseek-chat); guided arm is 1 run per defect, main campaign 3"
+  }
+}

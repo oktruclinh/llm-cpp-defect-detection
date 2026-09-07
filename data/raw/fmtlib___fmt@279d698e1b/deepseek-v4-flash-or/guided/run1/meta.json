@@ -1,0 +1,17 @@
+{
+  "defect_id": "fmtlib___fmt@279d698e1b",
+  "project": "fmtlib___fmt",
+  "model": "deepseek-v4-flash-or",
+  "model_version": "deepseek/deepseek-v4-flash",
+  "run_id": 1,
+  "condition": "guided",
+  "seed": 1,
+  "timestamp": "2026-09-07T17:41:28",
+  "temperature": 0.2,
+  "shots": 1,
+  "compiled_on_fixed": true,
+  "tokens_in": 437,
+  "tokens_out": 1740,
+  "test_path": "/home/truclinh/Thesis/kse2026/artifact/data/raw/fmtlib___fmt@279d698e1b/deepseek-v4-flash-or/guided/run1/test.cpp",
+  "compile_err_tail": ""
+}

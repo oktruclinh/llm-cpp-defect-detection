@@ -78,7 +78,11 @@ running the disputed input; those probes ship as `rq3_probe_*.json`.
 |---|---|
 | `rq1_coder1.csv`, `rq1_labmate.csv` | RQ1 labels per coder |
 | `rq1_final.csv`, `rq1_final_adjudicated.csv` | RQ1 labels used in Table II |
-| `rq3_coder1.csv`, `rq3_coder2.csv` | RQ3 labels per coder (pre-adjudication; κ is computed from these) |
-| `rq3_frozen44.csv` | the 44-suite analysis set with both coders' labels and the final label |
+| `rq3_coder1.csv`, `rq3_coder2.csv` | RQ3 labels per coder, **annotation round 1 only**: 47 suites = 31 from the main campaign plus 16 from the buggy-generation arm that are not in the paper. Joined positionally against `rq3_coding_sheet.csv` (row order = `id`), which carries the run number. κ over these 47 rows is 0.80, **not** the published value |
+| `rq3_delta_coder1.csv`, `rq3_delta_coder2.csv` | round 2: the 13 GPT-5.4 suites, added after round 1. Keyed by `(defect_id, model, run)` |
+| `rq3_labels_merged44.csv` | **the record behind the published κ = 0.72**: round 1 restricted to the analysis set, merged with round 2, one row per suite with a `round` column. Self-contained — no positional join needed |
+| `rq3_kappa_verification.json` | output of `analysis/rq3_reconcile_labels.py`: κ for both populations, and the cell-by-cell check that the merge reproduces `rq3_frozen44.csv` |
+| `rq3_frozen44.csv` | the 44-suite analysis set with both coders' labels, the final label, and `adjudication_reason` (the probe evidence for each of the six resolutions) |
+| `e4_suite_classification.csv` (in `rq3/`) | per-case reachability re-analysis: which of the 44 keep a **valid** case that reaches the patch. 41 do; the RQ3 population in the paper is those 41 |
 | `rq3_adjudicate6.csv` | the six disagreements and their resolved labels |
 | `rq3_probe_*.json`, `rq3_confirmation.json` | executable checks supporting the resolutions and the two mechanisms |

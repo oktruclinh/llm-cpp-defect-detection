@@ -33,6 +33,17 @@
     "api_key_env": "DEEPSEEK_API_KEY", "temperature": 0.8, "max_tokens": 4096,
     "price_in_per_mtok": 0.14, "price_out_per_mtok": 0.28
   },
+  "deepseek-v4-flash-or": {
+    "_note": "E5d ONLY (2026-09-07). Same model as the campaign's deepseek-v4-flash, routed via OpenRouter because the direct DeepSeek account returned 402 Payment Required. Provider endpoint differs from the original campaign; the model identifier does not.",
+    "provider": "openrouter",
+    "base_url": "https://openrouter.ai/api/v1",
+    "model": "deepseek/deepseek-v4-flash",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "price_in_per_mtok": 0.14,
+    "price_out_per_mtok": 0.28
+  },
   "qwen3-coder": {
     "_note": "Campaign model 2 (Alibaba, code-specialized, open). Via OpenRouter (one key for qwen+gemini). VERIFY exact slug at openrouter.ai/models before the run; direct alt: DashScope OpenAI-compat endpoint.",
     "provider": "openrouter",

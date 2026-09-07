@@ -1,0 +1,538 @@
+defect_id,model,run,test_case,case_kind,reached_patch_any,reached_patch_lastentry,lines_any,lines_lastentry,ran,timed_out
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameEmptyString,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameLeadingSpaces,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameMultipleSpaces,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameNoArguments,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameNoPath,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameNormalCase,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameOnlySpaces,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameRelativePath,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameSingleChar,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameTrailingSpaces,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameWithQuotes,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,qwen3-coder,1,ValidatorsTest.StripProgramNameWithSpecialChars,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.BoundarySingleCharacterProgram,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.BoundarySingleCharacterProgramNoArguments,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.EmptyCommandLineReturnsEmptyParts,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.LeadingSpacesBeforeProgramNameAreIgnored,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.MultipleSpacesBeforeArgumentsAreTrimmedFromRemainder,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.OnlyProgramNameNoArguments,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.OnlyWhitespaceReturnsEmptyParts,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.ProgramNameAndMultipleArguments,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.ProgramNameAndSingleArgument,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.QuotedProgramNameWithArguments,invalid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.QuotedProgramNameWithExtraSpacesBeforeArgumentsTrimsRemainder,invalid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.QuotedProgramNameWithoutArguments,invalid,True,True,1169,1169,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.SingleQuoteProgramNameWithArguments,invalid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.SpaceThenTabsBeforeArgumentRemainAfterLeftTrimOfSpacesOnly,invalid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.TabBetweenProgramAndArgumentsDoesNotSplitOnTab,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.TrailingSpacesAfterProgramNameProduceEmptyRemainder,valid,True,True,1167 1168,1167 1168,True,False
+CLIUtils___CLI11@020a21afc6,gpt-5.4-or,3,SplitProgramNameTest.UnterminatedQuoteTreatsRestAsProgramName,invalid,True,True,1167 1168,1167 1168,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdDuplicateNames,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdEmptyNamedArguments,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdLongNames,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdMixedArguments,invalid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdMultipleNamedArguments,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdNamedArgumentNotFound,invalid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdNestedFormatting,invalid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdNumericNames,invalid,False,False,,,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdSingleCharacterNames,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdSpecialCharacters,invalid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdUnicodeNames,invalid,False,False,,,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdWithNamedArguments,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,1,FmtCoreTest.GetIdWithoutNamedArguments,valid,False,False,,,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdEmptyNamedArguments,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdEmptyStringNames,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdLongNames,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdMixedPositionalAndNamed,invalid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdMultipleNamedArguments,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdNamedArgumentNotFound,invalid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdNestedFormatting,invalid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdNumericNames,invalid,False,False,,,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdRepeatedNames,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdSpecialCharacters,invalid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdUnicodeNames,invalid,False,False,,,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdWithNamedArguments,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,2,FmtCoreTest.GetIdWithoutNamedArguments,valid,False,False,,,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdComplexScenarios,invalid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdEdgeCases,invalid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdLargeArguments,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdPerformance,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdSpecialCharacters,valid,True,True,1715 1717,1715 1717,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdStringViewCompatibility,invalid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdWithNamedArguments,valid,True,True,1715 1717 1719,1715 1717 1719,True,False
+fmtlib___fmt@0cc73ebf79,qwen3-coder,3,FmtCoreTest.GetIdWithoutNamedArguments,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.BaseFormatting,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.CharTypes,valid,True,True,1620,1620,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.DifferentIntegerTypes,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.FillAlignSign,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.LongLongTypes,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.NegativeNumbersWithAlignment,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.Precision,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.PrecisionNegative,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.SignOptions,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.WidthAndAlignment,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.WidthAndBase,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.WidthPrecisionNegative,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.WidthSmallerThanDigits,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.ZeroAndEdgeCases,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.ZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.ZeroPaddingAndBase,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,2,FormatIntegerTest.ZeroPaddingNegative,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.AlternateFormWithWidth,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.BaseFormatting,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.BasicWidthAndAlignment,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.BoolType,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.CharType,invalid,True,True,1620,1620,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.EdgeCases,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.EmptyFormatString,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.MultipleArguments,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.NegativeNumbersWithFill,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.SignAndZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.SignOptions,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.WidthAndPrecision,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.WidthLargerThanDigits,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.WidthPrecisionAndSign,invalid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.WidthSmallerThanDigits,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.ZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@279d698e1b,deepseek-chat,3,FormatIntegerTest.ZeroPaddingWithAlignment,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteCharEdgeTest.CharBoundaryValues,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteCharFormatTest.CharWithFillAndAlign,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteCharTest.BasicChar,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteCharTest.CharInFormatString,invalid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteCharTest.CharWithWidth,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteCharTest.SpecialChars,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteLongDoubleEdgeTest.MinMaxValues,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteLongDoubleTest.BasicValues,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteLongDoubleTest.FormatSpecs,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteLongDoubleTest.InfinityAndNaN,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteLongDoubleTest.LargeAndSmallValues,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteLongDoubleTest.ZeroAndNegativeZero,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteWcharEdgeTest.WcharBoundaryValues,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteWcharFormatTest.WcharWithFillAndAlign,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteWcharTest.BasicWchar,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteWcharTest.SpecialWchars,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteWcharTest.WcharInFormatString,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,1,WriteWcharTest.WcharWithWidth,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteCharTest.BasicCharacters,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteCharTest.InLargerString,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteCharTest.NonPrintableCharacters,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteCharTest.SpecialCharacters,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteCharTest.WithFormatSpecifiers,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteLongDoubleTest.BasicValues,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteLongDoubleTest.InLargerString,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteLongDoubleTest.InfinityAndNaN,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteLongDoubleTest.VeryLargeAndSmall,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteLongDoubleTest.WithFormatSpecifiers,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteLongDoubleTest.ZeroAndNegativeZero,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteWcharTest.BasicWideCharacters,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteWcharTest.InLargerWideString,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteWcharTest.WideNonPrintableCharacters,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,2,WriteWcharTest.WideSpecialCharacters,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteBufferTest.MemoryBuffer,valid,True,False,2758,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteCharTest.BasicChar,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteCharTest.CharWithFormatSpecs,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteCharTest.NonPrintableChars,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteCharTest.SpecialChars,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteEdgeCaseTest.SingleCharString,valid,True,True,2758 2759 2761 2762,2758 2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteLongDoubleTest.BasicValues,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteLongDoubleTest.ExtremeValues,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteLongDoubleTest.FormatSpecs,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteLongDoubleTest.SpecialValues,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteWcharTest.BasicWchar,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteWcharTest.SpecialWchars,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,deepseek-chat,3,WriteWcharTest.WcharWithFormatSpecs,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,1,FmtFormatTest.WriteChar,invalid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,1,FmtFormatTest.WriteLongDouble,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,1,FmtFormatTest.WriteWideChar,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,2,FmtFormatTest.WriteChar,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,2,FmtFormatTest.WriteDouble,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,2,FmtFormatTest.WriteFloat,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,2,FmtFormatTest.WriteLongDouble,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,qwen3-coder,2,FmtFormatTest.WriteWideChar,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteCharTest.AppliesAlignmentAndWidthToChar,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteCharTest.AppliesCustomFillToChar,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteCharTest.FormatsControlCharacter,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteCharTest.FormatsNullCharAndPreservesLength,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteCharTest.FormatsSingleChar,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteCharTest.WidthZeroOrOneDoesNotAddUnexpectedCharacters,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteLongDoubleTest.AppliesWidthAlignmentAndFill,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteLongDoubleTest.FormatsFiniteValuesWithDefaultAndFixedPrecision,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteLongDoubleTest.FormatsNegativeZeroWithSign,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteLongDoubleTest.FormatsSpecialValues,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteLongDoubleTest.FormatsZero,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteLongDoubleTest.UsesLongDoubleOverloadInFormatArgStore,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteWCharTest.AppliesAlignmentAndFillToWideChar,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteWCharTest.FormatsNullWideCharAndPreservesLength,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,1,FmtWriteWCharTest.FormatsSingleWideCharWithWformat,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteCharTest.FormatsControlCharactersAsRawCharacters,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteCharTest.FormatsNullCharAndPreservesLength,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteCharTest.FormatsSingleCharWithDefaultFormatter,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteCharTest.RepeatedFormattingProducesIndependentCharacters,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteCharTest.SupportsWidthAlignmentAndFill,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.ConcatenatesWithOtherArgumentsCorrectly,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.FormatsInfinityAndNaN,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.FormatsLargeLongDoubleWithLongDoublePrecision,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.FormatsNegativeZeroWithSign,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.FormatsSimpleFiniteValues,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.FormatsZeroCorrectly,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.SupportsScientificAndGeneralFormats,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteLongDoubleTest.SupportsWidthAlignmentAndSign,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteWCharTest.FormatsWideCharacterWithWideStringAPI,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteWCharTest.FormatsWideNullCharacterAndPreservesLength,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,2,FmtFormatWriteWCharTest.SupportsWidthAlignmentForWideCharacters,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteCharTest.FormatsBoundaryCharValues,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteCharTest.FormatsNullCharPreservingLength,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteCharTest.FormatsSingleCharWithFormat,valid,True,True,2758,2758,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteCharTest.WritesCharIntoMemoryBuffer,valid,True,False,2758,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteCharTest.WritesLiteralCharViaFormatToBuffer,valid,True,False,2758,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.CanAppendLongDoubleAndCharsTogether,valid,True,False,2758,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.FormatsInfinityAndNaN,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.FormatsNegativeLongDouble,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.FormatsScientificNotationWhenRequested,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.FormatsZeroLongDouble,invalid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.HonorsPrecisionForLongDouble,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteLongDoubleTest.WritesLongDoubleIntoMemoryBuffer,valid,False,False,,,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteWCharTest.FormatsSingleWideChar,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteWCharTest.FormatsWideNullCharPreservingLength,valid,True,True,2759 2761 2762,2759 2761 2762,True,False
+fmtlib___fmt@287eaab3b2,gpt-5.4-or,3,FmtFormatWriteWCharTest.WritesWideCharIntoWideMemoryBuffer,valid,True,False,2759 2761 2762,,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.NormalOctalFormatting,valid,True,True,1442 1443,1442 1443,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalBoundaryValues,valid,True,True,1442 1443 1444 1447,1442 1443 1444 1447,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalLargeValues,invalid,True,True,1442 1443 1444 1447,1442 1443 1444 1447,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalNegativeValues,valid,True,True,1442 1443 1444 1447,1442 1443 1444 1447,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalPrecisionVariations,invalid,False,False,,,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalPrecisionWithAltFlag,invalid,False,False,,,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalWithAltFlag,valid,True,True,1442 1443 1444 1447,1442 1443 1444 1447,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalWithAltFlagAndPrecision,invalid,False,False,,,True,False
+fmtlib___fmt@611cf0b3c6,qwen3-coder,3,FormatOctalTest.OctalZeroValue,invalid,True,True,1442 1443 1444 1447,1442 1443 1444 1447,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.BooleanType,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.CharType,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.CustomIntegralType,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.FloatingPointTypes,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.LongLongTypes,invalid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.MaximumValues,valid,True,True,2819 2820 2821 2822 2823 2825,2819 2820 2821 2822 2823 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.MixedSpecifiers,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.NegativeValues,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.SignedCharType,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.SignedIntegerTypes,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.StringType,valid,True,True,2819 2820,2819 2820,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.UnsignedIntegerTypes,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,deepseek-chat,3,FormatSignTest.ZeroValues,valid,True,True,2819 2820 2821 2822 2823 2825,2819 2820 2821 2822 2823 2825,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestBooleanFormatting,invalid,False,False,,,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestCharType,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestNegativeValues,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestNonIntegralTypesError,invalid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestNormalFormattingUnaffected,valid,False,False,,,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestSignedIntegerTypes,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestStringFormatting,valid,False,False,,,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestUnsignedTypesError,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestVariousIntegralTypes,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,qwen3-coder,1,SignTest.TestZeroValues,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.CharacterTypeAcceptsPlusSignAsSignedArgument,invalid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.DynamicWidthAndPrecisionDoNotAffectSignValidationForUnsigned,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.FloatingPointArgumentsAcceptSignSpecifier,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.FormatErrorMessageMentionsSignedArgumentForUnsignedIntegral,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.NonNumericArgumentsRejectSignSpecifier,valid,True,True,2819 2820,2819 2820,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.SignedIntegerBoundaryValuesFormatSuccessfully,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.SignedIntegerTypesAcceptPlusSign,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.UnsignedIntegralTypesRejectMinusAndSpaceSignSpecifiers,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,2,FmtCoreOnSignTest.UnsignedIntegralTypesRejectPlusSign,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,3,FmtCoreOnSignTest.BoolRejectsPlusSignAsUnsignedIntegralLikeType,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,3,FmtCoreOnSignTest.CharTypeAcceptsPlusSign,invalid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,3,FmtCoreOnSignTest.FloatingPointArgumentsAcceptPlusSign,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,3,FmtCoreOnSignTest.NonNumericArgumentsRejectSignSpecifier,valid,True,True,2819 2820,2819 2820,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,3,FmtCoreOnSignTest.SignedIntegralTypesAcceptPlusSign,valid,True,True,2819 2820 2821 2822 2825,2819 2820 2821 2822 2825,True,False
+fmtlib___fmt@6a13464059,gpt-5.4-or,3,FmtCoreOnSignTest.UnsignedIntegralTypesRejectPlusSign,valid,True,True,2819 2820 2821 2822 2823,2819 2820 2821 2822 2823,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.AlignNumericOverriddenToRight,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.AltFlagResetToFalse,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.EmptyString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.LongString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.NumericTypesStillWork,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.PointerType,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.PrecisionHandling,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.SignResetToNone,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.SingleCharacter,invalid,True,False,258 259 260 261,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.StringViewType,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,1,PrintfFormatterTest.VariousWidths,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.AltFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.AltResetForNonNumeric,valid,True,False,263,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.BasicStringFormatting,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ConstCharPointerArgument,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.EmptyStringFormatting,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.EmptyStringWithWidth,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.LongStringFormatting,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.MinusFlagWorksForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.MinusOverridesZeroForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.MultipleFlagsIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.MultipleFormatSpecifiers,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.NumericAlignOverriddenForStrings,invalid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.PlusFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.PrecisionForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.SignResetForNonNumeric,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.SpaceFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.StdStringArgument,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.StringWithNullChar,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.StringWithSpecialCharacters,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.WidthAndPrecisionForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.WidthSpecificationForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ZeroFlagIgnoredForChars,invalid,True,False,258 259 260 261,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ZeroFlagIgnoredForPointers,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ZeroFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ZeroFlagWithWidthForString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ZeroFlagWorksForFloats,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,2,PrintfFormatterTest.ZeroFlagWorksForIntegers,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.AllFlagsIgnoredForStrings,invalid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.AltFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.DefaultAlignmentForString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.EmptyStringWithWidth,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.FlagResetAfterStringFormatting,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.LeftAlignmentForString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.MultipleFormatsWithMixedTypes,invalid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.NumericAlignmentOverwrittenForString,invalid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.NumericAlignmentToRightForString,invalid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.SignFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.SpaceFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.StringLongerThanWidth,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagIgnoredForBool,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagIgnoredForChar,invalid,True,False,258 259 260 261,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagIgnoredForPointers,invalid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagIgnoredForStringView,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagIgnoredForStrings,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagWithPrecisionForString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroFlagWorksForIntegers,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,deepseek-chat,3,PrintfFormatterTest.ZeroWidthForString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,1,PrintfFormatterTest.IntegerEdgeValues,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,1,PrintfFormatterTest.IntegerNoZeroFlagAndAlignment,invalid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,1,PrintfFormatterTest.IntegerZeroFlagAndAlignment,invalid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,1,PrintfFormatterTest.NonIntegerTypesZeroFlagIgnored,invalid,True,False,258 259 260 261,,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.AlternateForm,valid,True,False,263,,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.BasicIntegerFormatting,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.MaxIntValues,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.SignFlags,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.WidthAndPrecision,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.ZeroFlagWithNonNumericAlign,invalid,True,True,258 259 260 261 263,263,True,False
+fmtlib___fmt@96c18b26c2,gemini-2.5-flash,3,PrintfFormatIntegralTest.ZeroValue,invalid,True,True,258 259 260 261 263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatCharacter,invalid,True,False,258 259 260 261,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatFloat,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatHexadecimal,valid,True,False,263,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatIntegerEdgeCases,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatIntegerWithSignAndFlags,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatMixed,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatOctal,valid,True,False,263,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatPointer,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatString,valid,False,False,,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,1,PrintfTest.FormatUnsignedInteger,valid,True,False,263,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerAlignment,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerEdgeCases,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerNegativeValues,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerSpecialCases,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerVariousTypes,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerWidthAndPrecision,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerWithAltForm,valid,True,False,263,,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerWithFlags,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerWithSign,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,2,PrintfTest.FormatIntegerZeroPadding,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,3,PrintfTest.FormatIntegerAlignmentAndFlags,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,3,PrintfTest.FormatIntegerBounds,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,3,PrintfTest.FormatIntegerEdgeCases,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,3,PrintfTest.FormatIntegerSpecialCases,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,3,PrintfTest.FormatIntegerVariousTypes,valid,True,True,263,263,True,False
+fmtlib___fmt@96c18b26c2,qwen3-coder,3,PrintfTest.FormatIntegerWithSignAndFlags,valid,True,True,263,263,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgComplexFormatting,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgLongNames,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgMissingArgument,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgMixedNamedAndPositional,invalid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgMultipleArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgRepeatedNames,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgSingleCharacterNames,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgUnicodeNames,invalid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithEmptyName,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithNamedArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithNumbersInNames,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithNumericNames,invalid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithSpacesInNames,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithSpecialCharacters,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,1,BasicContextTest.GetArgWithUnderscores,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithComplexFormat,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithEmptyFormatString,valid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithEmptyName,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithFloatValue,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithLargeStringArgument,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithMixedArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithMultipleNamedArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithNamedArgument,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithNegativeValue,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithNestedFormatting,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithNonExistentArgument,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithNumericArgument,invalid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithOnlyNamedArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithRepeatedNames,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithSpecialCharactersInName,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,2,BasicContextTest.GetArgWithZeroValue,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithComplexTypes,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithEmptyName,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithMissingNamedArgument,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithMixedArguments,invalid,True,True,3003,3003,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithMultipleArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithNamedArgument,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithNumericArguments,valid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithOnlyNamedArguments,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithRepeatedNames,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithSpecialCharacters,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,qwen3-coder,3,BasicContextTest.GetArgWithZeroValues,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.FindsNamedArgumentAmongPositionalArguments,invalid,True,True,3003,3003,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.MissingEmptyNamedArgumentThrowsFormatError,invalid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.MissingNamedArgumentThrowsFormatError,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.MissingNamedArgumentWithNoArgumentsThrowsFormatError,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.MissingWideNamedArgumentThrowsFormatError,invalid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.NameLookupIsCaseSensitive,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.NameLookupIsExact,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.ReturnsNamedIntegerArgument,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.ReturnsNamedStringArgument,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.ReusesSameNamedArgumentMultipleTimes,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.SupportsEmptyArgumentName,valid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,1,FmtNamedArgumentLookupTest.WorksWithWideCharacterFormatStrings,valid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.EmptyArgumentNameCanBeResolved,valid,False,False,,,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.MissingNamedArgumentAmongExistingNamedArgumentsThrowsFormatError,valid,True,True,3003 3004 3005 3006 3007 3008,3003 3004 3005 3006 3007 3008,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.MissingNamedArgumentThrowsFormatError,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.NameLookupIsCaseSensitive,valid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.NamedArgumentWorksWithFormatToBufferAPI,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.RepeatedLookupOfSameNamedArgumentWorks,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.RetrievesMultipleNamedArgumentsAndPreservesMapping,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.RetrievesNamedArgumentByName,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.SimilarPrefixesDoNotMatchWrongArgument,valid,True,True,3003 3004 3005 3006 3007,3003 3004 3005 3006 3007,True,False
+fmtlib___fmt@971fb584c3,gpt-5.4-or,2,FmtNamedArgumentLookupTest.UnicodeLikeBytesInArgumentNameAreMatchedExactly,invalid,True,True,3003 3004 3005 3006 3008,3003 3004 3005 3006 3008,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.BasicEnumFormatting,valid,True,True,3216 3219 3221,3216 3219 3221,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.CharEnumFormatting,valid,True,False,3216 3219 3221,,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.CustomUnderlyingTypeEnumFormatting,valid,True,False,3216 3219 3221,,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.EnumWithFormatSpecifiers,valid,True,True,3216 3219 3221,3216 3219 3221,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.LongEnumFormatting,invalid,True,False,3216 3219 3221,,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.MultipleEnumTypes,valid,True,True,3216 3219 3221,3216 3219 3221,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.NegativeEnumValueFormatting,valid,True,True,3216 3219 3221,3216 3219 3221,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.UnscopedEnumFormatting,valid,False,False,,,True,False
+fmtlib___fmt@c04fb91b03,gemini-2.5-flash,3,EnumFormatterTest.ZeroEnumValueFormatting,valid,True,True,3216 3219 3221,3216 3219 3221,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.BoundarySeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.CustomPrecision,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.DurationCastTruncation,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.IntegerSeconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.Microseconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.Milliseconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.Nanoseconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.NegativeDuration,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.SecondsWithFraction,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.VerySmallFraction,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,1,ChronoWriteFractionalSecondsTest.ZeroDuration,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.DifferentPeriodTypes,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.DifferentRepTypes,invalid,True,False,1838 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.IntegerSeconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.LargeFractional,valid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.LargeValues,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.NegativeNearZero,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.NegativeSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.PrecisionSpecifier,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.SecondsWithFractional,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.SmallFractional,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,2,ChronoWriteFractionalSecondsTest.ZeroDuration,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.CustomPrecisionSeconds,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.DefaultFormatSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.IntegerDurationSeconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.LargeFractionalSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.MaxPrecisionSeconds,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.MicrosecondsDurationSeconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.MillisecondsDurationSeconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.MinPrecisionSeconds,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.NanosecondsDurationSeconds,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.NegativeDurationSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.RoundingFractionalSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.SmallFractionalSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.TruncatingPrecisionSeconds,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.ZeroDurationSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,deepseek-chat,3,ChronoFractionalSecondsTest.ZeroFractionalSeconds,invalid,True,True,1838 1843,1838 1843,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.BoundaryAroundMinuteStillFormatsSecondsFieldCorrectly,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.CustomRatioDurationPrintsExactFractionalPrecision,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.FractionalFormattingWorksWithCustomChronoSpec,valid,True,True,1839 1841 1843,1839 1841 1843,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.MicrosecondsPrintSixFractionalDigits,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.MillisecondsPrintFractionalSeconds,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.MinutesAndHoursUseSecondFieldModuloSixtyWithFraction,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.NanosecondsPrintNineFractionalDigits,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.NegativeFractionalDurationsKeepSecondFieldAndFractionConsistent,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.SecondsWithoutFractionDoNotPrintDecimalPart,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,1,FmtChronoDurationFormattingTest.StringFormattingIsConsistent,invalid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationDefaultFormattingTest.PublicApiStillRepresentsFractionalDurations,invalid,False,False,,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.BoundaryAroundSecondTransitionIsCorrect,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.CustomRatioDurationFormatsFractionalSecondsCorrectly,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.FormattingDistinguishesWholeAndFractionalDurations,valid,True,True,1839 1841 1843,1839 1841 1843,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.FractionalFormattingUsesSecondFieldModuloMinute,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.MicrosecondsAppendFractionalPartWithSixDigits,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.MillisecondsAppendFractionalPart,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.NanosecondsAppendFractionalPartWithNineDigits,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.NegativeFractionalDurationsKeepSignAndFraction,valid,True,False,1839 1841 1843,,True,False
+fmtlib___fmt@cd7202e039,gpt-5.4-or,3,FmtChronoDurationSecondsFormattingTest.WholeSecondsDoNotShowFraction,valid,True,True,1839 1841 1843,1839 1841 1843,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.DefaultAlignmentNonNumeric,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.DefaultNumericBecomesRight,valid,True,True,2927 2928,2927 2928,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.IntegerWithSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.LargeWidthWithSign,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.MinimumWidthWithSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.MultipleSigns,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.NumericAlignmentDifferentTypes,valid,True,True,2927 2928 2929 2930 2931 2932 2933,2927 2928 2929 2930 2931 2932 2933,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.NumericToRightWithoutSign,valid,True,True,2927 2928 2929,2927 2928 2929,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.SignExactWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.SignWithFillCharacter,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.SignWithWidthAdjustment,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.SignWithWidthAndNumeric,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.SignWithoutWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,deepseek-chat,3,NumericAlignmentTest.ZeroWithSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.CenterAlignmentNoSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.CenterAlignmentWithSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.CustomFillChar,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.DefaultAlignmentNoSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.DefaultAlignmentWithSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.DifferentTypes,invalid,True,True,2927 2928,2927 2928,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.LargeWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.LeftAlignmentNoSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.LeftAlignmentWithSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.NumericAlignmentNoSignSpecifier,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.NumericAlignmentWithNegativeSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.NumericAlignmentWithPositiveSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.WidthOne,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gemini-2.5-flash,3,FmtAlignSignTest.ZeroWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.DefaultAlignmentForNumbersIsRightAndSignCountsTowardWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.ExplicitRightAlignmentWithZeroFillDoesNotBehaveLikeNumericAlignment,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.FloatingPointNumericAlignmentPlacesSignBeforeZeros,invalid,True,True,2927 2928 2929 2930 2931 2932 2933,2927 2928 2929 2930 2931 2932 2933,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.LeftAndCenterAlignmentKeepSignWithinContentWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.NumericAlignmentDiffersFromRightAlignmentForSignedValues,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.NumericAlignmentPlacesSignBeforeZeroPadding,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.NumericAlignmentReducesPaddingWidthForExplicitSign,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.PositiveZeroAndNegativeZeroFormattingRespectAlignmentRules,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.StringFormattingWithSignIsRejected,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,1,FmtFormatSignAlignmentTest.ZeroWidthAndMinimalWidthsHandleSignsCorrectly,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.CustomFillWithNumericAlignmentPadsAfterSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.CustomFillWithRightAlignmentPadsBeforeSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.DefaultAlignmentKeepsSignWithinRightAlignedField,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.ExplicitNumericAlignmentForFloatingPointPlacesSignBeforePadding,valid,True,True,2927 2928 2929 2930 2931 2932 2933,2927 2928 2929 2930 2931 2932 2933,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.ExplicitRightAlignmentMatchesDefaultForSignedNumbers,invalid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.InvalidFormatSpecifiersReportErrors,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.LeftAndCenterAlignmentCountSignAsPartOfContent,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.NegativeZeroFormattingWithFloatingPointUsesSameSignPlacementRules,valid,True,True,2927 2928 2929 2930 2931 2932 2933,2927 2928 2929 2930 2931 2932 2933,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.NumericAlignmentPlacesSignBeforeZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.NumericAlignmentReducesPaddingWidthBySign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.NumericAlignmentWithExplicitWidthOneAndSign,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.SignAwarePaddingWithNonNumericAlignmentCountsSignInWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.WidthZeroAndNoExtraPaddingEdgeCases,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.ZeroFlagBehavesAsNumericAlignmentEvenWithSignOptions,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,2,FmtFormatSignAlignmentTest.ZeroValueStillHandlesSignAndAlignmentCorrectly,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.CombinationOfAlternateFormAndNumericAlignmentKeepsSignFirst,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.DefaultAlignmentForSignedNumbersIsRightAndIncludesSignInWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.DynamicWidthWithNumericAlignmentStillCountsSignInsideWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.ErrorOnInvalidDynamicWidthStillOccursThroughPublicApi,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.ExplicitCenterAlignmentIncludesSignWithinFieldWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.ExplicitLeftAlignmentIncludesSignWithinFieldWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.ExplicitRightAlignmentIncludesSignWithinFieldWidth,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.NegativeZeroFormattingPreservesSignAndAlignmentRules,valid,True,True,2927 2928 2929 2930 2931 2932 2933,2927 2928 2929 2930 2931 2932 2933,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.NumericAlignmentPlacesSignBeforeZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.NumericAlignmentWidthCountsSignCharacter,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.NumericAlignmentWithExplicitPlusPlacesPlusBeforeZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.NumericAlignmentWithSpaceSignPlacesSpaceBeforeZeroPadding,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.SignAwarePaddingForFloatingPoint,valid,True,True,2927 2928 2929 2930 2931 2932 2933,2927 2928 2929 2930 2931 2932 2933,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.WidthZeroOrLessThanContentDoesNotCorruptSignHandling,valid,False,False,,,True,False
+fmtlib___fmt@fc6e0fe992,gpt-5.4-or,3,FmtFormatSignAlignmentTest.ZeroFlagBehavesAsNumericAlignmentAndOverridesDefaultRightPaddingBehavior,valid,False,False,,,True,False

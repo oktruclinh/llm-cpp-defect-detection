@@ -1,0 +1,21 @@
+{
+  "analysis_set": {
+    "n": 44,
+    "kappa": 0.72,
+    "observed_agreement": 0.8636,
+    "expected_agreement": 0.5124,
+    "disagreements": 6,
+    "round1_suites": 31,
+    "round2_suites": 13,
+    "source": "data/taxonomy/rq3_labels_merged44.csv"
+  },
+  "round1_file_as_shipped": {
+    "n": 47,
+    "kappa": 0.796,
+    "observed_agreement": 0.9149,
+    "disagreements": 4,
+    "note": "includes 16 buggy-generation-arm suites that are not in the paper and predates the 13 GPT-5.4 suites; this is NOT the published kappa"
+  },
+  "merge_verified_against_frozen44": true,
+  "reproduces_published_kappa": true
+}

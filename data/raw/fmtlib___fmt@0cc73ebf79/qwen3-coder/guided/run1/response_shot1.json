@@ -1,0 +1,46 @@
+{
+ "id": "gen-1788777421-cwyNAvCHPPylz52KoYrK",
+ "object": "chat.completion",
+ "created": 1788777421,
+ "model": "qwen/qwen3-coder-30b-a3b-instruct",
+ "provider": "SiliconFlow",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "```cpp\n#include <gtest/gtest.h>\n#include <fmt/core.h>\n#include <fmt/format.h>\n\nTEST(NamedArgsTest, GetIdWithNamedArguments) {\n    // Test normal case: named argument exists\n    auto result = fmt::format(\"Hello {name}!\", fmt::arg(\"name\", \"World\"));\n    EXPECT_EQ(\"Hello World!\", result);\n    \n    // Test that get_id works through the public API by checking\n    // that named arguments are properly resolved\n    EXPECT_NO_THROW(fmt::format(\"Hello {name}!\", fmt::arg(\"name\", \"World\")));\n}\n\nTEST(NamedArgsTest, GetIdWithMultipleNamedArguments) {\n    // Test multiple named arguments\n    auto result = fmt::format(\"{a} {b} {c}!\", \n                             fmt::arg(\"a\", \"Hello\"),\n                             fmt::arg(\"b\", \"beautiful\"),\n                             fmt::arg(\"c\", \"world\"));\n    EXPECT_EQ(\"Hello beautiful world!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithEmptyNamedArgument) {\n    // Test empty named argument name\n    auto result = fmt::format(\"Hello {name}!\", fmt::arg(\"name\", \"\"));\n    EXPECT_EQ(\"Hello !\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithSpecialCharactersInName) {\n    // Test named argument with special characters\n    auto result = fmt::format(\"Value: {test_var}!\", fmt::arg(\"test_var\", 42));\n    EXPECT_EQ(\"Value: 42!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithRepeatedNames) {\n    // Test that repeated names work correctly\n    auto result = fmt::format(\"{name} {name}!\", fmt::arg(\"name\", \"test\"));\n    EXPECT_EQ(\"test test!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithNoNamedArguments) {\n    // Test format string with no named arguments\n    auto result = fmt::format(\"Hello World!\");\n    EXPECT_EQ(\"Hello World!\", result);\n    \n    // Test with positional arguments only\n    auto result2 = fmt::format(\"{} {}\", \"Hello\", \"World\");\n    EXPECT_EQ(\"Hello World\", result2);\n}\n\nTEST(NamedArgsTest, GetIdWithMixedArguments) {\n    // Test mix of positional and named arguments\n    auto result = fmt::format(\"Hello {name}, you have {count} messages!\", \n                             fmt::arg(\"name\", \"Alice\"),\n                             fmt::arg(\"count\", 5));\n    EXPECT_EQ(\"Hello Alice, you have 5 messages!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithNumericNames) {\n    // Test named arguments with numeric names\n    auto result = fmt::format(\"Value {1} is {2}!\", \n                             fmt::arg(\"1\", \"first\"),\n                             fmt::arg(\"2\", \"important\"));\n    EXPECT_EQ(\"Value first is important!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithLongNames) {\n    // Test with long named argument names\n    auto result = fmt::format(\"Hello {very_long_argument_name}!\", \n                             fmt::arg(\"very_long_argument_name\", \"World\"));\n    EXPECT_EQ(\"Hello World!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithUnicodeNames) {\n    // Test with Unicode characters in argument names\n    auto result = fmt::format(\"Hello {naïve}!\", fmt::arg(\"naïve\", \"World\"));\n    EXPECT_EQ(\"Hello World!\", result);\n}\n\nTEST(NamedArgsTest, GetIdWithSameNameDifferentValues) {\n    // Test that same name can be used with different values\n    auto result1 = fmt::format(\"{name}!\", fmt::arg(\"name\", \"Alice\"));\n    auto result2 = fmt::format(\"{name}!\", fmt::arg(\"name\", \"Bob\"));\n    EXPECT_EQ(\"Alice!\", result1);\n    EXPECT_EQ(\"Bob!\", result2);\n}\n```",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 440,
+  "completion_tokens": 814,
+  "total_tokens": 1254,
+  "cost": 0.00025872,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00025872,
+   "upstream_inference_prompt_cost": 3.08e-05,
+   "upstream_inference_completions_cost": 0.00022792
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}
