@@ -43,7 +43,7 @@ suites with clang). Re-running *generation* needs API keys — see §5.
 
 | Path | What it holds |
 |---|---|
-| `data/raw/`, `data/raw_n3/` | The **453** generated `test.cpp` files, one directory per `defect / model / run`, each with `meta.json` (model version, seed, temperature, token counts) and `eval.json` (per-test-case outcomes). |
+| `data/raw/`, `data/raw_n3/` | The **465** generated `test.cpp` files: one directory per `defect / model / run` for the main campaign, and per `defect / model / condition / run` for the prompt and probe arms. Every one carries `meta.json` (model version, seed, temperature, token counts). `eval.json` (per-test-case outcomes) accompanies the 285 main Tier A cells (228 fixed + 57 buggy); the ablation arms record their outcomes only in `data/results/*.jsonl`. |
 | `data/results/*.jsonl` | One row per generation cell: compilation, validity, detection, reachability. These files back every rate in the paper. |
 | `data/taxonomy/` | Human annotation: `CODEBOOK.md` (label definitions and decision tree), per-coder labels, the frozen 44-suite analysis set, the six adjudicated disagreements, and the executable probes that resolved them. Free-text annotator notes are not included. |
 | `generate/` | Prompt templates (`prompt.py`), API client (`llm_client.py`), generation with one compile-repair round (`generate_tests.py`). |
@@ -75,7 +75,7 @@ Every quantity in the paper, with the file that contains it and the command that
 | Paper | Value | Source |
 |---|---|---|
 | Per-model non-compile | 16 / 26 / 30 / 54 % | `data/results/rows_tierA_*_fixed.jsonl`, field `outcome == "non_compilable"` |
-| Taxonomy (Table II) | 44 / 17 / 15 / 18 / 6 % | `data/taxonomy/rq1_final_adjudicated.csv`, field `final_code`; categories defined in `data/taxonomy/CODEBOOK.md`; classifier `analysis/taxonomy_rq1.py` |
+| Taxonomy (Table II) | 44 / 17 / 15 / 18 / 6 % | `data/taxonomy/rq1_final_adjudicated.csv`, field `final_code` — **not** `rq1_final.csv`, which is the pre-adjudication file and yields 43 / 18 / 15 / 18 / 6 %. Categories defined in `data/taxonomy/CODEBOOK.md`; classifier `analysis/taxonomy_rq1.py` |
 | Internal wall | 126 of 126 | `campaign_internal.jsonl` + `campaign_internal_v2.jsonl` + `campaign_spirv.jsonl`, minus the 12 cells of the two reclassified nng defects |
 | Pre-audit rate | 136 of 138 | same three files, all 23 candidates |
 
@@ -88,6 +88,7 @@ Every quantity in the paper, with the file that contains it and the command that
 | All attempts | 16 / 228 = 7 % (defect-cluster bootstrap CI 0.9–15.8) | `analysis/cluster_bootstrap.py` — resamples the 19 **defects**, not the 228 cells |
 | Per model (unconditional) | 1 / 2 / 5 / 8 detections of 57 | `rows_tierA_<model>_fixed.jsonl` |
 | Never reached / reached-but-not-caught | 60 % / 29 % (84 and 41 of 141) | `outcome` field, **after** the per-case re-analysis in `rq3/e4_suite_classification.csv` reassigned 3 suites from *reached* to *never reached* |
+| Never-reached upper bound (Threats) | six of the 81 never-reached suites do reach under the *any* rule | `rq3/p0_notreached/` — `suite_classification.csv`, field `group`; regenerate with `analysis/e4_notreached_probe.py` |
 | Invalid test cases | 674 / 1810 = 37 % | fields `n_tests`, `n_invalid_on_fixed` |
 | Strict detection | 0 of 14 clean suites | suites with `n_invalid_on_fixed == 0` and `n_flaky_fixed == 0` |
 | Arrow probes | 2 of 6 compile; `Flush` 0 of 6 | `arrow_public.jsonl`, `campaign_arrow_cc.jsonl` |
@@ -191,4 +192,20 @@ real money. It is not needed to verify any number in the paper.
 - **`deepseek-v4-flash-or` in `models.json` is a routing substitution**, used only by
   `e5d_probe_generate.py`: the direct DeepSeek endpoint returned 402 Payment Required, so that
   probe reached the same model through OpenRouter.
+- **Two RQ1 label files ship, and they differ by one cell.** `rq1_final.csv` is the
+  pre-adjudication file: it carries the full columns (`defect_id`, `model`, `clf_code`,
+  `source`) and is the input to `apply_adjudication.py`, the basis of the 94 % classifier fit
+  and of the κ = 0.56 comparison against `rq1_labmate.csv`. `rq1_final_adjudicated.csv` is its
+  output and is the file behind Table II. Recomputing the Table II percentages from
+  `rq1_final.csv` gives 43 / 18 instead of the published 44 / 17. Neither file is renamed
+  because 5 analysis scripts reference them by name.
+- **The internal campaign ships aggregated rows, not raw suites.** The nng, cppcheck and
+  SPIRV-Tools cells were generated on a separate cloud machine and only the per-cell result
+  rows were retrieved, so `data/raw/` contains no directory for those defects. Every internal
+  campaign number in the paper is recomputable from `campaign_internal.jsonl`,
+  `campaign_internal_v2.jsonl` and `campaign_spirv.jsonl`, which hold one row per cell
+  (138 rows over 23 pre-audit defects; see the *Internal wall* and *Pre-audit rate* entries in
+  §3). What cannot be re-checked here is any claim about the text of those suites, including
+  the paper's observation that ten of the twelve suites for the two reclassified nng defects
+  still call internal `nni_*` functions.
 - **Known limitations** are stated in the paper's Threats to Validity.

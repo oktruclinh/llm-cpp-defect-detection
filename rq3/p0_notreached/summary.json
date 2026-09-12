@@ -1,0 +1,32 @@
+{
+  "n_suites": 81,
+  "groups": {
+    "D": 72,
+    "A": 6,
+    "B": 3
+  },
+  "groups_under_lastentry_rule": {
+    "D": 81
+  },
+  "labels_over_groupA_lastentry": {},
+  "suites_with_multi_entry_gcov_lines": 9,
+  "group_definitions": {
+    "A": "at least one valid case reaches the patched region on its own",
+    "B": "no valid case reaches; only invalid/flaky cases do",
+    "C": "suite reaches but no single case does (gcov aggregation artefact)",
+    "D": "whole-suite run did not reproduce the recorded reach",
+    "ERR": "suite could not be rebuilt"
+  },
+  "suite_level_reproduction": "81/81",
+  "labels_over_44": {
+    "": 81
+  },
+  "labels_over_groupA": {
+    "": 6
+  },
+  "groupA_n_defects": 2,
+  "groupA_projects": {
+    "fmtlib": 6
+  },
+  "rq3_population_changes": true
+}
